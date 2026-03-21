@@ -1,0 +1,2386 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-03-20T22:56:34.921Z",
+      "data": {
+        "meta": {
+          "version": "2.0.0",
+          "timestamp": "2026-03-20T22:56:34.921Z",
+          "totalDurationMs": 18812,
+          "sourcesQueried": 29,
+          "sourcesOk": 29,
+          "sourcesFailed": 0
+        },
+        "fred": [
+          {
+            "id": "DFF",
+            "label": "Fed Funds Rate",
+            "value": 3.64,
+            "date": "2026-03-19",
+            "recent": [
+              3.64,
+              3.64,
+              3.64,
+              3.64,
+              3.64
+            ]
+          },
+          {
+            "id": "DGS2",
+            "label": "2-Year Treasury Yield",
+            "value": 3.79,
+            "date": "2026-03-19",
+            "recent": [
+              3.79,
+              3.76,
+              3.68,
+              3.68,
+              3.73
+            ]
+          },
+          {
+            "id": "DGS10",
+            "label": "10-Year Treasury Yield",
+            "value": 4.25,
+            "date": "2026-03-19",
+            "recent": [
+              4.25,
+              4.26,
+              4.2,
+              4.23,
+              4.28
+            ]
+          },
+          {
+            "id": "DGS30",
+            "label": "30-Year Treasury Yield",
+            "value": 4.83,
+            "date": "2026-03-19",
+            "recent": [
+              4.83,
+              4.88,
+              4.85,
+              4.86,
+              4.9
+            ]
+          },
+          {
+            "id": "T10Y2Y",
+            "label": "10Y-2Y Spread (Yield Curve)",
+            "value": 0.51,
+            "date": "2026-03-20",
+            "recent": [
+              0.51,
+              0.46,
+              0.5,
+              0.52,
+              0.55
+            ]
+          },
+          {
+            "id": "T10Y3M",
+            "label": "10Y-3M Spread",
+            "value": 0.65,
+            "date": "2026-03-20",
+            "recent": [
+              0.65,
+              0.52,
+              0.53,
+              0.48,
+              0.51
+            ]
+          },
+          {
+            "id": "CPIAUCSL",
+            "label": "CPI All Items",
+            "value": 327.46,
+            "date": "2026-02-01",
+            "recent": [
+              327.46,
+              326.588,
+              326.031
+            ]
+          },
+          {
+            "id": "CPILFESL",
+            "label": "Core CPI (ex Food & Energy)",
+            "value": 333.512,
+            "date": "2026-02-01",
+            "recent": [
+              333.512,
+              332.793,
+              331.814
+            ]
+          },
+          {
+            "id": "PCEPI",
+            "label": "PCE Price Index",
+            "value": 128.969,
+            "date": "2026-01-01",
+            "recent": [
+              128.969,
+              128.615
+            ]
+          },
+          {
+            "id": "MICH",
+            "label": "Michigan Inflation Expectations",
+            "value": 4,
+            "date": "2026-01-01",
+            "recent": [
+              4,
+              4.2
+            ]
+          },
+          {
+            "id": "UNRATE",
+            "label": "Unemployment Rate",
+            "value": 4.4,
+            "date": "2026-02-01",
+            "recent": [
+              4.4,
+              4.3,
+              4.4
+            ]
+          },
+          {
+            "id": "PAYEMS",
+            "label": "Nonfarm Payrolls",
+            "value": 158466,
+            "date": "2026-02-01",
+            "recent": [
+              158466,
+              158558,
+              158432
+            ]
+          },
+          {
+            "id": "ICSA",
+            "label": "Initial Jobless Claims",
+            "value": 205000,
+            "date": "2026-03-14",
+            "recent": [
+              205000,
+              213000,
+              214000,
+              211000,
+              208000
+            ]
+          },
+          {
+            "id": "M2SL",
+            "label": "M2 Money Supply",
+            "value": 22442.1,
+            "date": "2026-01-01",
+            "recent": [
+              22442.1,
+              22366.2
+            ]
+          },
+          {
+            "id": "WALCL",
+            "label": "Fed Balance Sheet Total Assets",
+            "value": 6655939,
+            "date": "2026-03-18",
+            "recent": [
+              6655939,
+              6646344,
+              6628894,
+              6613797,
+              6613395
+            ]
+          },
+          {
+            "id": "VIXCLS",
+            "label": "VIX (Fear Index)",
+            "value": 24.06,
+            "date": "2026-03-19",
+            "recent": [
+              24.06,
+              25.09,
+              22.37,
+              23.51,
+              27.19
+            ]
+          },
+          {
+            "id": "BAMLH0A0HYM2",
+            "label": "High Yield Spread (Credit Stress)",
+            "value": 3.27,
+            "date": "2026-03-19",
+            "recent": [
+              3.27,
+              3.2,
+              3.22,
+              3.27,
+              3.28
+            ]
+          },
+          {
+            "id": "DCOILWTICO",
+            "label": "WTI Crude Oil",
+            "value": 93.39,
+            "date": "2026-03-16",
+            "recent": [
+              93.39,
+              98.48,
+              95.61,
+              86.8,
+              83.71
+            ]
+          },
+          {
+            "id": "MORTGAGE30US",
+            "label": "30-Year Mortgage Rate",
+            "value": 6.22,
+            "date": "2026-03-19",
+            "recent": [
+              6.22,
+              6.11,
+              6,
+              5.98,
+              6.01
+            ]
+          },
+          {
+            "id": "DTWEXBGS",
+            "label": "USD Trade Weighted Index",
+            "value": 120.5518,
+            "date": "2026-03-13",
+            "recent": [
+              120.5518,
+              119.8227,
+              119.2885,
+              118.7255,
+              119.5151
+            ]
+          }
+        ],
+        "energy": {
+          "wti": 98.09,
+          "brent": 106.77,
+          "natgas": 3.1,
+          "crudeStocks": 449259,
+          "wtiRecent": [
+            93.5,
+            96.21,
+            96.32,
+            96.14,
+            98.09
+          ],
+          "signals": [
+            "Large crude inventory build: +6.2M barrels"
+          ]
+        },
+        "bls": [
+          {
+            "id": "CUUR0000SA0",
+            "label": "CPI-U All Items",
+            "value": 326.785,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 1.533,
+            "momChangePct": 0.4713
+          },
+          {
+            "id": "CUUR0000SA0L1E",
+            "label": "CPI-U Core (ex Food & Energy)",
+            "value": 333.242,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 1.292,
+            "momChangePct": 0.3892
+          },
+          {
+            "id": "LNS14000000",
+            "label": "Unemployment Rate",
+            "value": 4.4,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 0.1,
+            "momChangePct": 2.3256
+          },
+          {
+            "id": "CES0000000001",
+            "label": "Nonfarm Payrolls (thousands)",
+            "value": 158466,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": -92,
+            "momChangePct": -0.058
+          },
+          {
+            "id": "WPUFD49104",
+            "label": "PPI Final Demand",
+            "value": 152.168,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 0.885,
+            "momChangePct": 0.585
+          }
+        ],
+        "treasury": {
+          "totalDebt": "39002265870014.23",
+          "signals": [
+            "National debt at $39.00T"
+          ]
+        },
+        "gscpi": {
+          "value": 0.49,
+          "date": "2026-02",
+          "interpretation": "above average"
+        },
+        "tg": {
+          "posts": 189,
+          "urgent": [
+            {
+              "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem ai",
+              "date": "2026-03-20T22:15:10+00:00"
+            },
+            {
+              "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to ",
+              "date": "2026-03-20T18:20:42+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory o",
+              "date": "2026-03-20T20:15:42+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warhe",
+              "date": "2026-03-20T21:15:17+00:00"
+            },
+            {
+              "text": "🇺🇸🇮🇱🇮🇷The Epstein coalition&#39;s strikes on Tehran this afternoon.",
+              "date": "2026-03-20T17:50:48+00:00"
+            },
+            {
+              "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We hav",
+              "date": "2026-03-20T20:17:30+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#3",
+              "date": "2026-03-20T20:45:14+00:00"
+            },
+            {
+              "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not w",
+              "date": "2026-03-20T20:04:50+00:00"
+            },
+            {
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in",
+              "date": "2026-03-20T14:47:06+00:00"
+            },
+            {
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in",
+              "date": "2026-03-20T14:57:57+00:00"
+            },
+            {
+              "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering intercept",
+              "date": "2026-03-20T17:42:03+00:00"
+            },
+            {
+              "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ r",
+              "date": "2026-03-20T17:19:33+00:00"
+            },
+            {
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in",
+              "date": "2026-03-20T15:47:50+00:00"
+            },
+            {
+              "text": "🇺🇸📈⚠️ In a sudden turn of events, US 12-month inflation expectations have sur",
+              "date": "2026-03-20T20:04:28+00:00"
+            },
+            {
+              "text": "🇮🇷⚔️🇮🇱 Iranian ballistic missiles apperantly struck a major IDF base in Cent",
+              "date": "2026-03-20T19:29:31+00:00"
+            }
+          ]
+        },
+        "thermal": [
+          {
+            "region": "Middle East",
+            "det": 0,
+            "night": 0,
+            "hc": 0
+          },
+          {
+            "region": "Ukraine",
+            "det": 0,
+            "night": 0,
+            "hc": 0
+          },
+          {
+            "region": "Iran",
+            "det": 0,
+            "night": 0,
+            "hc": 0
+          },
+          {
+            "region": "Sudan / Horn of Africa",
+            "det": 0,
+            "night": 0,
+            "hc": 0
+          },
+          {
+            "region": "Myanmar",
+            "det": 0,
+            "night": 0,
+            "hc": 0
+          },
+          {
+            "region": "South Asia",
+            "det": 0,
+            "night": 0,
+            "hc": 0
+          }
+        ],
+        "air": [
+          {
+            "region": "Middle East",
+            "total": 76
+          },
+          {
+            "region": "Taiwan Strait",
+            "total": 26
+          },
+          {
+            "region": "Ukraine Region",
+            "total": 41
+          },
+          {
+            "region": "Baltic Region",
+            "total": 12
+          },
+          {
+            "region": "South China Sea",
+            "total": 86
+          },
+          {
+            "region": "Korean Peninsula",
+            "total": 65
+          }
+        ],
+        "nuke": [
+          {
+            "site": "Zaporizhzhia NPP (Ukraine)",
+            "anom": false,
+            "cpm": 33.92
+          },
+          {
+            "site": "Chernobyl Exclusion Zone",
+            "anom": false,
+            "cpm": 33.28
+          },
+          {
+            "site": "Bushehr NPP (Iran)",
+            "anom": false,
+            "cpm": null
+          },
+          {
+            "site": "Yongbyon (North Korea)",
+            "anom": false,
+            "cpm": null
+          },
+          {
+            "site": "Fukushima Daiichi",
+            "anom": false,
+            "cpm": 25.88
+          },
+          {
+            "site": "Dimona (Israel)",
+            "anom": false,
+            "cpm": 29.52
+          }
+        ],
+        "who": [
+          {
+            "title": "Sudan virus disease – Uganda"
+          },
+          {
+            "title": "Poliomyelitis - Indonesia"
+          },
+          {
+            "title": "Typhoid fever - Democratic Republic of the Congo"
+          },
+          {
+            "title": "Influenza A (H5N1) virus - China"
+          },
+          {
+            "title": "Avian Influenza A (H5N1) - Cambodia"
+          },
+          {
+            "title": "Avian Influenza A(H3N8)"
+          },
+          {
+            "title": "Measles – Nepal"
+          },
+          {
+            "title": "Middle East Respiratory Syndrome Coronavirus –Saudi Arabia"
+          },
+          {
+            "title": "HIV cases–Pakistan"
+          },
+          {
+            "title": "1997 - Ebola haemorrhagic fever in Gabon (new outbreak) - Update 12"
+          }
+        ],
+        "acled": {
+          "totalEvents": 0,
+          "totalFatalities": 0
+        },
+        "sdr": {
+          "total": 911,
+          "online": 911
+        },
+        "news": {
+          "count": 50
+        },
+        "ideas": []
+      },
+      "delta": {
+        "timestamp": "2026-03-20T22:56:34.921Z",
+        "previous": "2026-03-20T22:41:40.359Z",
+        "signals": {
+          "new": [
+            {
+              "key": "tg_urgent:83b1bb342305",
+              "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem airbase between March 5 and 6, shrapnel fr",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem airbase between March 5 and 6, shrapnel from the explosion caused minor damage to two Italian Eurofighter Typhoon fighter ",
+                "views": 10000,
+                "date": "2026-03-20T22:15:10+00:00",
+                "urgentFlags": [
+                  "confirmed",
+                  "strike",
+                  "explosion",
+                  "dam"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:64c9f47991c5",
+              "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to use the Royal Air Force bases at Fairfor",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to use the Royal Air Force bases at Fairford and Diego Garcia to launch strikes on Iranian missile sites targeting ships in",
+                "views": 30000,
+                "date": "2026-03-20T18:20:42+00:00",
+                "urgentFlags": [
+                  "missile",
+                  "strike"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:c23fea7b4ed6",
+              "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory of the Israeli military base Ben-Am after",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory of the Israeli military base Ben-Am after a strike by an Iranian ballistic missile.\n\nThe base is the permanent deployment",
+                "views": 24100,
+                "date": "2026-03-20T20:15:42+00:00",
+                "urgentFlags": [
+                  "missile",
+                  "strike"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:cb37e062b8e3",
+              "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warheads of Iranian missiles are raining down",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warheads of Iranian missiles are raining down on the central regions.",
+                "views": 19300,
+                "date": "2026-03-20T21:15:17+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "missile"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:adc266ce0a0b",
+              "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We have already defeated Iran. As for the Stra",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We have already defeated Iran. As for the Strait of Hormuz - we don&#39;t need it, we don&#39;t use it,\" he said.\n\nAt the same",
+                "views": 24300,
+                "date": "2026-03-20T20:17:30+00:00",
+                "urgentFlags": [
+                  "ceasefire"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:03af195e152a",
+              "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#39;Blood Guard Units&#39;), Abu Mahdi al-",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#39;Blood Guard Units&#39;), Abu Mahdi al-Jafari, said:\n\n\"Over the past 20 days, we have carried out successful and precis",
+                "views": 21400,
+                "date": "2026-03-20T20:45:14+00:00",
+                "urgentFlags": [
+                  "nato"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:7ed4057eba89",
+              "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not want a ceasefire",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not want a ceasefire",
+                "views": 24200,
+                "date": "2026-03-20T20:04:50+00:00",
+                "urgentFlags": [
+                  "ceasefire"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:afc8e3728a4f",
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new dron",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+                "views": 1310,
+                "date": "2026-03-20T14:47:06+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:afc8e3728a4f",
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new dron",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+                "views": 1310,
+                "date": "2026-03-20T14:57:57+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:047881ee1e78",
+              "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering interceptors plus naval and long-range drones, al",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering interceptors plus naval and long-range drones, along with training and know-how. He says he’s ready to sign when Trump is, and th",
+                "views": 1030,
+                "date": "2026-03-20T17:42:03+00:00",
+                "urgentFlags": [
+                  "drone",
+                  "intercept"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:07f90dff2fb8",
+              "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ reports. The facility was used to repair ",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ reports. The facility was used to repair and service Russian S-300 and S-400 systems, Buk and Tor air defenses, and radar",
+                "views": 976,
+                "date": "2026-03-20T17:19:33+00:00",
+                "urgentFlags": [
+                  "strike",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:afc8e3728a4f",
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new dron",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+                "views": 1200,
+                "date": "2026-03-20T15:47:50+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:f3a23f9bfdd9",
+              "text": "🇺🇸📈⚠️ In a sudden turn of events, US 12-month inflation expectations have surged to 5.2%, the highest level since Mar",
+              "item": {
+                "channel": "CIG_telegram",
+                "text": "🇺🇸📈⚠️ In a sudden turn of events, US 12-month inflation expectations have surged to 5.2%, the highest level since March 2023.\n\nIn just 3 weeks, markets have gone from pricing-in rate cuts to rate h",
+                "views": 7010,
+                "date": "2026-03-20T20:04:28+00:00",
+                "urgentFlags": [
+                  "dam"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:a57ff0e323fd",
+              "text": "🇮🇷⚔️🇮🇱 Iranian ballistic missiles apperantly struck a major IDF base in Central Israel.\n\nNASA firms map shows that f",
+              "item": {
+                "channel": "CIG_telegram",
+                "text": "🇮🇷⚔️🇮🇱 Iranian ballistic missiles apperantly struck a major IDF base in Central Israel.\n\nNASA firms map shows that fires erupted earlier today at the Israeli Defense Forces (IDF) Ben Ami Military ",
+                "views": 6130,
+                "date": "2026-03-20T19:29:31+00:00",
+                "urgentFlags": [
+                  "missile"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            }
+          ],
+          "escalated": [],
+          "deescalated": [
+            {
+              "key": "thermal_total",
+              "label": "Thermal Detections",
+              "from": 20577,
+              "to": 0,
+              "change": -20577,
+              "direction": "down",
+              "pctChange": -100,
+              "severity": "critical"
+            }
+          ],
+          "unchanged": [
+            "vix",
+            "hy_spread",
+            "10y2y",
+            "wti",
+            "brent",
+            "natgas",
+            "unemployment",
+            "fed_funds",
+            "10y_yield",
+            "usd_index",
+            "mortgage",
+            "urgent_posts",
+            "air_total",
+            "who_alerts",
+            "conflict_events",
+            "conflict_fatalities",
+            "sdr_online",
+            "news_count",
+            "sources_ok"
+          ]
+        },
+        "summary": {
+          "totalChanges": 15,
+          "criticalChanges": 15,
+          "direction": "mixed",
+          "signalBreakdown": {
+            "new": 14,
+            "escalated": 0,
+            "deescalated": 1,
+            "unchanged": 19
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2026-03-20T22:41:40.359Z",
+      "data": {
+        "meta": {
+          "version": "2.0.0",
+          "timestamp": "2026-03-20T22:41:40.359Z",
+          "totalDurationMs": 24279,
+          "sourcesQueried": 29,
+          "sourcesOk": 29,
+          "sourcesFailed": 0
+        },
+        "fred": [
+          {
+            "id": "DFF",
+            "label": "Fed Funds Rate",
+            "value": 3.64,
+            "date": "2026-03-19",
+            "recent": [
+              3.64,
+              3.64,
+              3.64,
+              3.64,
+              3.64
+            ]
+          },
+          {
+            "id": "DGS2",
+            "label": "2-Year Treasury Yield",
+            "value": 3.79,
+            "date": "2026-03-19",
+            "recent": [
+              3.79,
+              3.76,
+              3.68,
+              3.68,
+              3.73
+            ]
+          },
+          {
+            "id": "DGS10",
+            "label": "10-Year Treasury Yield",
+            "value": 4.25,
+            "date": "2026-03-19",
+            "recent": [
+              4.25,
+              4.26,
+              4.2,
+              4.23,
+              4.28
+            ]
+          },
+          {
+            "id": "DGS30",
+            "label": "30-Year Treasury Yield",
+            "value": 4.83,
+            "date": "2026-03-19",
+            "recent": [
+              4.83,
+              4.88,
+              4.85,
+              4.86,
+              4.9
+            ]
+          },
+          {
+            "id": "T10Y2Y",
+            "label": "10Y-2Y Spread (Yield Curve)",
+            "value": 0.51,
+            "date": "2026-03-20",
+            "recent": [
+              0.51,
+              0.46,
+              0.5,
+              0.52,
+              0.55
+            ]
+          },
+          {
+            "id": "T10Y3M",
+            "label": "10Y-3M Spread",
+            "value": 0.65,
+            "date": "2026-03-20",
+            "recent": [
+              0.65,
+              0.52,
+              0.53,
+              0.48,
+              0.51
+            ]
+          },
+          {
+            "id": "CPIAUCSL",
+            "label": "CPI All Items",
+            "value": 327.46,
+            "date": "2026-02-01",
+            "recent": [
+              327.46,
+              326.588,
+              326.031
+            ]
+          },
+          {
+            "id": "CPILFESL",
+            "label": "Core CPI (ex Food & Energy)",
+            "value": 333.512,
+            "date": "2026-02-01",
+            "recent": [
+              333.512,
+              332.793,
+              331.814
+            ]
+          },
+          {
+            "id": "PCEPI",
+            "label": "PCE Price Index",
+            "value": 128.969,
+            "date": "2026-01-01",
+            "recent": [
+              128.969,
+              128.615
+            ]
+          },
+          {
+            "id": "MICH",
+            "label": "Michigan Inflation Expectations",
+            "value": 4,
+            "date": "2026-01-01",
+            "recent": [
+              4,
+              4.2
+            ]
+          },
+          {
+            "id": "UNRATE",
+            "label": "Unemployment Rate",
+            "value": 4.4,
+            "date": "2026-02-01",
+            "recent": [
+              4.4,
+              4.3,
+              4.4
+            ]
+          },
+          {
+            "id": "PAYEMS",
+            "label": "Nonfarm Payrolls",
+            "value": 158466,
+            "date": "2026-02-01",
+            "recent": [
+              158466,
+              158558,
+              158432
+            ]
+          },
+          {
+            "id": "ICSA",
+            "label": "Initial Jobless Claims",
+            "value": 205000,
+            "date": "2026-03-14",
+            "recent": [
+              205000,
+              213000,
+              214000,
+              211000,
+              208000
+            ]
+          },
+          {
+            "id": "M2SL",
+            "label": "M2 Money Supply",
+            "value": 22442.1,
+            "date": "2026-01-01",
+            "recent": [
+              22442.1,
+              22366.2
+            ]
+          },
+          {
+            "id": "WALCL",
+            "label": "Fed Balance Sheet Total Assets",
+            "value": 6655939,
+            "date": "2026-03-18",
+            "recent": [
+              6655939,
+              6646344,
+              6628894,
+              6613797,
+              6613395
+            ]
+          },
+          {
+            "id": "VIXCLS",
+            "label": "VIX (Fear Index)",
+            "value": 24.06,
+            "date": "2026-03-19",
+            "recent": [
+              24.06,
+              25.09,
+              22.37,
+              23.51,
+              27.19
+            ]
+          },
+          {
+            "id": "BAMLH0A0HYM2",
+            "label": "High Yield Spread (Credit Stress)",
+            "value": 3.27,
+            "date": "2026-03-19",
+            "recent": [
+              3.27,
+              3.2,
+              3.22,
+              3.27,
+              3.28
+            ]
+          },
+          {
+            "id": "DCOILWTICO",
+            "label": "WTI Crude Oil",
+            "value": 93.39,
+            "date": "2026-03-16",
+            "recent": [
+              93.39,
+              98.48,
+              95.61,
+              86.8,
+              83.71
+            ]
+          },
+          {
+            "id": "MORTGAGE30US",
+            "label": "30-Year Mortgage Rate",
+            "value": 6.22,
+            "date": "2026-03-19",
+            "recent": [
+              6.22,
+              6.11,
+              6,
+              5.98,
+              6.01
+            ]
+          },
+          {
+            "id": "DTWEXBGS",
+            "label": "USD Trade Weighted Index",
+            "value": 120.5518,
+            "date": "2026-03-13",
+            "recent": [
+              120.5518,
+              119.8227,
+              119.2885,
+              118.7255,
+              119.5151
+            ]
+          }
+        ],
+        "energy": {
+          "wti": 98.09,
+          "brent": 106.77,
+          "natgas": 3.1,
+          "crudeStocks": 449259,
+          "wtiRecent": [
+            93.5,
+            96.21,
+            96.32,
+            96.14,
+            98.09
+          ],
+          "signals": [
+            "Large crude inventory build: +6.2M barrels"
+          ]
+        },
+        "bls": [
+          {
+            "id": "CUUR0000SA0",
+            "label": "CPI-U All Items",
+            "value": 326.785,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 1.533,
+            "momChangePct": 0.4713
+          },
+          {
+            "id": "CUUR0000SA0L1E",
+            "label": "CPI-U Core (ex Food & Energy)",
+            "value": 333.242,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 1.292,
+            "momChangePct": 0.3892
+          },
+          {
+            "id": "LNS14000000",
+            "label": "Unemployment Rate",
+            "value": 4.4,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 0.1,
+            "momChangePct": 2.3256
+          },
+          {
+            "id": "CES0000000001",
+            "label": "Nonfarm Payrolls (thousands)",
+            "value": 158466,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": -92,
+            "momChangePct": -0.058
+          },
+          {
+            "id": "WPUFD49104",
+            "label": "PPI Final Demand",
+            "value": 152.168,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 0.885,
+            "momChangePct": 0.585
+          }
+        ],
+        "treasury": {
+          "totalDebt": "39002265870014.23",
+          "signals": [
+            "National debt at $39.00T"
+          ]
+        },
+        "gscpi": {
+          "value": 0.49,
+          "date": "2026-02",
+          "interpretation": "above average"
+        },
+        "tg": {
+          "posts": 189,
+          "urgent": [
+            {
+              "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem ai",
+              "date": "2026-03-20T22:15:10+00:00"
+            },
+            {
+              "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to ",
+              "date": "2026-03-20T18:20:42+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory o",
+              "date": "2026-03-20T20:15:42+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warhe",
+              "date": "2026-03-20T21:15:17+00:00"
+            },
+            {
+              "text": "🇺🇦⚡️A forced evacuation of children has begun in Slavyansk, according to UkroS",
+              "date": "2026-03-20T17:39:21+00:00"
+            },
+            {
+              "text": "🇺🇸🇮🇱🇮🇷The Epstein coalition&#39;s strikes on Tehran this afternoon.",
+              "date": "2026-03-20T17:50:48+00:00"
+            },
+            {
+              "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We hav",
+              "date": "2026-03-20T20:17:30+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#3",
+              "date": "2026-03-20T20:45:14+00:00"
+            },
+            {
+              "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not w",
+              "date": "2026-03-20T20:04:50+00:00"
+            },
+            {
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in",
+              "date": "2026-03-20T14:57:57+00:00"
+            },
+            {
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in",
+              "date": "2026-03-20T14:47:06+00:00"
+            },
+            {
+              "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering intercept",
+              "date": "2026-03-20T17:42:03+00:00"
+            },
+            {
+              "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ r",
+              "date": "2026-03-20T17:19:33+00:00"
+            },
+            {
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in",
+              "date": "2026-03-20T15:47:50+00:00"
+            },
+            {
+              "text": "🇺🇸📈⚠️ In a sudden turn of events, US 12-month inflation expectations have sur",
+              "date": "2026-03-20T20:04:28+00:00"
+            }
+          ]
+        },
+        "thermal": [
+          {
+            "region": "Middle East",
+            "det": 536,
+            "night": 215,
+            "hc": 13
+          },
+          {
+            "region": "Ukraine",
+            "det": 247,
+            "night": 97,
+            "hc": 2
+          },
+          {
+            "region": "Iran",
+            "det": 188,
+            "night": 52,
+            "hc": 3
+          },
+          {
+            "region": "Sudan / Horn of Africa",
+            "det": 2129,
+            "night": 127,
+            "hc": 110
+          },
+          {
+            "region": "Myanmar",
+            "det": 7049,
+            "night": 1240,
+            "hc": 761
+          },
+          {
+            "region": "South Asia",
+            "det": 10428,
+            "night": 1974,
+            "hc": 609
+          }
+        ],
+        "air": [
+          {
+            "region": "Middle East",
+            "total": 78
+          },
+          {
+            "region": "Taiwan Strait",
+            "total": 28
+          },
+          {
+            "region": "Ukraine Region",
+            "total": 36
+          },
+          {
+            "region": "Baltic Region",
+            "total": 18
+          },
+          {
+            "region": "South China Sea",
+            "total": 91
+          },
+          {
+            "region": "Korean Peninsula",
+            "total": 68
+          }
+        ],
+        "nuke": [
+          {
+            "site": "Zaporizhzhia NPP (Ukraine)",
+            "anom": false,
+            "cpm": 33.92
+          },
+          {
+            "site": "Chernobyl Exclusion Zone",
+            "anom": false,
+            "cpm": 33.28
+          },
+          {
+            "site": "Bushehr NPP (Iran)",
+            "anom": false,
+            "cpm": null
+          },
+          {
+            "site": "Yongbyon (North Korea)",
+            "anom": false,
+            "cpm": null
+          },
+          {
+            "site": "Fukushima Daiichi",
+            "anom": false,
+            "cpm": 25.88
+          },
+          {
+            "site": "Dimona (Israel)",
+            "anom": false,
+            "cpm": 29.52
+          }
+        ],
+        "who": [
+          {
+            "title": "Sudan virus disease – Uganda"
+          },
+          {
+            "title": "Poliomyelitis - Indonesia"
+          },
+          {
+            "title": "Typhoid fever - Democratic Republic of the Congo"
+          },
+          {
+            "title": "Influenza A (H5N1) virus - China"
+          },
+          {
+            "title": "Avian Influenza A (H5N1) - Cambodia"
+          },
+          {
+            "title": "Avian Influenza A(H3N8)"
+          },
+          {
+            "title": "Measles – Nepal"
+          },
+          {
+            "title": "Middle East Respiratory Syndrome Coronavirus –Saudi Arabia"
+          },
+          {
+            "title": "HIV cases–Pakistan"
+          },
+          {
+            "title": "1997 - Ebola haemorrhagic fever in Gabon (new outbreak) - Update 12"
+          }
+        ],
+        "acled": {
+          "totalEvents": 0,
+          "totalFatalities": 0
+        },
+        "sdr": {
+          "total": 911,
+          "online": 911
+        },
+        "news": {
+          "count": 50
+        },
+        "ideas": []
+      },
+      "delta": {
+        "timestamp": "2026-03-20T22:41:40.359Z",
+        "previous": "2026-03-20T22:26:32.058Z",
+        "signals": {
+          "new": [
+            {
+              "key": "tg_urgent:83b1bb342305",
+              "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem airbase between March 5 and 6, shrapnel fr",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem airbase between March 5 and 6, shrapnel from the explosion caused minor damage to two Italian Eurofighter Typhoon fighter ",
+                "views": 7570,
+                "date": "2026-03-20T22:15:10+00:00",
+                "urgentFlags": [
+                  "confirmed",
+                  "strike",
+                  "explosion",
+                  "dam"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:64c9f47991c5",
+              "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to use the Royal Air Force bases at Fairfor",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to use the Royal Air Force bases at Fairford and Diego Garcia to launch strikes on Iranian missile sites targeting ships in",
+                "views": 29400,
+                "date": "2026-03-20T18:20:42+00:00",
+                "urgentFlags": [
+                  "missile",
+                  "strike"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:c23fea7b4ed6",
+              "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory of the Israeli military base Ben-Am after",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory of the Israeli military base Ben-Am after a strike by an Iranian ballistic missile.\n\nThe base is the permanent deployment",
+                "views": 23000,
+                "date": "2026-03-20T20:15:42+00:00",
+                "urgentFlags": [
+                  "missile",
+                  "strike"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:cb37e062b8e3",
+              "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warheads of Iranian missiles are raining down",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warheads of Iranian missiles are raining down on the central regions.",
+                "views": 17600,
+                "date": "2026-03-20T21:15:17+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "missile"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:1de8b152f0c9",
+              "text": "🇺🇦⚡️A forced evacuation of children has begun in Slavyansk, according to UkroSmi and the local Gauleiter.  Earlier, th",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇺🇦⚡️A forced evacuation of children has begun in Slavyansk, according to UkroSmi and the local Gauleiter.  Earlier, the drug Fuhrer signed a law allowing police officers to forcibly remove and take ",
+                "views": 29700,
+                "date": "2026-03-20T17:39:21+00:00",
+                "urgentFlags": [
+                  "evacuation"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:adc266ce0a0b",
+              "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We have already defeated Iran. As for the Stra",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We have already defeated Iran. As for the Strait of Hormuz - we don&#39;t need it, we don&#39;t use it,\" he said.\n\nAt the same",
+                "views": 23200,
+                "date": "2026-03-20T20:17:30+00:00",
+                "urgentFlags": [
+                  "ceasefire"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:03af195e152a",
+              "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#39;Blood Guard Units&#39;), Abu Mahdi al-",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#39;Blood Guard Units&#39;), Abu Mahdi al-Jafari, said:\n\n\"Over the past 20 days, we have carried out successful and precis",
+                "views": 20300,
+                "date": "2026-03-20T20:45:14+00:00",
+                "urgentFlags": [
+                  "nato"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:7ed4057eba89",
+              "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not want a ceasefire",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not want a ceasefire",
+                "views": 23200,
+                "date": "2026-03-20T20:04:50+00:00",
+                "urgentFlags": [
+                  "ceasefire"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:afc8e3728a4f",
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new dron",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+                "views": 1300,
+                "date": "2026-03-20T14:57:57+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:afc8e3728a4f",
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new dron",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+                "views": 1290,
+                "date": "2026-03-20T14:47:06+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:047881ee1e78",
+              "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering interceptors plus naval and long-range drones, al",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering interceptors plus naval and long-range drones, along with training and know-how. He says he’s ready to sign when Trump is, and th",
+                "views": 1010,
+                "date": "2026-03-20T17:42:03+00:00",
+                "urgentFlags": [
+                  "drone",
+                  "intercept"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:07f90dff2fb8",
+              "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ reports. The facility was used to repair ",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ reports. The facility was used to repair and service Russian S-300 and S-400 systems, Buk and Tor air defenses, and radar",
+                "views": 959,
+                "date": "2026-03-20T17:19:33+00:00",
+                "urgentFlags": [
+                  "strike",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:afc8e3728a4f",
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new dron",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+                "views": 1190,
+                "date": "2026-03-20T15:47:50+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:f3a23f9bfdd9",
+              "text": "🇺🇸📈⚠️ In a sudden turn of events, US 12-month inflation expectations have surged to 5.2%, the highest level since Mar",
+              "item": {
+                "channel": "CIG_telegram",
+                "text": "🇺🇸📈⚠️ In a sudden turn of events, US 12-month inflation expectations have surged to 5.2%, the highest level since March 2023.\n\nIn just 3 weeks, markets have gone from pricing-in rate cuts to rate h",
+                "views": 6740,
+                "date": "2026-03-20T20:04:28+00:00",
+                "urgentFlags": [
+                  "dam"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            }
+          ],
+          "escalated": [
+            {
+              "key": "thermal_total",
+              "label": "Thermal Detections",
+              "from": 19958,
+              "to": 20577,
+              "change": 619,
+              "direction": "up",
+              "pctChange": 3.1,
+              "severity": "moderate"
+            }
+          ],
+          "deescalated": [],
+          "unchanged": [
+            "vix",
+            "hy_spread",
+            "10y2y",
+            "wti",
+            "brent",
+            "natgas",
+            "unemployment",
+            "fed_funds",
+            "10y_yield",
+            "usd_index",
+            "mortgage",
+            "urgent_posts",
+            "air_total",
+            "who_alerts",
+            "conflict_events",
+            "conflict_fatalities",
+            "sdr_online",
+            "news_count",
+            "sources_ok"
+          ]
+        },
+        "summary": {
+          "totalChanges": 15,
+          "criticalChanges": 14,
+          "direction": "mixed",
+          "signalBreakdown": {
+            "new": 14,
+            "escalated": 1,
+            "deescalated": 0,
+            "unchanged": 19
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2026-03-20T22:26:32.058Z",
+      "data": {
+        "meta": {
+          "version": "2.0.0",
+          "timestamp": "2026-03-20T22:26:32.058Z",
+          "totalDurationMs": 16006,
+          "sourcesQueried": 29,
+          "sourcesOk": 29,
+          "sourcesFailed": 0
+        },
+        "fred": [
+          {
+            "id": "DFF",
+            "label": "Fed Funds Rate",
+            "value": 3.64,
+            "date": "2026-03-19",
+            "recent": [
+              3.64,
+              3.64,
+              3.64,
+              3.64,
+              3.64
+            ]
+          },
+          {
+            "id": "DGS2",
+            "label": "2-Year Treasury Yield",
+            "value": 3.79,
+            "date": "2026-03-19",
+            "recent": [
+              3.79,
+              3.76,
+              3.68,
+              3.68,
+              3.73
+            ]
+          },
+          {
+            "id": "DGS10",
+            "label": "10-Year Treasury Yield",
+            "value": 4.25,
+            "date": "2026-03-19",
+            "recent": [
+              4.25,
+              4.26,
+              4.2,
+              4.23,
+              4.28
+            ]
+          },
+          {
+            "id": "DGS30",
+            "label": "30-Year Treasury Yield",
+            "value": 4.83,
+            "date": "2026-03-19",
+            "recent": [
+              4.83,
+              4.88,
+              4.85,
+              4.86,
+              4.9
+            ]
+          },
+          {
+            "id": "T10Y2Y",
+            "label": "10Y-2Y Spread (Yield Curve)",
+            "value": 0.51,
+            "date": "2026-03-20",
+            "recent": [
+              0.51,
+              0.46,
+              0.5,
+              0.52,
+              0.55
+            ]
+          },
+          {
+            "id": "T10Y3M",
+            "label": "10Y-3M Spread",
+            "value": 0.65,
+            "date": "2026-03-20",
+            "recent": [
+              0.65,
+              0.52,
+              0.53,
+              0.48,
+              0.51
+            ]
+          },
+          {
+            "id": "CPIAUCSL",
+            "label": "CPI All Items",
+            "value": 327.46,
+            "date": "2026-02-01",
+            "recent": [
+              327.46,
+              326.588,
+              326.031
+            ]
+          },
+          {
+            "id": "CPILFESL",
+            "label": "Core CPI (ex Food & Energy)",
+            "value": 333.512,
+            "date": "2026-02-01",
+            "recent": [
+              333.512,
+              332.793,
+              331.814
+            ]
+          },
+          {
+            "id": "PCEPI",
+            "label": "PCE Price Index",
+            "value": 128.969,
+            "date": "2026-01-01",
+            "recent": [
+              128.969,
+              128.615
+            ]
+          },
+          {
+            "id": "MICH",
+            "label": "Michigan Inflation Expectations",
+            "value": 4,
+            "date": "2026-01-01",
+            "recent": [
+              4,
+              4.2
+            ]
+          },
+          {
+            "id": "UNRATE",
+            "label": "Unemployment Rate",
+            "value": 4.4,
+            "date": "2026-02-01",
+            "recent": [
+              4.4,
+              4.3,
+              4.4
+            ]
+          },
+          {
+            "id": "PAYEMS",
+            "label": "Nonfarm Payrolls",
+            "value": 158466,
+            "date": "2026-02-01",
+            "recent": [
+              158466,
+              158558,
+              158432
+            ]
+          },
+          {
+            "id": "ICSA",
+            "label": "Initial Jobless Claims",
+            "value": 205000,
+            "date": "2026-03-14",
+            "recent": [
+              205000,
+              213000,
+              214000,
+              211000,
+              208000
+            ]
+          },
+          {
+            "id": "M2SL",
+            "label": "M2 Money Supply",
+            "value": 22442.1,
+            "date": "2026-01-01",
+            "recent": [
+              22442.1,
+              22366.2
+            ]
+          },
+          {
+            "id": "WALCL",
+            "label": "Fed Balance Sheet Total Assets",
+            "value": 6655939,
+            "date": "2026-03-18",
+            "recent": [
+              6655939,
+              6646344,
+              6628894,
+              6613797,
+              6613395
+            ]
+          },
+          {
+            "id": "VIXCLS",
+            "label": "VIX (Fear Index)",
+            "value": 24.06,
+            "date": "2026-03-19",
+            "recent": [
+              24.06,
+              25.09,
+              22.37,
+              23.51,
+              27.19
+            ]
+          },
+          {
+            "id": "BAMLH0A0HYM2",
+            "label": "High Yield Spread (Credit Stress)",
+            "value": 3.27,
+            "date": "2026-03-19",
+            "recent": [
+              3.27,
+              3.2,
+              3.22,
+              3.27,
+              3.28
+            ]
+          },
+          {
+            "id": "DCOILWTICO",
+            "label": "WTI Crude Oil",
+            "value": 93.39,
+            "date": "2026-03-16",
+            "recent": [
+              93.39,
+              98.48,
+              95.61,
+              86.8,
+              83.71
+            ]
+          },
+          {
+            "id": "MORTGAGE30US",
+            "label": "30-Year Mortgage Rate",
+            "value": 6.22,
+            "date": "2026-03-19",
+            "recent": [
+              6.22,
+              6.11,
+              6,
+              5.98,
+              6.01
+            ]
+          },
+          {
+            "id": "DTWEXBGS",
+            "label": "USD Trade Weighted Index",
+            "value": 120.5518,
+            "date": "2026-03-13",
+            "recent": [
+              120.5518,
+              119.8227,
+              119.2885,
+              118.7255,
+              119.5151
+            ]
+          }
+        ],
+        "energy": {
+          "wti": 98.09,
+          "brent": 106.77,
+          "natgas": 3.1,
+          "crudeStocks": 449259,
+          "wtiRecent": [
+            93.5,
+            96.21,
+            96.32,
+            96.14,
+            98.09
+          ],
+          "signals": [
+            "Large crude inventory build: +6.2M barrels"
+          ]
+        },
+        "bls": [
+          {
+            "id": "CUUR0000SA0",
+            "label": "CPI-U All Items",
+            "value": 326.785,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 1.533,
+            "momChangePct": 0.4713
+          },
+          {
+            "id": "CUUR0000SA0L1E",
+            "label": "CPI-U Core (ex Food & Energy)",
+            "value": 333.242,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 1.292,
+            "momChangePct": 0.3892
+          },
+          {
+            "id": "LNS14000000",
+            "label": "Unemployment Rate",
+            "value": 4.4,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 0.1,
+            "momChangePct": 2.3256
+          },
+          {
+            "id": "CES0000000001",
+            "label": "Nonfarm Payrolls (thousands)",
+            "value": 158466,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": -92,
+            "momChangePct": -0.058
+          },
+          {
+            "id": "WPUFD49104",
+            "label": "PPI Final Demand",
+            "value": 152.168,
+            "period": "2026-M02",
+            "date": "2026-02",
+            "momChange": 0.885,
+            "momChangePct": 0.585
+          }
+        ],
+        "treasury": {
+          "totalDebt": "39002265870014.23",
+          "signals": [
+            "National debt at $39.00T"
+          ]
+        },
+        "gscpi": {
+          "value": 0.49,
+          "date": "2026-02",
+          "interpretation": "above average"
+        },
+        "tg": {
+          "posts": 189,
+          "urgent": [
+            {
+              "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to ",
+              "date": "2026-03-20T18:20:42+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem ai",
+              "date": "2026-03-20T22:15:10+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory o",
+              "date": "2026-03-20T20:15:42+00:00"
+            },
+            {
+              "text": "🇺🇦⚡️A forced evacuation of children has begun in Slavyansk, according to UkroS",
+              "date": "2026-03-20T17:39:21+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warhe",
+              "date": "2026-03-20T21:15:17+00:00"
+            },
+            {
+              "text": "🇺🇦⚡️A forced evacuation of children has begun in Slavyansk, according to UkroS",
+              "date": "2026-03-20T17:39:05+00:00"
+            },
+            {
+              "text": "🇺🇸🇮🇱🇮🇷The Epstein coalition&#39;s strikes on Tehran this afternoon.",
+              "date": "2026-03-20T17:50:48+00:00"
+            },
+            {
+              "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We hav",
+              "date": "2026-03-20T20:17:30+00:00"
+            },
+            {
+              "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#3",
+              "date": "2026-03-20T20:45:14+00:00"
+            },
+            {
+              "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not w",
+              "date": "2026-03-20T20:04:50+00:00"
+            },
+            {
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in",
+              "date": "2026-03-20T14:57:57+00:00"
+            },
+            {
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in",
+              "date": "2026-03-20T14:47:06+00:00"
+            },
+            {
+              "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering intercept",
+              "date": "2026-03-20T17:42:03+00:00"
+            },
+            {
+              "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ r",
+              "date": "2026-03-20T17:19:33+00:00"
+            },
+            {
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in",
+              "date": "2026-03-20T15:47:50+00:00"
+            }
+          ]
+        },
+        "thermal": [
+          {
+            "region": "Middle East",
+            "det": 536,
+            "night": 215,
+            "hc": 13
+          },
+          {
+            "region": "Ukraine",
+            "det": 247,
+            "night": 97,
+            "hc": 2
+          },
+          {
+            "region": "Iran",
+            "det": 188,
+            "night": 52,
+            "hc": 3
+          },
+          {
+            "region": "Sudan / Horn of Africa",
+            "det": 2129,
+            "night": 127,
+            "hc": 110
+          },
+          {
+            "region": "Myanmar",
+            "det": 7036,
+            "night": 1227,
+            "hc": 761
+          },
+          {
+            "region": "South Asia",
+            "det": 9822,
+            "night": 1368,
+            "hc": 609
+          }
+        ],
+        "air": [
+          {
+            "region": "Middle East",
+            "total": 75
+          },
+          {
+            "region": "Taiwan Strait",
+            "total": 21
+          },
+          {
+            "region": "Ukraine Region",
+            "total": 39
+          },
+          {
+            "region": "Baltic Region",
+            "total": 15
+          },
+          {
+            "region": "South China Sea",
+            "total": 67
+          },
+          {
+            "region": "Korean Peninsula",
+            "total": 65
+          }
+        ],
+        "nuke": [
+          {
+            "site": "Zaporizhzhia NPP (Ukraine)",
+            "anom": false,
+            "cpm": 33.92
+          },
+          {
+            "site": "Chernobyl Exclusion Zone",
+            "anom": false,
+            "cpm": 33.28
+          },
+          {
+            "site": "Bushehr NPP (Iran)",
+            "anom": false,
+            "cpm": null
+          },
+          {
+            "site": "Yongbyon (North Korea)",
+            "anom": false,
+            "cpm": null
+          },
+          {
+            "site": "Fukushima Daiichi",
+            "anom": false,
+            "cpm": 25.88
+          },
+          {
+            "site": "Dimona (Israel)",
+            "anom": false,
+            "cpm": 29.52
+          }
+        ],
+        "who": [
+          {
+            "title": "Sudan virus disease – Uganda"
+          },
+          {
+            "title": "Poliomyelitis - Indonesia"
+          },
+          {
+            "title": "Typhoid fever - Democratic Republic of the Congo"
+          },
+          {
+            "title": "Influenza A (H5N1) virus - China"
+          },
+          {
+            "title": "Avian Influenza A (H5N1) - Cambodia"
+          },
+          {
+            "title": "Avian Influenza A(H3N8)"
+          },
+          {
+            "title": "Measles – Nepal"
+          },
+          {
+            "title": "Middle East Respiratory Syndrome Coronavirus –Saudi Arabia"
+          },
+          {
+            "title": "HIV cases–Pakistan"
+          },
+          {
+            "title": "1997 - Ebola haemorrhagic fever in Gabon (new outbreak) - Update 12"
+          }
+        ],
+        "acled": {
+          "totalEvents": 0,
+          "totalFatalities": 0
+        },
+        "sdr": {
+          "total": 911,
+          "online": 911
+        },
+        "news": {
+          "count": 50
+        },
+        "ideas": []
+      },
+      "delta": {
+        "timestamp": "2026-03-20T22:26:32.058Z",
+        "previous": "2026-03-20T22:11:34.354Z",
+        "signals": {
+          "new": [
+            {
+              "key": "tg_urgent:64c9f47991c5",
+              "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to use the Royal Air Force bases at Fairfor",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to use the Royal Air Force bases at Fairford and Diego Garcia to launch strikes on Iranian missile sites targeting ships in",
+                "views": 28500,
+                "date": "2026-03-20T18:20:42+00:00",
+                "urgentFlags": [
+                  "missile",
+                  "strike"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:83b1bb342305",
+              "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem airbase between March 5 and 6, shrapnel fr",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem airbase between March 5 and 6, shrapnel from the explosion caused minor damage to two Italian Eurofighter Typhoon fighter ",
+                "views": 4260,
+                "date": "2026-03-20T22:15:10+00:00",
+                "urgentFlags": [
+                  "confirmed",
+                  "strike",
+                  "explosion",
+                  "dam"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:c23fea7b4ed6",
+              "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory of the Israeli military base Ben-Am after",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory of the Israeli military base Ben-Am after a strike by an Iranian ballistic missile.\n\nThe base is the permanent deployment",
+                "views": 21900,
+                "date": "2026-03-20T20:15:42+00:00",
+                "urgentFlags": [
+                  "missile",
+                  "strike"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:1de8b152f0c9",
+              "text": "🇺🇦⚡️A forced evacuation of children has begun in Slavyansk, according to UkroSmi and the local Gauleiter.  Earlier, th",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇺🇦⚡️A forced evacuation of children has begun in Slavyansk, according to UkroSmi and the local Gauleiter.  Earlier, the drug Fuhrer signed a law allowing police officers to forcibly remove and take ",
+                "views": 29100,
+                "date": "2026-03-20T17:39:21+00:00",
+                "urgentFlags": [
+                  "evacuation"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:cb37e062b8e3",
+              "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warheads of Iranian missiles are raining down",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warheads of Iranian missiles are raining down on the central regions.",
+                "views": 15900,
+                "date": "2026-03-20T21:15:17+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "missile"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:1de8b152f0c9",
+              "text": "🇺🇦⚡️A forced evacuation of children has begun in Slavyansk, according to UkroSmi and the local Gauleiter.\n\nEarlier, th",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇺🇦⚡️A forced evacuation of children has begun in Slavyansk, according to UkroSmi and the local Gauleiter.\n\nEarlier, the drug Fuhrer signed a law allowing police officers to forcibly remove and take ",
+                "views": 28700,
+                "date": "2026-03-20T17:39:05+00:00",
+                "urgentFlags": [
+                  "evacuation"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:adc266ce0a0b",
+              "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We have already defeated Iran. As for the Stra",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We have already defeated Iran. As for the Strait of Hormuz - we don&#39;t need it, we don&#39;t use it,\" he said.\n\nAt the same",
+                "views": 22100,
+                "date": "2026-03-20T20:17:30+00:00",
+                "urgentFlags": [
+                  "ceasefire"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:03af195e152a",
+              "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#39;Blood Guard Units&#39;), Abu Mahdi al-",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#39;Blood Guard Units&#39;), Abu Mahdi al-Jafari, said:\n\n\"Over the past 20 days, we have carried out successful and precis",
+                "views": 19000,
+                "date": "2026-03-20T20:45:14+00:00",
+                "urgentFlags": [
+                  "nato"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:7ed4057eba89",
+              "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not want a ceasefire",
+              "item": {
+                "channel": "intelslava",
+                "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not want a ceasefire",
+                "views": 22100,
+                "date": "2026-03-20T20:04:50+00:00",
+                "urgentFlags": [
+                  "ceasefire"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:afc8e3728a4f",
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new dron",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+                "views": 1290,
+                "date": "2026-03-20T14:57:57+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:afc8e3728a4f",
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new dron",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+                "views": 1270,
+                "date": "2026-03-20T14:47:06+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:047881ee1e78",
+              "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering interceptors plus naval and long-range drones, al",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering interceptors plus naval and long-range drones, along with training and know-how. He says he’s ready to sign when Trump is, and th",
+                "views": 1000,
+                "date": "2026-03-20T17:42:03+00:00",
+                "urgentFlags": [
+                  "drone",
+                  "intercept"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:07f90dff2fb8",
+              "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ reports. The facility was used to repair ",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ reports. The facility was used to repair and service Russian S-300 and S-400 systems, Buk and Tor air defenses, and radar",
+                "views": 947,
+                "date": "2026-03-20T17:19:33+00:00",
+                "urgentFlags": [
+                  "strike",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            },
+            {
+              "key": "tg_urgent:afc8e3728a4f",
+              "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new dron",
+              "item": {
+                "channel": "wartranslated",
+                "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+                "views": 1170,
+                "date": "2026-03-20T15:47:50+00:00",
+                "urgentFlags": [
+                  "alert",
+                  "drone"
+                ]
+              },
+              "reason": "New urgent OSINT post"
+            }
+          ],
+          "escalated": [],
+          "deescalated": [],
+          "unchanged": [
+            "vix",
+            "hy_spread",
+            "10y2y",
+            "wti",
+            "brent",
+            "natgas",
+            "unemployment",
+            "fed_funds",
+            "10y_yield",
+            "usd_index",
+            "mortgage",
+            "urgent_posts",
+            "thermal_total",
+            "air_total",
+            "who_alerts",
+            "conflict_events",
+            "conflict_fatalities",
+            "sdr_online",
+            "news_count",
+            "sources_ok"
+          ]
+        },
+        "summary": {
+          "totalChanges": 14,
+          "criticalChanges": 14,
+          "direction": "mixed",
+          "signalBreakdown": {
+            "new": 14,
+            "escalated": 0,
+            "deescalated": 0,
+            "unchanged": 20
+          }
+        }
+      }
+    }
+  ],
+  "alertedSignals": {}
+}

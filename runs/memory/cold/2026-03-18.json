@@ -1,0 +1,786 @@
+[
+  {
+    "timestamp": "2026-03-17T13:29:26.650Z",
+    "data": {
+      "meta": {
+        "version": "2.0.0",
+        "timestamp": "2026-03-17T13:29:26.650Z",
+        "totalDurationMs": 28819,
+        "sourcesQueried": 27,
+        "sourcesOk": 27,
+        "sourcesFailed": 0
+      },
+      "fred": [
+        {
+          "id": "DFF",
+          "label": "Fed Funds Rate",
+          "value": 3.64,
+          "date": "2026-03-13",
+          "recent": [
+            3.64,
+            3.64,
+            3.64,
+            3.64,
+            3.64
+          ]
+        },
+        {
+          "id": "DGS2",
+          "label": "2-Year Treasury Yield",
+          "value": 3.73,
+          "date": "2026-03-13",
+          "recent": [
+            3.73,
+            3.76,
+            3.64,
+            3.57,
+            3.56
+          ]
+        },
+        {
+          "id": "DGS10",
+          "label": "10-Year Treasury Yield",
+          "value": 4.28,
+          "date": "2026-03-13",
+          "recent": [
+            4.28,
+            4.27,
+            4.21,
+            4.15,
+            4.12
+          ]
+        },
+        {
+          "id": "DGS30",
+          "label": "30-Year Treasury Yield",
+          "value": 4.9,
+          "date": "2026-03-13",
+          "recent": [
+            4.9,
+            4.88,
+            4.86,
+            4.78,
+            4.72
+          ]
+        },
+        {
+          "id": "T10Y2Y",
+          "label": "10Y-2Y Spread (Yield Curve)",
+          "value": 0.55,
+          "date": "2026-03-16",
+          "recent": [
+            0.55,
+            0.55,
+            0.51,
+            0.57,
+            0.58
+          ]
+        },
+        {
+          "id": "T10Y3M",
+          "label": "10Y-3M Spread",
+          "value": 0.51,
+          "date": "2026-03-16",
+          "recent": [
+            0.51,
+            0.56,
+            0.55,
+            0.5,
+            0.44
+          ]
+        },
+        {
+          "id": "CPIAUCSL",
+          "label": "CPI All Items",
+          "value": 327.46,
+          "date": "2026-02-01",
+          "recent": [
+            327.46,
+            326.588,
+            326.031
+          ]
+        },
+        {
+          "id": "CPILFESL",
+          "label": "Core CPI (ex Food & Energy)",
+          "value": 333.512,
+          "date": "2026-02-01",
+          "recent": [
+            333.512,
+            332.793,
+            331.814
+          ]
+        },
+        {
+          "id": "PCEPI",
+          "label": "PCE Price Index",
+          "value": 128.969,
+          "date": "2026-01-01",
+          "recent": [
+            128.969,
+            128.615
+          ]
+        },
+        {
+          "id": "MICH",
+          "label": "Michigan Inflation Expectations",
+          "value": 4,
+          "date": "2026-01-01",
+          "recent": [
+            4,
+            4.2
+          ]
+        },
+        {
+          "id": "UNRATE",
+          "label": "Unemployment Rate",
+          "value": 4.4,
+          "date": "2026-02-01",
+          "recent": [
+            4.4,
+            4.3,
+            4.4
+          ]
+        },
+        {
+          "id": "PAYEMS",
+          "label": "Nonfarm Payrolls",
+          "value": 158466,
+          "date": "2026-02-01",
+          "recent": [
+            158466,
+            158558,
+            158432
+          ]
+        },
+        {
+          "id": "ICSA",
+          "label": "Initial Jobless Claims",
+          "value": 213000,
+          "date": "2026-03-07",
+          "recent": [
+            213000,
+            214000,
+            213000,
+            208000,
+            229000
+          ]
+        },
+        {
+          "id": "M2SL",
+          "label": "M2 Money Supply",
+          "value": 22442.1,
+          "date": "2026-01-01",
+          "recent": [
+            22442.1,
+            22366.2
+          ]
+        },
+        {
+          "id": "WALCL",
+          "label": "Fed Balance Sheet Total Assets",
+          "value": 6646344,
+          "date": "2026-03-11",
+          "recent": [
+            6646344,
+            6628894,
+            6613797,
+            6613395,
+            6622382
+          ]
+        },
+        {
+          "id": "VIXCLS",
+          "label": "VIX (Fear Index)",
+          "value": 27.19,
+          "date": "2026-03-13",
+          "recent": [
+            27.19,
+            27.29,
+            24.23,
+            24.93,
+            25.5
+          ]
+        },
+        {
+          "id": "BAMLH0A0HYM2",
+          "label": "High Yield Spread (Credit Stress)",
+          "value": 3.28,
+          "date": "2026-03-13",
+          "recent": [
+            3.28,
+            3.17,
+            3.09,
+            3.06,
+            3.19
+          ]
+        },
+        {
+          "id": "DCOILWTICO",
+          "label": "WTI Crude Oil",
+          "value": 94.65,
+          "date": "2026-03-09",
+          "recent": [
+            94.65,
+            90.77,
+            80.88,
+            74.58,
+            74.48
+          ]
+        },
+        {
+          "id": "MORTGAGE30US",
+          "label": "30-Year Mortgage Rate",
+          "value": 6.11,
+          "date": "2026-03-12",
+          "recent": [
+            6.11,
+            6,
+            5.98,
+            6.01,
+            6.09
+          ]
+        },
+        {
+          "id": "DTWEXBGS",
+          "label": "USD Trade Weighted Index",
+          "value": 120.5518,
+          "date": "2026-03-13",
+          "recent": [
+            120.5518,
+            119.8227,
+            119.2885,
+            118.7255,
+            119.5151
+          ]
+        }
+      ],
+      "energy": {
+        "wti": 94.04,
+        "brent": 101.79,
+        "natgas": 3.09,
+        "crudeStocks": 443103,
+        "wtiRecent": [
+          95.73,
+          98.71,
+          93.5,
+          94.04
+        ],
+        "signals": []
+      },
+      "bls": [
+        {
+          "id": "CUUR0000SA0",
+          "label": "CPI-U All Items",
+          "value": 326.785,
+          "period": "2026-M02",
+          "date": "2026-02",
+          "momChange": 1.533,
+          "momChangePct": 0.4713
+        },
+        {
+          "id": "CUUR0000SA0L1E",
+          "label": "CPI-U Core (ex Food & Energy)",
+          "value": 333.242,
+          "period": "2026-M02",
+          "date": "2026-02",
+          "momChange": 1.292,
+          "momChangePct": 0.3892
+        },
+        {
+          "id": "LNS14000000",
+          "label": "Unemployment Rate",
+          "value": 4.4,
+          "period": "2026-M02",
+          "date": "2026-02",
+          "momChange": 0.1,
+          "momChangePct": 2.3256
+        },
+        {
+          "id": "CES0000000001",
+          "label": "Nonfarm Payrolls (thousands)",
+          "value": 158466,
+          "period": "2026-M02",
+          "date": "2026-02",
+          "momChange": -92,
+          "momChangePct": -0.058
+        },
+        {
+          "id": "WPUFD49104",
+          "label": "PPI Final Demand",
+          "value": 151.351,
+          "period": "2026-M01",
+          "date": "2026-01",
+          "momChange": 1.554,
+          "momChangePct": 1.0374
+        }
+      ],
+      "treasury": {
+        "totalDebt": "38902637810572.47",
+        "signals": [
+          "National debt at $38.90T"
+        ]
+      },
+      "gscpi": {
+        "value": 0.49,
+        "date": "2026-02",
+        "interpretation": "above average"
+      },
+      "tg": {
+        "posts": 187,
+        "urgent": [
+          {
+            "text": "🇺🇸🇮🇷Strikes by the US Air Force on Iranian coastal defense missile systems o",
+            "date": "2026-03-17T11:57:09+00:00"
+          },
+          {
+            "text": "🇵🇰⚔️🇦🇫 \"At least 400 people were killed and 250 injured in an air strike by ",
+            "date": "2026-03-17T09:18:55+00:00"
+          },
+          {
+            "text": "🇮🇷🇦🇪⚡️An explosion occurred near the port of Sharjah in the UAE.\n\nThis was r",
+            "date": "2026-03-17T11:12:44+00:00"
+          },
+          {
+            "text": "🇮🇱🇮🇷Israel announces the assassination of the Secretary of Iran&#39;s Suprem",
+            "date": "2026-03-17T11:56:02+00:00"
+          },
+          {
+            "text": "🇮🇷🇦🇪New satellite images of the Al Dhafra airbase in the UAE after Iranian s",
+            "date": "2026-03-17T12:08:27+00:00"
+          },
+          {
+            "text": "🇮🇷⚔️🇺🇸 Iran destroyed so many American radars in the Middle East, the U.S. i",
+            "date": "2026-03-17T07:41:52+00:00"
+          },
+          {
+            "text": "🇮🇱🇮🇷The IDF now claims that the secretary of Iran&#39;s Supreme National Sec",
+            "date": "2026-03-17T12:14:33+00:00"
+          },
+          {
+            "text": "🇮🇱⚔️🇱🇧🇱🇧 JUST IN: Israel is preparing a major ground invasion of southern ",
+            "date": "2026-03-17T07:50:32+00:00"
+          },
+          {
+            "text": "🇮🇷🇮🇱The missile attack by Iran as part of Operation \"Truthful Promise 4\" is ",
+            "date": "2026-03-17T13:00:26+00:00"
+          },
+          {
+            "text": "🇯🇵 Shortage of Naphtha Threatens Supply Chain Chaos in Japan\n\nFor all the head",
+            "date": "2026-03-17T07:57:31+00:00"
+          },
+          {
+            "text": "🇮🇷 Reza Pahlavi’s supporters in Iran are turning against him\n\nThe son of Iran’",
+            "date": "2026-03-17T10:10:43+00:00"
+          },
+          {
+            "text": "🇮🇷⚔️🇺🇸 The U.S. lost 10% of its MQ-9 Reaper fleet since late 2023 — USAF&#39",
+            "date": "2026-03-17T09:40:26+00:00"
+          },
+          {
+            "text": "‼️🔥⚠️ Heavy artilery bombardment over Kharkov, Ukraine early morning 02.28.22.\n",
+            "date": "2022-02-28T10:03:27+00:00"
+          },
+          {
+            "text": "Meanwhile, Pakistan has launched massive strikes on Afghanistan. It is reported ",
+            "date": "2026-03-16T18:47:38+00:00"
+          }
+        ]
+      },
+      "thermal": [
+        {
+          "region": "Middle East",
+          "det": 0,
+          "night": 0,
+          "hc": 0
+        },
+        {
+          "region": "Ukraine",
+          "det": 0,
+          "night": 0,
+          "hc": 0
+        },
+        {
+          "region": "Iran",
+          "det": 0,
+          "night": 0,
+          "hc": 0
+        },
+        {
+          "region": "Sudan / Horn of Africa",
+          "det": 0,
+          "night": 0,
+          "hc": 0
+        },
+        {
+          "region": "Myanmar",
+          "det": 0,
+          "night": 0,
+          "hc": 0
+        },
+        {
+          "region": "South Asia",
+          "det": 0,
+          "night": 0,
+          "hc": 0
+        }
+      ],
+      "air": [
+        {
+          "region": "Middle East",
+          "total": 143
+        },
+        {
+          "region": "Taiwan Strait",
+          "total": 65
+        },
+        {
+          "region": "Ukraine Region",
+          "total": 52
+        },
+        {
+          "region": "Baltic Region",
+          "total": 39
+        },
+        {
+          "region": "South China Sea",
+          "total": 123
+        },
+        {
+          "region": "Korean Peninsula",
+          "total": 31
+        }
+      ],
+      "nuke": [
+        {
+          "site": "Zaporizhzhia NPP (Ukraine)",
+          "anom": false,
+          "cpm": 33.92
+        },
+        {
+          "site": "Chernobyl Exclusion Zone",
+          "anom": false,
+          "cpm": 33.28
+        },
+        {
+          "site": "Bushehr NPP (Iran)",
+          "anom": false,
+          "cpm": null
+        },
+        {
+          "site": "Yongbyon (North Korea)",
+          "anom": false,
+          "cpm": null
+        },
+        {
+          "site": "Fukushima Daiichi",
+          "anom": false,
+          "cpm": 91.28
+        },
+        {
+          "site": "Dimona (Israel)",
+          "anom": false,
+          "cpm": 29.52
+        }
+      ],
+      "who": [
+        {
+          "title": "Sudan virus disease – Uganda"
+        },
+        {
+          "title": "Poliomyelitis - Indonesia"
+        },
+        {
+          "title": "Typhoid fever - Democratic Republic of the Congo"
+        },
+        {
+          "title": "Influenza A (H5N1) virus - China"
+        },
+        {
+          "title": "Avian Influenza A (H5N1) - Cambodia"
+        },
+        {
+          "title": "Avian Influenza A(H3N8)"
+        },
+        {
+          "title": "Measles – Nepal"
+        },
+        {
+          "title": "Middle East Respiratory Syndrome Coronavirus –Saudi Arabia"
+        },
+        {
+          "title": "HIV cases–Pakistan"
+        },
+        {
+          "title": "1997 - Ebola haemorrhagic fever in Gabon (new outbreak) - Update 12"
+        }
+      ],
+      "acled": {
+        "totalEvents": 0,
+        "totalFatalities": 0
+      },
+      "sdr": {
+        "total": 899,
+        "online": 899
+      },
+      "news": {
+        "count": 50
+      },
+      "ideas": []
+    },
+    "delta": {
+      "timestamp": "2026-03-17T13:29:26.650Z",
+      "previous": "2026-03-17T13:15:26.264Z",
+      "signals": {
+        "new": [
+          {
+            "key": "tg_urgent:792c55ee3f3e",
+            "text": "🇺🇸🇮🇷Strikes by the US Air Force on Iranian coastal defense missile systems or electronic warfare systems.",
+            "item": {
+              "channel": "intelslava",
+              "text": "🇺🇸🇮🇷Strikes by the US Air Force on Iranian coastal defense missile systems or electronic warfare systems.",
+              "views": 18100,
+              "date": "2026-03-17T11:57:09+00:00",
+              "urgentFlags": [
+                "missile",
+                "strike"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:f55a967b5ea3",
+            "text": "🇵🇰⚔️🇦🇫 \"At least 400 people were killed and 250 injured in an air strike by Pakistan on a drug rehabilitation hospit",
+            "item": {
+              "channel": "CIG_telegram",
+              "text": "🇵🇰⚔️🇦🇫 \"At least 400 people were killed and 250 injured in an air strike by Pakistan on a drug rehabilitation hospital in ​Kabul, a spokesman of the Afghan Taliban government said on Tuesday, a sh",
+              "views": 6070,
+              "date": "2026-03-17T09:18:55+00:00",
+              "urgentFlags": [
+                "strike",
+                "escalation",
+                "killed"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:1d9011ee29a1",
+            "text": "🇮🇷🇦🇪⚡️An explosion occurred near the port of Sharjah in the UAE.\n\nThis was reported to TASS by the British company A",
+            "item": {
+              "channel": "intelslava",
+              "text": "🇮🇷🇦🇪⚡️An explosion occurred near the port of Sharjah in the UAE.\n\nThis was reported to TASS by the British company Ambrey, which specializes in maritime security.",
+              "views": 22500,
+              "date": "2026-03-17T11:12:44+00:00",
+              "urgentFlags": [
+                "explosion"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:fed9d4a7f388",
+            "text": "🇮🇱🇮🇷Israel announces the assassination of the Secretary of Iran&#39;s Supreme National Security Council Ali Larijani",
+            "item": {
+              "channel": "intelslava",
+              "text": "🇮🇱🇮🇷Israel announces the assassination of the Secretary of Iran&#39;s Supreme National Security Council Ali Larijani.\n\nLarijani was the representative of Iran&#39;s Supreme Leader Ayatollah Khamen",
+              "views": 18200,
+              "date": "2026-03-17T11:56:02+00:00",
+              "urgentFlags": [
+                "assassination"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:612129bb2426",
+            "text": "🇮🇷🇦🇪New satellite images of the Al Dhafra airbase in the UAE after Iranian strikes.\n\nThe strikes hit barracks/reside",
+            "item": {
+              "channel": "intelslava",
+              "text": "🇮🇷🇦🇪New satellite images of the Al Dhafra airbase in the UAE after Iranian strikes.\n\nThe strikes hit barracks/residential premises and nearby buildings. Craters and collapsed roofs are visible.",
+              "views": 16600,
+              "date": "2026-03-17T12:08:27+00:00",
+              "urgentFlags": [
+                "strike"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:16bcb8ee39bc",
+            "text": "🇮🇷⚔️🇺🇸 Iran destroyed so many American radars in the Middle East, the U.S. is now deploying additional E-2D Hawkeye ",
+            "item": {
+              "channel": "CIG_telegram",
+              "text": "🇮🇷⚔️🇺🇸 Iran destroyed so many American radars in the Middle East, the U.S. is now deploying additional E-2D Hawkeye airborne radar aircraft to the Middle East (at least five spotted deploying) to ",
+              "views": 6250,
+              "date": "2026-03-17T07:41:52+00:00",
+              "urgentFlags": [
+                "missile",
+                "drone"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:cf0a43db37f5",
+            "text": "🇮🇱🇮🇷The IDF now claims that the secretary of Iran&#39;s Supreme National Security Council, Ali Larijani, who was kil",
+            "item": {
+              "channel": "intelslava",
+              "text": "🇮🇱🇮🇷The IDF now claims that the secretary of Iran&#39;s Supreme National Security Council, Ali Larijani, who was killed by them, was allegedly the actual leader of Iran.",
+              "views": 15800,
+              "date": "2026-03-17T12:14:33+00:00",
+              "urgentFlags": [
+                "killed"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:37322ba072f7",
+            "text": "🇮🇱⚔️🇱🇧🇱🇧 JUST IN: Israel is preparing a major ground invasion of southern Lebanon, aiming to seize all territory s",
+            "item": {
+              "channel": "CIG_telegram",
+              "text": "🇮🇱⚔️🇱🇧🇱🇧 JUST IN: Israel is preparing a major ground invasion of southern Lebanon, aiming to seize all territory south of the Litani River and dismantle Hezbollah infrastructure, U.S. and Israel",
+              "views": 5760,
+              "date": "2026-03-17T07:50:32+00:00",
+              "urgentFlags": [
+                "just in",
+                "invasion"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:15269cbef53c",
+            "text": "🇮🇷🇮🇱The missile attack by Iran as part of Operation \"Truthful Promise 4\" is continuing.\n\nThere are new arrivals in I",
+            "item": {
+              "channel": "intelslava",
+              "text": "🇮🇷🇮🇱The missile attack by Iran as part of Operation \"Truthful Promise 4\" is continuing.\n\nThere are new arrivals in Israel.",
+              "views": 8160,
+              "date": "2026-03-17T13:00:26+00:00",
+              "urgentFlags": [
+                "missile"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:cff542f3f148",
+            "text": "🇯🇵 Shortage of Naphtha Threatens Supply Chain Chaos in Japan\n\nFor all the headlines about the looming shortage in crud",
+            "item": {
+              "channel": "CIG_telegram",
+              "text": "🇯🇵 Shortage of Naphtha Threatens Supply Chain Chaos in Japan\n\nFor all the headlines about the looming shortage in crude oil, Japan faces a more immediate hit to its industrial supply chain from a li",
+              "views": 5590,
+              "date": "2026-03-17T07:57:31+00:00",
+              "urgentFlags": [
+                "chemical"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:cb64094731db",
+            "text": "🇮🇷 Reza Pahlavi’s supporters in Iran are turning against him\n\nThe son of Iran’s last monarch has encouraged protesters",
+            "item": {
+              "channel": "CIG_telegram",
+              "text": "🇮🇷 Reza Pahlavi’s supporters in Iran are turning against him\n\nThe son of Iran’s last monarch has encouraged protesters to risk their lives and stayed silent on civilians killed by the US and Israel\n",
+              "views": 6550,
+              "date": "2026-03-17T10:10:43+00:00",
+              "urgentFlags": [
+                "killed"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:1b1fd120e33f",
+            "text": "🇮🇷⚔️🇺🇸 The U.S. lost 10% of its MQ-9 Reaper fleet since late 2023 — USAF&#39;s magazine\n\nUse of the Reapers has help",
+            "item": {
+              "channel": "CIG_telegram",
+              "text": "🇮🇷⚔️🇺🇸 The U.S. lost 10% of its MQ-9 Reaper fleet since late 2023 — USAF&#39;s magazine\n\nUse of the Reapers has helped ensure manned U.S. fighters haven’t been shot down over hostile territory, an",
+              "views": 6340,
+              "date": "2026-03-17T09:40:26+00:00",
+              "urgentFlags": [
+                "dam"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:012dbc6fc9bc",
+            "text": "‼️🔥⚠️ Heavy artilery bombardment over Kharkov, Ukraine early morning 02.28.22.\nt.me/ukraine_frontline",
+            "item": {
+              "channel": "ukraine_frontline",
+              "text": "‼️🔥⚠️ Heavy artilery bombardment over Kharkov, Ukraine early morning 02.28.22.\nt.me/ukraine_frontline",
+              "views": 2880,
+              "date": "2022-02-28T10:03:27+00:00",
+              "urgentFlags": [
+                "bombardment"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          },
+          {
+            "key": "tg_urgent:75b67b99772c",
+            "text": "Meanwhile, Pakistan has launched massive strikes on Afghanistan. It is reported that aircraft struck central Kabul, and ",
+            "item": {
+              "channel": "wartranslated",
+              "text": "Meanwhile, Pakistan has launched massive strikes on Afghanistan. It is reported that aircraft struck central Kabul, and a fire is now raging in the capital.",
+              "views": 2110,
+              "date": "2026-03-16T18:47:38+00:00",
+              "urgentFlags": [
+                "strike"
+              ]
+            },
+            "reason": "New urgent OSINT post"
+          }
+        ],
+        "escalated": [],
+        "deescalated": [
+          {
+            "key": "thermal_total",
+            "label": "Thermal Detections",
+            "from": 15503,
+            "to": 0,
+            "change": -15503,
+            "direction": "down",
+            "pctChange": -100,
+            "severity": "critical"
+          }
+        ],
+        "unchanged": [
+          "vix",
+          "hy_spread",
+          "10y2y",
+          "wti",
+          "brent",
+          "natgas",
+          "unemployment",
+          "fed_funds",
+          "10y_yield",
+          "usd_index",
+          "mortgage",
+          "urgent_posts",
+          "air_total",
+          "who_alerts",
+          "conflict_events",
+          "conflict_fatalities",
+          "sdr_online",
+          "news_count",
+          "sources_ok"
+        ]
+      },
+      "summary": {
+        "totalChanges": 15,
+        "criticalChanges": 15,
+        "direction": "mixed",
+        "signalBreakdown": {
+          "new": 14,
+          "escalated": 0,
+          "deescalated": 1,
+          "unchanged": 19
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,75 @@
+// NOAA / National Weather Service — Severe weather alerts & climate events
+// No auth required. Real-time alerts.
+
+import { safeFetch } from '../utils/fetch.mjs';
+
+const NWS_BASE = 'https://api.weather.gov';
+
+// Get all active weather alerts (US)
+export async function getActiveAlerts(opts = {}) {
+  const {
+    severity = null,  // Extreme, Severe, Moderate, Minor
+    urgency = null,   // Immediate, Expected, Future
+    event = null,     // e.g. "Tornado Warning", "Hurricane Warning"
+    limit = 50,
+  } = opts;
+
+  const params = new URLSearchParams({ limit: String(limit), status: 'actual' });
+  if (severity) params.set('severity', severity);
+  if (urgency) params.set('urgency', urgency);
+  if (event) params.set('event', event);
+
+  return safeFetch(`${NWS_BASE}/alerts/active?${params}`, {
+    headers: { 'Accept': 'application/geo+json' },
+  });
+}
+
+// Get severe alerts only
+export async function getSevereAlerts() {
+  return getActiveAlerts({ severity: 'Extreme,Severe' });
+}
+
+// Briefing — severe weather events that could impact markets/supply chains
+export async function briefing() {
+  const alerts = await getSevereAlerts();
+  const features = alerts?.features || [];
+
+  // Categorize by impact type
+  const hurricanes = features.filter(f => /hurricane|typhoon|tropical/i.test(f.properties?.event));
+  const tornadoes = features.filter(f => /tornado/i.test(f.properties?.event));
+  const floods = features.filter(f => /flood/i.test(f.properties?.event));
+  const winter = features.filter(f => /blizzard|ice storm|winter/i.test(f.properties?.event));
+  const fire = features.filter(f => /fire/i.test(f.properties?.event));
+  const other = features.filter(f => {
+    const e = f.properties?.event || '';
+    return !/hurricane|typhoon|tropical|tornado|flood|blizzard|ice storm|winter|fire/i.test(e);
+  });
+
+  return {
+    source: 'NOAA/NWS',
+    timestamp: new Date().toISOString(),
+    totalSevereAlerts: features.length,
+    summary: {
+      hurricanes: hurricanes.length,
+      tornadoes: tornadoes.length,
+      floods: floods.length,
+      winterStorms: winter.length,
+      wildfires: fire.length,
+      other: other.length,
+    },
+    topAlerts: features.slice(0, 15).map(f => ({
+      event: f.properties?.event,
+      severity: f.properties?.severity,
+      urgency: f.properties?.urgency,
+      headline: f.properties?.headline,
+      areas: f.properties?.areaDesc,
+      onset: f.properties?.onset,
+      expires: f.properties?.expires,
+    })),
+  };
+}
+
+if (process.argv[1]?.endsWith('noaa.mjs')) {
+  const data = await briefing();
+  console.log(JSON.stringify(data, null, 2));
+}

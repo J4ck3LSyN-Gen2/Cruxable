@@ -1,0 +1,4649 @@
+{
+  "crucix": {
+    "version": "2.0.0",
+    "timestamp": "2026-03-20T22:56:34.921Z",
+    "totalDurationMs": 18812,
+    "sourcesQueried": 29,
+    "sourcesOk": 29,
+    "sourcesFailed": 0
+  },
+  "sources": {
+    "GDELT": {
+      "source": "GDELT",
+      "timestamp": "2026-03-20T22:56:21.614Z",
+      "totalArticles": 0,
+      "allArticles": [],
+      "conflicts": [],
+      "economy": [],
+      "health": [],
+      "crisis": []
+    },
+    "OpenSky": {
+      "source": "OpenSky",
+      "timestamp": "2026-03-20T22:56:19.018Z",
+      "hotspots": [
+        {
+          "region": "Middle East",
+          "key": "middleEast",
+          "totalAircraft": 76,
+          "byCountry": {
+            "Turkey": 23,
+            "Japan": 1,
+            "Iraq": 1,
+            "Austria": 1,
+            "United Arab Emirates": 8,
+            "Israel": 3,
+            "Azerbaijan": 1,
+            "Finland": 1,
+            "United States": 3,
+            "Ethiopia": 1,
+            "Czech Republic": 1,
+            "Republic of Korea": 1,
+            "France": 1,
+            "United Kingdom": 5,
+            "Syrian Arab Republic": 1,
+            "Greece": 1,
+            "India": 2,
+            "Russian Federation": 1,
+            "Pakistan": 1,
+            "Kuwait": 1,
+            "Ukraine": 1,
+            "Uzbekistan": 1,
+            "Canada": 1,
+            "Egypt": 9,
+            "Saudi Arabia": 3,
+            "Georgia": 1,
+            "Ireland": 1,
+            "Germany": 1
+          },
+          "noCallsign": 1,
+          "highAltitude": 2
+        },
+        {
+          "region": "Taiwan Strait",
+          "key": "taiwan",
+          "totalAircraft": 26,
+          "byCountry": {
+            "China": 3,
+            "Thailand": 2,
+            "Taiwan": 17,
+            "Republic of Korea": 1,
+            "United States": 1,
+            "Viet Nam": 1,
+            "Singapore": 1
+          },
+          "noCallsign": 3,
+          "highAltitude": 1
+        },
+        {
+          "region": "Ukraine Region",
+          "key": "ukraine",
+          "totalAircraft": 41,
+          "byCountry": {
+            "Hungary": 3,
+            "United Kingdom": 2,
+            "Slovakia": 1,
+            "Germany": 7,
+            "Bulgaria": 1,
+            "China": 2,
+            "Poland": 4,
+            "Ukraine": 2,
+            "Turkey": 3,
+            "Austria": 3,
+            "Republic of Korea": 2,
+            "Australia": 1,
+            "United States": 1,
+            "Kingdom of the Netherlands": 1,
+            "Luxembourg": 1,
+            "Singapore": 2,
+            "Canada": 1,
+            "Egypt": 1,
+            "Malta": 3
+          },
+          "noCallsign": 0,
+          "highAltitude": 1
+        },
+        {
+          "region": "Baltic Region",
+          "key": "baltics",
+          "totalAircraft": 12,
+          "byCountry": {
+            "Latvia": 1,
+            "Lithuania": 1,
+            "Poland": 2,
+            "China": 2,
+            "Estonia": 1,
+            "Turkey": 1,
+            "Germany": 1,
+            "Ireland": 3
+          },
+          "noCallsign": 1,
+          "highAltitude": 0
+        },
+        {
+          "region": "South China Sea",
+          "key": "southChinaSea",
+          "totalAircraft": 86,
+          "byCountry": {
+            "India": 1,
+            "China": 24,
+            "Malaysia": 6,
+            "Canada": 1,
+            "Thailand": 2,
+            "Taiwan": 6,
+            "United States": 4,
+            "Qatar": 1,
+            "Philippines": 37,
+            "Viet Nam": 1,
+            "Luxembourg": 1,
+            "Indonesia": 1,
+            "Republic of Korea": 1
+          },
+          "noCallsign": 4,
+          "highAltitude": 0
+        },
+        {
+          "region": "Korean Peninsula",
+          "key": "koreanPeninsula",
+          "totalAircraft": 65,
+          "byCountry": {
+            "Indonesia": 1,
+            "Mexico": 1,
+            "United States": 2,
+            "China": 4,
+            "Viet Nam": 2,
+            "Republic of Korea": 41,
+            "Japan": 8,
+            "United Kingdom": 1,
+            "Germany": 1,
+            "Philippines": 1,
+            "Malaysia": 2,
+            "Cambodia": 1
+          },
+          "noCallsign": 2,
+          "highAltitude": 2
+        }
+      ]
+    },
+    "FIRMS": {
+      "source": "NASA FIRMS",
+      "timestamp": "2026-03-20T22:56:17.369Z",
+      "status": "active",
+      "hotspots": [
+        {
+          "region": "Middle East",
+          "error": "fetch failed"
+        },
+        {
+          "region": "Ukraine",
+          "error": "fetch failed"
+        },
+        {
+          "region": "Iran",
+          "error": "fetch failed"
+        },
+        {
+          "region": "Sudan / Horn of Africa",
+          "error": "fetch failed"
+        },
+        {
+          "region": "Myanmar",
+          "error": "fetch failed"
+        },
+        {
+          "region": "South Asia",
+          "error": "fetch failed"
+        }
+      ],
+      "signals": []
+    },
+    "Maritime": {
+      "source": "Maritime/AIS",
+      "timestamp": "2026-03-20T22:56:16.148Z",
+      "status": "limited",
+      "message": "Set AISSTREAM_API_KEY for real-time global vessel tracking (free at aisstream.io)",
+      "chokepoints": {
+        "straitOfHormuz": {
+          "label": "Strait of Hormuz",
+          "lat": 26.5,
+          "lon": 56.5,
+          "note": "20% of world oil"
+        },
+        "suezCanal": {
+          "label": "Suez Canal",
+          "lat": 30.5,
+          "lon": 32.3,
+          "note": "12% of world trade"
+        },
+        "straitOfMalacca": {
+          "label": "Strait of Malacca",
+          "lat": 2.5,
+          "lon": 101.5,
+          "note": "25% of world trade"
+        },
+        "babElMandeb": {
+          "label": "Bab el-Mandeb",
+          "lat": 12.6,
+          "lon": 43.3,
+          "note": "Red Sea gateway"
+        },
+        "taiwanStrait": {
+          "label": "Taiwan Strait",
+          "lat": 24,
+          "lon": 119,
+          "note": "88% of largest container ships"
+        },
+        "bosporusStrait": {
+          "label": "Bosphorus",
+          "lat": 41.1,
+          "lon": 29.1,
+          "note": "Black Sea access"
+        },
+        "panamaCanal": {
+          "label": "Panama Canal",
+          "lat": 9.1,
+          "lon": -79.7,
+          "note": "5% of world trade"
+        },
+        "capeOfGoodHope": {
+          "label": "Cape of Good Hope",
+          "lat": -34.4,
+          "lon": 18.5,
+          "note": "Suez alternative"
+        }
+      },
+      "monitoringCapabilities": [
+        "Dark ship detection (AIS transponder shutoffs)",
+        "Sanctions evasion (ship-to-ship transfers)",
+        "Naval deployment tracking",
+        "Port congestion (vessel dwell time)",
+        "Chokepoint traffic anomalies",
+        "Oil tanker route changes"
+      ],
+      "hint": "For now, I can use web search to check maritime news and shipping disruptions"
+    },
+    "Safecast": {
+      "source": "Safecast",
+      "timestamp": "2026-03-20T22:56:19.203Z",
+      "sites": [
+        {
+          "site": "Zaporizhzhia NPP (Ukraine)",
+          "key": "zaporizhzhia",
+          "recentReadings": 25,
+          "avgCPM": 33.92,
+          "maxCPM": 46,
+          "anomaly": false,
+          "lastReading": "2023-05-28T07:12:38.000Z"
+        },
+        {
+          "site": "Chernobyl Exclusion Zone",
+          "key": "chernobyl",
+          "recentReadings": 25,
+          "avgCPM": 33.28,
+          "maxCPM": 40,
+          "anomaly": false,
+          "lastReading": "2023-07-12T11:10:18.000Z"
+        },
+        {
+          "site": "Bushehr NPP (Iran)",
+          "key": "bushehr",
+          "recentReadings": 0,
+          "avgCPM": null,
+          "maxCPM": null,
+          "anomaly": false,
+          "lastReading": null
+        },
+        {
+          "site": "Yongbyon (North Korea)",
+          "key": "yongbyon",
+          "recentReadings": 0,
+          "avgCPM": null,
+          "maxCPM": null,
+          "anomaly": false,
+          "lastReading": null
+        },
+        {
+          "site": "Fukushima Daiichi",
+          "key": "fukushima",
+          "recentReadings": 25,
+          "avgCPM": 25.88,
+          "maxCPM": 57,
+          "anomaly": false,
+          "lastReading": "2016-07-16T02:00:57.000Z"
+        },
+        {
+          "site": "Dimona (Israel)",
+          "key": "dimona",
+          "recentReadings": 25,
+          "avgCPM": 29.52,
+          "maxCPM": 41,
+          "anomaly": false,
+          "lastReading": "2018-01-15T08:05:27.000Z"
+        }
+      ],
+      "signals": [
+        "All monitored nuclear sites within normal radiation levels"
+      ]
+    },
+    "ACLED": {
+      "source": "ACLED",
+      "timestamp": "2026-03-20T22:56:22.187Z",
+      "error": "ACLED data access denied (HTTP 403, auth method: oauth). Response: {\"message\":\"Access denied\"}\n→ Fix: Log in at https://acleddata.com/user/login, then:\n  1. Accept Terms of Use (profile → Terms of Use button → check the box)\n  2. Complete all required profile fields\n  3. Ensure your account has the \"API\" access group\n  Contact access@acleddata.com if issues persist."
+    },
+    "ReliefWeb": {
+      "source": "HDX (Humanitarian Data Exchange) — ReliefWeb fallback",
+      "timestamp": "2026-03-20T22:56:22.064Z",
+      "rwError": "HTTP 403: {\"status\":403,\"time\":55,\"error\":{\"type\":\"AccessDeniedHttpException\",\"message\":\"You are not using an approved appname. Kindly request an appname from ReliefWeb here: https:\\/\\/apidoc.reliefweb.int\\/par",
+      "rwNote": "ReliefWeb API requires an approved appname since Nov 2025. Set RELIEFWEB_APPNAME env var after registering at https://apidoc.reliefweb.int/parameters#appname",
+      "hdxDatasets": [
+        {
+          "title": "GDACS RSS Information",
+          "date": "2026-03-20T16:26:59.057692",
+          "source": "European Union",
+          "countries": [
+            "Afghanistan",
+            "Albania",
+            "Algeria",
+            "Angola",
+            "Argentina",
+            "Australia",
+            "Azerbaijan",
+            "Belarus",
+            "Belgium",
+            "Benin",
+            "Bhutan",
+            "Bolivia (Plurinational State of)",
+            "Botswana",
+            "Brazil",
+            "Bulgaria",
+            "Burkina Faso",
+            "Cambodia",
+            "Cameroon",
+            "Canada",
+            "Central African Republic",
+            "Chad",
+            "Chile",
+            "China",
+            "Colombia",
+            "Comoros",
+            "Côte d'Ivoire",
+            "Democratic Republic of the Congo",
+            "Dominican Republic",
+            "Ecuador",
+            "El Salvador",
+            "Ethiopia",
+            "France",
+            "Greece",
+            "Guinea",
+            "Haiti",
+            "India",
+            "Indonesia",
+            "Malaysia",
+            "New Caledonia",
+            "New Zealand",
+            "Niger",
+            "Nigeria",
+            "Papua New Guinea",
+            "Romania",
+            "Senegal",
+            "Spain",
+            "Sudan"
+          ],
+          "url": "https://data.humdata.org/dataset/gdacs-rss-information"
+        },
+        {
+          "title": "Bangladesh - Multi Sector Needs Assessment: Cox’s Bazar, Rohingya Refugee Response – June 2019",
+          "date": "2026-03-20T14:44:54.656853",
+          "source": "UNHCR, IOM Needs and Population Monitoring, ACAPS, WFP VAM, REACH",
+          "countries": [
+            "Bangladesh"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-bgd-msna-2019-june-v2-1"
+        },
+        {
+          "title": "Bangladesh - Shelter Need Assessment Cox's Bazar 2019",
+          "date": "2026-03-20T14:44:49.767196",
+          "source": "UNHCR",
+          "countries": [
+            "Bangladesh"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-bgd-shelter-2019-v2-1"
+        },
+        {
+          "title": "Bangladesh - Joint Multi Sector Needs Assessment: Cox’s Bazar, Rohingya Refugee Response – August 2020, Host Community",
+          "date": "2026-03-20T14:40:49.718108",
+          "source": "UNHCR, Inter-sector Coordination Group",
+          "countries": [
+            "Bangladesh"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-bgd-2020-jmsna-hostcommunity-v2-1"
+        },
+        {
+          "title": "Bangladesh - Joint Multi Sector Needs Assessment: Cox’s Bazar, Rohingya Refugee Response – August 2020, Refugees",
+          "date": "2026-03-20T14:40:44.709623",
+          "source": "UNHCR, Inter-sector Coordination Group",
+          "countries": [
+            "Bangladesh"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-bgd-2020-jmsna-refugees-v2-1"
+        },
+        {
+          "title": "Lebanon - Vulnerability Assessment of Syrian Refugees in Lebanon, 2020",
+          "date": "2026-03-20T14:40:19.686823",
+          "source": "UNHCR, UNICEF, WFP",
+          "countries": [
+            "Lebanon"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-lbn-2020-vasyr-v2-1"
+        },
+        {
+          "title": "Serbia - Post-Distribution Monitoring of Cash-Based Interventions, July 2020",
+          "date": "2026-03-20T14:32:54.815726",
+          "source": "UNHCR",
+          "countries": [
+            "Serbia"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-srb-2020-cbi-pdm-v2-1"
+        },
+        {
+          "title": "Pakistan - Post-Distribution Monitoring of Cash-Based Intervention, November 2020",
+          "date": "2026-03-20T14:31:24.659001",
+          "source": "UNHCR",
+          "countries": [
+            "Pakistan"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-pak-2021-cbi-pdm"
+        },
+        {
+          "title": "Kyrgyzstan - Post-Distribution Monitoring of Cash-Based Intervention, February 2021",
+          "date": "2026-03-20T14:30:29.789233",
+          "source": "UNHCR",
+          "countries": [
+            "Kyrgyzstan"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-kgz-2021-cbi-pdm"
+        },
+        {
+          "title": "Lebanon - Vulnerability Assessment of Syrian Refugees in Lebanon, 2021",
+          "date": "2026-03-20T14:22:44.634824",
+          "source": "UNHCR, UNICEF, WFP",
+          "countries": [
+            "Lebanon"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-lbn-2021-vasyr-v2-1"
+        },
+        {
+          "title": "Afghanistan - Rapid Household Assessments 2022",
+          "date": "2026-03-20T14:07:05.272892",
+          "source": "UNHCR",
+          "countries": [
+            "Afghanistan"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-afg-2022-rhaf-anon-data-v2-1"
+        },
+        {
+          "title": "Lebanon - Vulnerability Assessment of Syrian Refugees in Lebanon, 2022",
+          "date": "2026-03-20T14:06:24.721924",
+          "source": "UNHCR, WFP, UNICEF",
+          "countries": [
+            "Lebanon"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-lbn-2022-vasyr-v2-1"
+        },
+        {
+          "title": "Afghanistan - Emergency Shelter Rapid Assessment Mechanism 2022",
+          "date": "2026-03-20T13:57:34.960599",
+          "source": "UNHCR",
+          "countries": [
+            "Afghanistan"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-afg-2022-ram-anon-data-v2-1"
+        },
+        {
+          "title": "Afghanistan - Rapid Household Assessments 2023",
+          "date": "2026-03-20T13:51:54.613860",
+          "source": "UNHCR",
+          "countries": [
+            "Afghanistan"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-afg-2023-rhaf-anon-data-v2-1"
+        },
+        {
+          "title": "Afghanistan - Rapid Household Assessments 2024 January-June",
+          "date": "2026-03-20T13:47:29.618189",
+          "source": "UNHCR",
+          "countries": [
+            "Afghanistan"
+          ],
+          "url": "https://data.humdata.org/dataset/unhcr-afg-2024my-rhaf-anon-data-v2-1"
+        }
+      ]
+    },
+    "WHO": {
+      "source": "WHO",
+      "timestamp": "2026-03-20T22:56:19.407Z",
+      "diseaseOutbreakNews": [
+        {
+          "title": "Sudan virus disease – Uganda",
+          "date": "2025-02-01T10:10:31Z",
+          "donId": "2025-DON555",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2025-DON555",
+          "summary": "On 30 January 2025, the Ministry of Health of Uganda declared an outbreak of Sudan virus disease (SVD) following confirmation from three national reference laboratories. The case presented with signs and symptoms between 20 and 21 January and died on 29 January at the National Referral Hospital in K"
+        },
+        {
+          "title": "Poliomyelitis - Indonesia",
+          "date": "2024-03-13T09:24:38Z",
+          "donId": "2005DON123",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2005DON123",
+          "summary": "22 new polio cases were confirmed in Indonesia, bringing the total number of cases to 122. The new cases are from West Java province.Recently confirmed cases in Sumatra and Central Java occurred outside the area where two emergency vaccination campaigns were held on 31 May and 29 June. A large outbr"
+        },
+        {
+          "title": "Typhoid fever - Democratic Republic of the Congo",
+          "date": "2024-03-12T22:25:16Z",
+          "donId": "2005DON106",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2005DON106",
+          "summary": "From 27 September 2004 - 11 January 2005, WHO has received reports of a total of 42 564 cases and 214 deaths (case fatality ratio, 0.5%), and 696 severe cases of intestinal perforation in Kinshasa. (see previous report).M&eacute;decins sans Fronti&egrave;res-Belgium has been working to provide clean"
+        },
+        {
+          "title": "Influenza A (H5N1) virus - China",
+          "date": "2024-03-07T13:06:11Z",
+          "donId": "2007DON075",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2007DON075",
+          "summary": "The Ministry of Health in China has reported a new case of human infection with the H5N1 avian influenza virus. The case was confirmed by the national laboratory on 23 May.The 19-year old male soldier, serving in Fujian province, developed fever and pneumonia-like symptoms on 9 May and was hospitali"
+        },
+        {
+          "title": "Avian Influenza A (H5N1) - Cambodia",
+          "date": "2024-02-08T08:22:50Z",
+          "donId": "2024-DON501",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2024-DON501",
+          "summary": "Between 26 and 28 January 2024, the Cambodia National Focal Point (NFP) for the International Health Regulations (IHR) notified the World Health Organization (WHO) of two confirmed cases of human infection with avian influenza A(H5N1) virus. These cases were reported from Kampong Trabek district, Pr"
+        },
+        {
+          "title": "Avian Influenza A(H3N8)",
+          "date": "2023-04-11T13:10:25Z",
+          "donId": "2023-DON456",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2023-DON456",
+          "summary": "On 27 March 2023, the National Health Commission of the People’s Republic of China notified WHO of one confirmed case of human infection with an avian influenza A(H3N8) virus. This is the third reported case of human infection with an avian influenza A(H3N8) virus; all three cases have been reported"
+        },
+        {
+          "title": "Measles – Nepal",
+          "date": "2023-03-14T15:51:05Z",
+          "donId": "2023-DON446",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2023-DON446",
+          "summary": "On 2 January 2023, an outbreak of measles was confirmed in Nepalgunj sub-metropolitan city (SMC) in Banke district, Nepal, following a cluster of cases of fever and rash. Following the confirmation and through active case search, the index case was identified, with the onset of symptoms on 24 Novemb"
+        },
+        {
+          "title": "Middle East Respiratory Syndrome Coronavirus –Saudi Arabia",
+          "date": "2022-11-16T20:09:42Z",
+          "donId": "2022-DON422",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2022-DON422",
+          "summary": "From 29 December 2021 to 31 October 2022, four laboratory-confirmed cases of Middle East respiratory syndrome coronavirus (MERS-CoV) were reported to WHO by the Ministry of Health of the Kingdom of Saudi Arabia. No deaths were reported.  Household contacts for the four cases were followed-up by the "
+        },
+        {
+          "title": "HIV cases–Pakistan",
+          "date": "2022-07-28T09:16:58Z",
+          "donId": "2019-DON163",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2019-DON163",
+          "summary": "On 25 April 2019, the local administration in Larkana district was alerted by media reports of a surge in human immunodeficiency virus (HIV) cases among children in Ratodero Taluka, Larkana district, Sindh province, Pakistan. A screening camp was initially established at Taluka&rsquo;s main hospital"
+        },
+        {
+          "title": "1997 - Ebola haemorrhagic fever in Gabon (new outbreak) - Update 12",
+          "date": "2021-06-08T13:32:24Z",
+          "donId": null,
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/1997_01_09b-en",
+          "summary": "\r\n09 January 1997 Disease Outbreak Reported\r\n\r\nThe latest report from Gabon informs that a total of 58 cases with 43 deaths had\r\noccurred in the outbreak up to 8 January. The last fatal case occurred on 8 January. One patient\r\nis still hospitalized and 14 have recovered.\r\n"
+        },
+        {
+          "title": "1998 - Cholera in the Comoros Islands",
+          "date": "2021-06-08T08:13:57Z",
+          "donId": null,
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/1998_02_10b-en",
+          "summary": "\r\n10 February 1998 Disease Outbreak Reported\r\n\r\nUp to 7 February a total of 193 cases with 8 deaths (CFR 4.14%) had been reported on\r\nGrande Comore Island. Although the first cases were recorded in Mbéni, 77 of the 193\r\ncases have occurred in Moroni and 12 districts and villages in and around the ca"
+        },
+        {
+          "title": "1999 - Malaria in Burundi",
+          "date": "2021-06-07T14:04:22Z",
+          "donId": null,
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/1999_06_25-en",
+          "summary": "\r\n25 June 1999 Disease Outbreak Reported\r\n\r\nBetween January and May 1999, a total of 616 034 cases of malaria was reported by\r\nhealth centres. In January, all provinces were affected, and although only 75% of\r\nprovinces were affected in May, there was a significant increase in some (especially\r\nKaru"
+        },
+        {
+          "title": "1999 - Plague in Malawi",
+          "date": "2021-06-07T14:00:57Z",
+          "donId": null,
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/1999_07_27-en",
+          "summary": "\r\n27 July 1999 Disease Outbreak Reported\r\n\r\nSince 18 June a number of sporadic suspect cases of plague have occurred in Nsanje\r\ndistrict, Southern Region. Up to 21 July, 74 suspect cases had been reported from a total\r\nof 22 villages. Six villages along the Mozambican border were the most affected r"
+        },
+        {
+          "title": "2000 - Meningococcal disease in Francen(Update), United Kingdom (Update), Oman, Saudi ARabia, Netherlands",
+          "date": "2021-06-07T11:09:38Z",
+          "donId": null,
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2000_04_21b-en",
+          "summary": "\r\n21 April 2000 Disease Outbreak Reported\r\n\r\nThere have been a number of cases of meningococcal disease which are associated with\r\nreturnees from the Haj and their close contacts.\r\n\r\nFrance- Update. The number of cases of meningococcal disease associated with\r\npilgrims who have travelled for the Haj"
+        },
+        {
+          "title": "2001 - Meningococcal disease in the African Meningitis Belt",
+          "date": "2021-06-07T10:54:09Z",
+          "donId": null,
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/2001_02_20-en",
+          "summary": "\r\n20 February 2001 Disease Outbreak Reported\r\n\r\nThe highest number of cases and the highest burden of this\r\ndisease occur in sub-Saharan Africa in an area that is referred to as the meningitis belt.\r\n&nbsp; This is the area between Senegal and Ethiopia and includes all or part of at least\r\n15 countr"
+        }
+      ],
+      "outbreakError": null,
+      "monitoringCapabilities": [
+        "Disease Outbreak News (DONs)",
+        "Global health indicators (GHO)",
+        "Pandemic early warning signals",
+        "Cross-reference with GDELT health event mentions"
+      ]
+    },
+    "OFAC": {
+      "source": "OFAC Sanctions",
+      "timestamp": "2026-03-20T22:56:29.979Z",
+      "lastUpdated": "03/20/2026",
+      "sdnList": {
+        "publishDate": "03/20/2026",
+        "entryCount": 1,
+        "recordCount": 18714,
+        "dataAvailable": true
+      },
+      "advancedList": {
+        "publishDate": null,
+        "entryCount": null,
+        "recordCount": null,
+        "dataAvailable": true
+      },
+      "sampleEntries": [],
+      "endpoints": {
+        "sdnXml": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.XML",
+        "sdnAdvanced": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN_ADVANCED.XML",
+        "consolidatedAdvanced": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/CONS_ADVANCED.XML"
+      }
+    },
+    "OpenSanctions": {
+      "source": "OpenSanctions",
+      "timestamp": "2026-03-20T22:56:24.265Z",
+      "recentSearches": [
+        {
+          "query": "Iran",
+          "totalResults": 0,
+          "entities": []
+        },
+        {
+          "query": "Russia",
+          "totalResults": 0,
+          "entities": []
+        },
+        {
+          "query": "North Korea",
+          "totalResults": 0,
+          "entities": []
+        },
+        {
+          "query": "Syria",
+          "totalResults": 0,
+          "entities": []
+        },
+        {
+          "query": "Venezuela",
+          "totalResults": 0,
+          "entities": []
+        },
+        {
+          "query": "Wagner",
+          "totalResults": 0,
+          "entities": []
+        }
+      ],
+      "totalSanctionedEntities": 0,
+      "datasets": [],
+      "monitoringTargets": [
+        "Iran",
+        "Russia",
+        "North Korea",
+        "Syria",
+        "Venezuela",
+        "Wagner"
+      ]
+    },
+    "ADS-B": {
+      "source": "ADS-B Exchange",
+      "timestamp": "2026-03-20T22:56:21.629Z",
+      "status": "no_key",
+      "militaryAircraft": [],
+      "message": "No ADS-B Exchange API key configured. Set ADSB_API_KEY for military flight tracking.",
+      "signals": [
+        "ADS-B data unavailable — cannot assess military flight activity"
+      ],
+      "integrationGuide": {
+        "step1": "Sign up at https://rapidapi.com/adsbexchange/api/adsbexchange-com1",
+        "step2": "Subscribe to the free tier (500 requests/month)",
+        "step3": "Set ADSB_API_KEY=<your-rapidapi-key> in .env",
+        "features": [
+          "Unfiltered military aircraft tracking (unlike FlightRadar24)",
+          "Real-time position, altitude, speed, heading",
+          "ICAO hex code identification for military registrations",
+          "Geographic area search within radius",
+          "Dedicated /mil endpoint for military-only feed"
+        ]
+      },
+      "complementarySource": "OpenSky (opensky.mjs) provides partial military coverage for free",
+      "knownMilitaryTypes": {
+        "RC135": "RC-135 Rivet Joint (SIGINT)",
+        "E3CF": "E-3 Sentry AWACS",
+        "E3TF": "E-3 Sentry AWACS",
+        "E6B": "E-6B Mercury (TACAMO)",
+        "EP3": "EP-3 Aries (SIGINT)",
+        "P8": "P-8 Poseidon (Maritime Patrol)",
+        "P8A": "P-8A Poseidon",
+        "RQ4": "RQ-4 Global Hawk (UAV)",
+        "RQ4B": "RQ-4B Global Hawk",
+        "U2": "U-2 Dragon Lady",
+        "MQ9": "MQ-9 Reaper (UAV)",
+        "MQ1": "MQ-1 Predator (UAV)",
+        "E8": "E-8 JSTARS",
+        "KC135": "KC-135 Stratotanker",
+        "KC10": "KC-10 Extender",
+        "KC46": "KC-46 Pegasus",
+        "B52": "B-52 Stratofortress",
+        "B1": "B-1B Lancer",
+        "B2": "B-2 Spirit",
+        "C17": "C-17 Globemaster III",
+        "C5": "C-5 Galaxy",
+        "C130": "C-130 Hercules",
+        "VC25": "VC-25 (Air Force One)",
+        "E4B": "E-4B Nightwatch (Doomsday Plane)",
+        "C32": "C-32 (Air Force Two)",
+        "C40": "C-40 Clipper"
+      }
+    },
+    "FRED": {
+      "source": "FRED",
+      "timestamp": "2026-03-20T22:56:22.398Z",
+      "indicators": [
+        {
+          "id": "DFF",
+          "label": "Fed Funds Rate",
+          "value": 3.64,
+          "date": "2026-03-19",
+          "recent": [
+            3.64,
+            3.64,
+            3.64,
+            3.64,
+            3.64
+          ]
+        },
+        {
+          "id": "DGS2",
+          "label": "2-Year Treasury Yield",
+          "value": 3.79,
+          "date": "2026-03-19",
+          "recent": [
+            3.79,
+            3.76,
+            3.68,
+            3.68,
+            3.73
+          ]
+        },
+        {
+          "id": "DGS10",
+          "label": "10-Year Treasury Yield",
+          "value": 4.25,
+          "date": "2026-03-19",
+          "recent": [
+            4.25,
+            4.26,
+            4.2,
+            4.23,
+            4.28
+          ]
+        },
+        {
+          "id": "DGS30",
+          "label": "30-Year Treasury Yield",
+          "value": 4.83,
+          "date": "2026-03-19",
+          "recent": [
+            4.83,
+            4.88,
+            4.85,
+            4.86,
+            4.9
+          ]
+        },
+        {
+          "id": "T10Y2Y",
+          "label": "10Y-2Y Spread (Yield Curve)",
+          "value": 0.51,
+          "date": "2026-03-20",
+          "recent": [
+            0.51,
+            0.46,
+            0.5,
+            0.52,
+            0.55
+          ]
+        },
+        {
+          "id": "T10Y3M",
+          "label": "10Y-3M Spread",
+          "value": 0.65,
+          "date": "2026-03-20",
+          "recent": [
+            0.65,
+            0.52,
+            0.53,
+            0.48,
+            0.51
+          ]
+        },
+        {
+          "id": "CPIAUCSL",
+          "label": "CPI All Items",
+          "value": 327.46,
+          "date": "2026-02-01",
+          "recent": [
+            327.46,
+            326.588,
+            326.031
+          ]
+        },
+        {
+          "id": "CPILFESL",
+          "label": "Core CPI (ex Food & Energy)",
+          "value": 333.512,
+          "date": "2026-02-01",
+          "recent": [
+            333.512,
+            332.793,
+            331.814
+          ]
+        },
+        {
+          "id": "PCEPI",
+          "label": "PCE Price Index",
+          "value": 128.969,
+          "date": "2026-01-01",
+          "recent": [
+            128.969,
+            128.615
+          ]
+        },
+        {
+          "id": "MICH",
+          "label": "Michigan Inflation Expectations",
+          "value": 4,
+          "date": "2026-01-01",
+          "recent": [
+            4,
+            4.2
+          ]
+        },
+        {
+          "id": "UNRATE",
+          "label": "Unemployment Rate",
+          "value": 4.4,
+          "date": "2026-02-01",
+          "recent": [
+            4.4,
+            4.3,
+            4.4
+          ]
+        },
+        {
+          "id": "PAYEMS",
+          "label": "Nonfarm Payrolls",
+          "value": 158466,
+          "date": "2026-02-01",
+          "recent": [
+            158466,
+            158558,
+            158432
+          ]
+        },
+        {
+          "id": "ICSA",
+          "label": "Initial Jobless Claims",
+          "value": 205000,
+          "date": "2026-03-14",
+          "recent": [
+            205000,
+            213000,
+            214000,
+            211000,
+            208000
+          ]
+        },
+        {
+          "id": "M2SL",
+          "label": "M2 Money Supply",
+          "value": 22442.1,
+          "date": "2026-01-01",
+          "recent": [
+            22442.1,
+            22366.2
+          ]
+        },
+        {
+          "id": "WALCL",
+          "label": "Fed Balance Sheet Total Assets",
+          "value": 6655939,
+          "date": "2026-03-18",
+          "recent": [
+            6655939,
+            6646344,
+            6628894,
+            6613797,
+            6613395
+          ]
+        },
+        {
+          "id": "VIXCLS",
+          "label": "VIX (Fear Index)",
+          "value": 24.06,
+          "date": "2026-03-19",
+          "recent": [
+            24.06,
+            25.09,
+            22.37,
+            23.51,
+            27.19
+          ]
+        },
+        {
+          "id": "BAMLH0A0HYM2",
+          "label": "High Yield Spread (Credit Stress)",
+          "value": 3.27,
+          "date": "2026-03-19",
+          "recent": [
+            3.27,
+            3.2,
+            3.22,
+            3.27,
+            3.28
+          ]
+        },
+        {
+          "id": "DCOILWTICO",
+          "label": "WTI Crude Oil",
+          "value": 93.39,
+          "date": "2026-03-16",
+          "recent": [
+            93.39,
+            98.48,
+            95.61,
+            86.8,
+            83.71
+          ]
+        },
+        {
+          "id": "MORTGAGE30US",
+          "label": "30-Year Mortgage Rate",
+          "value": 6.22,
+          "date": "2026-03-19",
+          "recent": [
+            6.22,
+            6.11,
+            6,
+            5.98,
+            6.01
+          ]
+        },
+        {
+          "id": "DTWEXBGS",
+          "label": "USD Trade Weighted Index",
+          "value": 120.5518,
+          "date": "2026-03-13",
+          "recent": [
+            120.5518,
+            119.8227,
+            119.2885,
+            118.7255,
+            119.5151
+          ]
+        }
+      ],
+      "signals": []
+    },
+    "Treasury": {
+      "source": "US Treasury",
+      "timestamp": "2026-03-20T22:56:20.544Z",
+      "debt": [
+        {
+          "date": "2026-03-19",
+          "totalDebt": "39002265870014.23",
+          "publicDebt": "31385414419029.53",
+          "intragovDebt": "7616851450984.70"
+        },
+        {
+          "date": "2026-03-18",
+          "totalDebt": "38976827976841.63",
+          "publicDebt": "31364647874667.34",
+          "intragovDebt": "7612180102174.29"
+        },
+        {
+          "date": "2026-03-17",
+          "totalDebt": "39016762910245.14",
+          "publicDebt": "31379706593178.71",
+          "intragovDebt": "7637056317066.43"
+        },
+        {
+          "date": "2026-03-16",
+          "totalDebt": "38992187847500.92",
+          "publicDebt": "31381345411579.55",
+          "intragovDebt": "7610842435921.37"
+        },
+        {
+          "date": "2026-03-13",
+          "totalDebt": "38902637810572.47",
+          "publicDebt": "31300165451609.92",
+          "intragovDebt": "7602472358962.55"
+        }
+      ],
+      "interestRates": [
+        {
+          "date": "2026-02-28",
+          "security": "Treasury Bills",
+          "rate": "3.720"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Treasury Notes",
+          "rate": "3.190"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Treasury Bonds",
+          "rate": "3.377"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Treasury Inflation-Protected Securities (TIPS)",
+          "rate": "0.990"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Treasury Floating Rate Notes (FRN)",
+          "rate": "3.748"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Federal Financing Bank",
+          "rate": "2.389"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Total Marketable",
+          "rate": "3.355"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Domestic Series",
+          "rate": "7.577"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Special Purpose Vehicle",
+          "rate": "2.781"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Foreign Series",
+          "rate": "0.000"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "State and Local Government Series",
+          "rate": "3.253"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "United States Savings Securities",
+          "rate": "3.252"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "United States Savings Inflation Securities",
+          "rate": "4.248"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Government Account Series",
+          "rate": "3.153"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Government Account Series Inflation Securities",
+          "rate": "1.347"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Total Non-marketable",
+          "rate": "3.161"
+        },
+        {
+          "date": "2026-02-28",
+          "security": "Total Interest-bearing Debt",
+          "rate": "3.320"
+        }
+      ],
+      "signals": [
+        "National debt at $39.00T"
+      ]
+    },
+    "BLS": {
+      "source": "BLS",
+      "timestamp": "2026-03-20T22:56:21.851Z",
+      "indicators": [
+        {
+          "id": "CUUR0000SA0",
+          "label": "CPI-U All Items",
+          "value": 326.785,
+          "period": "2026-M02",
+          "date": "2026-02",
+          "momChange": 1.533,
+          "momChangePct": 0.4713
+        },
+        {
+          "id": "CUUR0000SA0L1E",
+          "label": "CPI-U Core (ex Food & Energy)",
+          "value": 333.242,
+          "period": "2026-M02",
+          "date": "2026-02",
+          "momChange": 1.292,
+          "momChangePct": 0.3892
+        },
+        {
+          "id": "LNS14000000",
+          "label": "Unemployment Rate",
+          "value": 4.4,
+          "period": "2026-M02",
+          "date": "2026-02",
+          "momChange": 0.1,
+          "momChangePct": 2.3256
+        },
+        {
+          "id": "CES0000000001",
+          "label": "Nonfarm Payrolls (thousands)",
+          "value": 158466,
+          "period": "2026-M02",
+          "date": "2026-02",
+          "momChange": -92,
+          "momChangePct": -0.058
+        },
+        {
+          "id": "WPUFD49104",
+          "label": "PPI Final Demand",
+          "value": 152.168,
+          "period": "2026-M02",
+          "date": "2026-02",
+          "momChange": 0.885,
+          "momChangePct": 0.585
+        }
+      ],
+      "signals": [
+        "CPI-U MoM jump: 0.4713% (2026-M01 -> 2026-M02)",
+        "Core CPI MoM rising: 0.3892%",
+        "Nonfarm payrolls dropped by 92K"
+      ]
+    },
+    "EIA": {
+      "source": "EIA",
+      "timestamp": "2026-03-20T22:56:22.386Z",
+      "oilPrices": {
+        "wti": {
+          "value": 93.39,
+          "period": "2026-03-16",
+          "unit": null,
+          "label": "WTI Crude Oil ($/bbl)",
+          "recent": [
+            {
+              "value": 93.39,
+              "period": "2026-03-16"
+            },
+            {
+              "value": 98.48,
+              "period": "2026-03-13"
+            },
+            {
+              "value": 95.61,
+              "period": "2026-03-12"
+            },
+            {
+              "value": 86.8,
+              "period": "2026-03-11"
+            },
+            {
+              "value": 83.71,
+              "period": "2026-03-10"
+            }
+          ]
+        },
+        "brent": {
+          "value": 101.04,
+          "period": "2026-03-16",
+          "unit": null,
+          "label": "Brent Crude Oil ($/bbl)",
+          "recent": [
+            {
+              "value": 101.04,
+              "period": "2026-03-16"
+            },
+            {
+              "value": 103.23,
+              "period": "2026-03-13"
+            },
+            {
+              "value": 102.38,
+              "period": "2026-03-12"
+            },
+            {
+              "value": 90.98,
+              "period": "2026-03-11"
+            },
+            {
+              "value": 89.84,
+              "period": "2026-03-10"
+            }
+          ]
+        },
+        "spread": 7.65
+      },
+      "gasPrice": {
+        "value": 3.03,
+        "period": "2026-03-16",
+        "unit": null,
+        "label": "Henry Hub Natural Gas ($/MMBtu)"
+      },
+      "inventories": {
+        "crudeStocks": {
+          "value": 449259,
+          "period": "2026-03-13",
+          "unit": null,
+          "label": "US Crude Oil Inventories (thousand barrels)",
+          "recent": [
+            {
+              "value": 449259,
+              "period": "2026-03-13"
+            },
+            {
+              "value": 443103,
+              "period": "2026-03-06"
+            },
+            {
+              "value": 439279,
+              "period": "2026-02-27"
+            },
+            {
+              "value": 435804,
+              "period": "2026-02-20"
+            },
+            {
+              "value": 419815,
+              "period": "2026-02-13"
+            }
+          ]
+        }
+      },
+      "signals": [
+        "Large crude inventory build: +6.2M barrels"
+      ]
+    },
+    "GSCPI": {
+      "source": "NY Fed GSCPI",
+      "timestamp": "2026-03-20T22:56:20.379Z",
+      "latest": {
+        "value": 0.49,
+        "date": "2026-02",
+        "interpretation": "above average"
+      },
+      "trend": "stable",
+      "history": [
+        {
+          "date": "2026-02",
+          "value": 0.49
+        },
+        {
+          "date": "2026-01",
+          "value": 0.42
+        },
+        {
+          "date": "2025-12",
+          "value": 0.54
+        },
+        {
+          "date": "2025-11",
+          "value": -0.16
+        },
+        {
+          "date": "2025-10",
+          "value": -0.08
+        },
+        {
+          "date": "2025-09",
+          "value": -0.02
+        },
+        {
+          "date": "2025-08",
+          "value": -0.09
+        },
+        {
+          "date": "2025-07",
+          "value": 0.02
+        },
+        {
+          "date": "2025-06",
+          "value": 0.09
+        },
+        {
+          "date": "2025-05",
+          "value": 0.28
+        },
+        {
+          "date": "2025-04",
+          "value": -0.24
+        },
+        {
+          "date": "2025-03",
+          "value": -0.18
+        }
+      ],
+      "signals": []
+    },
+    "USAspending": {
+      "source": "USAspending",
+      "timestamp": "2026-03-20T22:56:21.534Z",
+      "recentDefenseContracts": [
+        {
+          "awardId": "NAS1510000",
+          "recipient": "THE BOEING COMPANY",
+          "amount": 22408572986.94,
+          "description": "INTERNATIONAL SPACE STATION",
+          "agency": "National Aeronautics and Space Administration",
+          "date": "1993-11-15",
+          "type": null
+        },
+        {
+          "awardId": "NNM07AB03C",
+          "recipient": "THE BOEING COMPANY",
+          "amount": 10410528680,
+          "description": "PROVIDE DEVELOPMENTAL HARDWARE AND TEST ARTICLES, AND MANUFACTURE AND ASSEMBLE ARES I UPPER STAGES. THE UPPER STAGE (US) ELEMENT IS AN INTEGRAL PART OF THE ARES I LAUNCH VEHICLE AND PROVIDES THE SECOND STAGE OF FLIGHT.  THE US ELEMENT IS RESPONSIBLE FOR THE ROLL CONTROL DURING THE FIRST STAGE BURN AND SEPARATION; AND WILL PROVIDE THE GUIDANCE AND NAVIGATION, COMMAND AND DATA HANDLING, AND OTHER AVIONICS FUNCTIONS FOR THE ARES I DURING ALL PHASES OF THE ASCENT FLIGHT.   THE US ELEMENT IS A NEW DESIGN THAT EMPHASIZES SAFETY, OPERABILITY, AND MINIMUM LIFE CYCLE COST. THE OVERALL DESIGN, DEVELOPMENT, TEST AND EVALUATION (DDT&E), PRODUCTION, AND SUSTAINING ENGINEERING EFFORTS INCLUDE ACTIVITIES PERFORMED BY THREE ORGANIZATIONS; THE NASA DESIGN TEAM (NDT), THE UPPER STAGE PRODUCTION CONTRACTOR (USPC) AND THE INSTRUMENT UNIT PRODUCTION CONTRACTOR (IUPC).  FOR CLARITY, THE USPC WILL BE REFERRED TO AS THE CONTRACTOR THROUGHOUT THIS DOCUMENT. NASA IS RESPONSIBLE FOR THE INTEGRATION OF THE PRIMARY ELEMENTS OF THE ARES I LAUNCH VEHICLE INCLUDING: THE FIRST STAGE, US INCLUDING INSTRUMENT UNIT (IU), AND US ENGINE; AND WILL ALSO INTEGRATE THE ARES I LAUNCH VEHICLE AT THE LAUNCH SITE.   NASA IS RESPONSIBLE FOR THE DDT&E, INCLUDING TECHNICAL AND PROGRAMMATIC INTEGRATION OF THE US SUBSYSTEMS AND GOVERNMENT-FURNISHED PROPERTY.  NASA WILL LEAD THE EFFORT TO DEVELOP THE REQUIREMENTS AND SPECIFICATIONS OF THE US ELEMENT, THE DEVELOPMENT PLAN AND TESTING REQUIREMENTS, AND ALL DESIGN DOCUMENTATION, INITIAL MANUFACTURING AND ASSEMBLY PROCESS PLANNING, LOGISTICS PLANNING, AND OPERATIONS SUPPORT PLANNING.  DEVELOPMENT, QUALIFICATION, AND ACCEPTANCE TESTING WILL BE CONDUCTED BY NASA AND THE CONTRACTOR TO SATISFY REQUIREMENTS AND FOR RISK MITIGATION.  NASA IS RESPONSIBLE FOR THE OVERALL UPPER STAGE VERIFICATION AND VALIDATION PROCESS AND WILL REQUIRE SUPPORT FROM THE CONTRACTOR.   THE CONTRACTOR IS RESPONSIBLE FOR THE MANUFACTURE AND ASSEMBLY OF THE UPPER STAGE TEST FLIGHT AND OPERATIONAL UPPER STAGE UNITS INCLUDING THE INSTALLATION OF UPPER STAGE INSTRUMENT UNIT, THE GOVERNMENT-FURNISHED US ENGINE, BOOSTER SEPARATION MOTORS, AND OTHER GOVERNMENT-FURNISHED PROPERTY.  A DESCRIPTION OF THE NASA MANAGED AND PERFORMED EFFORTS IS CONTAINED IN THE US WORK PACKAGES AND WILL BE MADE AVAILABLE TO THE CONTRACTOR TO ENSURE THEIR UNDERSTANDING OF THE ROLES AND RESPONSIBILITIES OF THE NDT, IUPC, AND CONTRACTOR DURING THE DESIGN, DEVELOPMENT, AND OPERATION OF THE US ELEMENT.   THE US CONCEPTUAL DESIGN DESCRIBED IN THE USO-CLV-SE-25704 US DESIGN DEFINITION DOCUMENT (DDD) IS THE BASELINE DESIGN FOR THIS CONTRACT.  THE CONTRACTORS EARLY ROLE WILL BE TO PROVIDE PRODUCIBILITY ENGINEERING SUPPORT TO NASA VIA THE ESTABLISHED US OFFICE STRUCTURE AND TO PROVIDE INPUTS INTO THE FINAL DESIGN CONFIGURATION, SPECIFICATIONS, AND STANDARDS.    NASA WILL TRANSITION THE MANUFACTURING AND ASSEMBLY, LOGISTICS SUPPORT INFRASTRUCTURE, CONFIGURATION MANAGEMENT, AND THE SUSTAINING ENGINEERING FUNCTIONS TO THE CONTRACTOR AT THE KEY POINTS DURING THE DEVELOPMENT AND IMPLEMENTATION OF THE PROGRAM CURRENTLY PLANNED TO OCCUR NO LATER THAN 90 DAYS AFTER THE COMPLETION OF THE FOLLOWING MAJOR MILESTONES:      MANUFACTURING AND ASSEMBLY  US       PRELIMINARY DESIGN REVIEW (PDR)       LOGISTICS SUPPORT INFRASTRUCTURE   US PDR      CONFIGURATION MANAGEMENT  US CRITICAL  DESIGN REVIEW CDR)      SUSTAINING ENGINEERING    US DESIGN        CERTIFICATION REVIEW (DCR)    AFTER THE COMPLETION OF AN ORDERLY TRANSITION OF ROLES AND RESPONSIBILITIES TO THE CONTRACTOR, NASA WILL ASSUME AN INSIGHT ROLE INTO THE CONTRACTORS PRODUCTION, SUSTAINING ENGINEERING, AND OPERATIONS SUPPORT OF THE ARES I US TEST PROGRAM AND FLIGHT HARDWARE.  AFTER DCR, THE CONTRACTOR WILL BE RESPONSIBLE FOR SUSTAINING ENGINEERING PER SOW SECTION 4.7, AS NECESSARY TO MAINTAIN AND SUPPORT THE US CONFIGURATION AND FOR PRODUCTION AND OPERATIONS SUPPORT.",
+          "agency": "National Aeronautics and Space Administration",
+          "date": "2007-09-01",
+          "type": null
+        },
+        {
+          "awardId": "80MSFC20C0052",
+          "recipient": "THE BOEING COMPANY",
+          "amount": 2297843189,
+          "description": "SPACE LAUNCH SYSTEM (SLS) STAGES PRODUCTION AND EVOLUTION CONTRACT (SPEC)",
+          "agency": "National Aeronautics and Space Administration",
+          "date": "2019-10-16",
+          "type": null
+        },
+        {
+          "awardId": "47QFSA20F0057",
+          "recipient": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+          "amount": 1436485084.47,
+          "description": "SOFTWARE LIFE CYCLE DEVELOPMENT",
+          "agency": "General Services Administration",
+          "date": "2020-05-05",
+          "type": null
+        },
+        {
+          "awardId": "47QFCA21C0001",
+          "recipient": "MAGELLAN FEDERAL, INC.",
+          "amount": 1072723980.02,
+          "description": "MILITARY AND FAMILY LIFE COUNSELING. REQUIREMENT FOR WORLDWIDE NON MEDICAL CONFIDENTIAL COUNSELING SERVICES.",
+          "agency": "General Services Administration",
+          "date": "2021-02-01",
+          "type": null
+        },
+        {
+          "awardId": "693KA721C00014",
+          "recipient": "LEIDOS, INC.",
+          "amount": 836206832.91,
+          "description": "THE PURPOSE OF THIS CONTRACT IS TO ENHANCE AND MAINTAIN THE EN ROUTE AUTOMATION AND MODERNIZATION (ERAM), INCLUDING THE EN ROUTE INFORMATION DISPLAY SYSTEM (ERIDS), AND TO PRODUCE, IMPLEMENT, AND PROVIDE SUPPORT FOR A LIMITED NUMBER OF ERAM/ERIDS SYS",
+          "agency": "Department of Transportation",
+          "date": "2021-06-15",
+          "type": null
+        },
+        {
+          "awardId": "70B02C21C00000005",
+          "recipient": "AMENTUM SERVICES, INC.",
+          "amount": 671184062.53,
+          "description": "AIRCRAFT MAINTENANCE AND LOGISTICS SUPPORT SERVICES",
+          "agency": "Department of Homeland Security",
+          "date": "2021-07-01",
+          "type": null
+        },
+        {
+          "awardId": "1305M224C0039",
+          "recipient": "LOCKHEED MARTIN CORPORATION",
+          "amount": 461039171,
+          "description": "NOAA/OMAO_PRODUCTION OF UP TO FOUR (4) FULLY MODIFIED C130J AIRCRAFT",
+          "agency": "Department of Commerce",
+          "date": "2024-09-30",
+          "type": null
+        },
+        {
+          "awardId": "47QFCA20C0019",
+          "recipient": "KRATOS S2, INC",
+          "amount": 339524745.31,
+          "description": "COSMIC AES SBIR III CONTRACT 47QFCA20C0019. THIS CONTRACT IS FOR OTHER FUNCTIONS.",
+          "agency": "General Services Administration",
+          "date": "2020-06-11",
+          "type": null
+        },
+        {
+          "awardId": "70B02C20C00000024",
+          "recipient": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
+          "amount": 328458502.57,
+          "description": "P-3 AIRCRAFT MAINTENANCE AND LOGISTIC SUPPORT SERVICES",
+          "agency": "Department of Homeland Security",
+          "date": "2020-09-01",
+          "type": null
+        }
+      ],
+      "topAgencies": [
+        {
+          "name": "400 Years of African-American History Commission",
+          "budget": 0,
+          "obligations": 0,
+          "outlays": 0
+        },
+        {
+          "name": "Access Board",
+          "budget": 6834307.6,
+          "obligations": 2177662.14,
+          "outlays": 2937971.56
+        },
+        {
+          "name": "Administrative Conference of the U.S.",
+          "budget": 1215211.08,
+          "obligations": 1050524.09,
+          "outlays": 1017478.22
+        },
+        {
+          "name": "Advisory Council on Historic Preservation",
+          "budget": 17256104.04,
+          "obligations": 4160478.94,
+          "outlays": 2573530.44
+        },
+        {
+          "name": "African Development Foundation",
+          "budget": 35589404.79,
+          "obligations": 2599974.17,
+          "outlays": 3159752.21
+        },
+        {
+          "name": "Agency for International Development",
+          "budget": 19187904379.52,
+          "obligations": 3400727642.83,
+          "outlays": 3715012357.09
+        },
+        {
+          "name": "American Battle Monuments Commission",
+          "budget": 255959126.61,
+          "obligations": 36275515.21,
+          "outlays": 34349147.01
+        },
+        {
+          "name": "Appalachian Regional Commission",
+          "budget": 12616188.93,
+          "obligations": 500000,
+          "outlays": 5137330.33
+        },
+        {
+          "name": "Armed Forces Retirement Home",
+          "budget": 262779361.33,
+          "obligations": 53916024.81,
+          "outlays": 51859968.43
+        },
+        {
+          "name": "Barry Goldwater Scholarship and Excellence In Education Foundation",
+          "budget": 39916991.36,
+          "obligations": 417473,
+          "outlays": 1259040.37
+        }
+      ]
+    },
+    "Comtrade": {
+      "source": "UN Comtrade",
+      "timestamp": "2026-03-20T22:56:25.218Z",
+      "tradeFlows": [],
+      "signals": [
+        "No significant trade anomalies detected in sampled commodities"
+      ],
+      "status": "no_data",
+      "note": "Comtrade data often lags 1-2 months. Recent periods may be incomplete.",
+      "coveredCommodities": {
+        "93": "Arms & Ammunition",
+        "2612": "Uranium & Thorium Ores",
+        "2701": "Coal",
+        "2709": "Crude Petroleum",
+        "2711": "Natural Gas (LNG & Pipeline)",
+        "2844": "Radioactive Elements (Nuclear)",
+        "7108": "Gold (unwrought/semi-manufactured)",
+        "7601": "Aluminium (unwrought)",
+        "8471": "Computers & Processing Units",
+        "8542": "Semiconductors (Electronic Integrated Circuits)"
+      },
+      "coveredCountries": {
+        "156": "China",
+        "158": "Taiwan",
+        "276": "Germany",
+        "356": "India",
+        "380": "Italy",
+        "392": "Japan",
+        "410": "South Korea",
+        "643": "Russia",
+        "826": "United Kingdom",
+        "842": "United States"
+      }
+    },
+    "NOAA": {
+      "source": "NOAA/NWS",
+      "timestamp": "2026-03-20T22:56:22.729Z",
+      "totalSevereAlerts": 0,
+      "summary": {
+        "hurricanes": 0,
+        "tornadoes": 0,
+        "floods": 0,
+        "winterStorms": 0,
+        "wildfires": 0,
+        "other": 0
+      },
+      "topAlerts": []
+    },
+    "EPA": {
+      "source": "EPA RadNet",
+      "timestamp": "2026-03-20T22:56:34.920Z",
+      "totalReadings": 0,
+      "readings": [],
+      "stateSummary": {},
+      "signals": [
+        "All EPA RadNet readings within normal background levels"
+      ],
+      "monitoredAnalytes": [
+        "GROSS BETA",
+        "GROSS ALPHA",
+        "IODINE-131",
+        "CESIUM-137",
+        "CESIUM-134",
+        "STRONTIUM-90",
+        "TRITIUM",
+        "URANIUM",
+        "PLUTONIUM"
+      ],
+      "thresholds": {
+        "GROSS BETA": {
+          "normal": 1,
+          "elevated": 5,
+          "unit": "pCi/m3"
+        },
+        "GROSS ALPHA": {
+          "normal": 0.05,
+          "elevated": 0.15,
+          "unit": "pCi/m3"
+        },
+        "IODINE-131": {
+          "normal": 0.01,
+          "elevated": 0.1,
+          "unit": "pCi/m3"
+        },
+        "CESIUM-137": {
+          "normal": 0.01,
+          "elevated": 0.1,
+          "unit": "pCi/m3"
+        },
+        "CESIUM-134": {
+          "normal": 0.001,
+          "elevated": 0.01,
+          "unit": "pCi/m3"
+        }
+      },
+      "note": "RadNet data may lag by hours to days. Near-real-time gamma data updates more frequently."
+    },
+    "Patents": {
+      "source": "USPTO Patents",
+      "timestamp": "2026-03-20T22:56:22.846Z",
+      "searchWindow": "2025-12-20 to 2026-03-20",
+      "totalFound": 0,
+      "recentPatents": {
+        "ai": [],
+        "quantum": [],
+        "nuclear": [],
+        "hypersonic": [],
+        "semiconductor": [],
+        "biotech": [],
+        "space": []
+      },
+      "signals": [
+        "No unusual patent filing patterns detected in strategic domains"
+      ],
+      "domains": {
+        "ai": "Artificial Intelligence",
+        "quantum": "Quantum Computing",
+        "nuclear": "Nuclear Technology",
+        "hypersonic": "Hypersonic & Advanced Propulsion",
+        "semiconductor": "Semiconductor & Chip Technology",
+        "biotech": "Biotechnology & Synthetic Biology",
+        "space": "Space & Satellite Technology"
+      }
+    },
+    "Bluesky": {
+      "source": "Bluesky",
+      "timestamp": "2026-03-20T22:56:31.510Z",
+      "topics": {
+        "conflict": [],
+        "markets": [],
+        "health": []
+      }
+    },
+    "Reddit": {
+      "source": "Reddit",
+      "timestamp": "2026-03-20T22:56:16.211Z",
+      "status": "no_key",
+      "message": "Reddit requires OAuth. Register at https://www.reddit.com/prefs/apps/ (script type), set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET in .env"
+    },
+    "Telegram": {
+      "source": "Telegram",
+      "timestamp": "2026-03-20T22:56:31.059Z",
+      "status": "web_scrape",
+      "method": "Public channel web preview scraping (no auth required)",
+      "channelsMonitored": 17,
+      "channelsReachable": 17,
+      "totalPosts": 189,
+      "urgentPosts": [
+        {
+          "postId": "intelslava/85197",
+          "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem airbase between March 5 and 6, shrapnel from the explosion caused minor damage to two Italian Eurofighter Typhoon fighter jets at this base.",
+          "date": "2026-03-20T22:15:10+00:00",
+          "views": 10000,
+          "hasMedia": true,
+          "channel": "intelslava",
+          "urgentFlags": [
+            "confirmed",
+            "strike",
+            "explosion",
+            "dam"
+          ],
+          "score": 58
+        },
+        {
+          "postId": "intelslava/85185",
+          "text": "🇬🇧🇺🇸 The Times: The United Kingdom has agreed to allow the United States to use the Royal Air Force bases at Fairford and Diego Garcia to launch strikes on Iranian missile sites targeting ships in the Strait of Hormuz, as part of collective self-defense.",
+          "date": "2026-03-20T18:20:42+00:00",
+          "views": 30000,
+          "hasMedia": false,
+          "channel": "intelslava",
+          "urgentFlags": [
+            "missile",
+            "strike"
+          ],
+          "score": 55
+        },
+        {
+          "postId": "intelslava/85189",
+          "text": "🇮🇷🇮🇱The data from the NASA FIRMS platform indicate a fire on the territory of the Israeli military base Ben-Am after a strike by an Iranian ballistic missile.\n\nThe base is the permanent deployment point of the 6920th Transport Battalion and one of the largest storage bases of the Israel Defense ",
+          "date": "2026-03-20T20:15:42+00:00",
+          "views": 24100,
+          "hasMedia": true,
+          "channel": "intelslava",
+          "urgentFlags": [
+            "missile",
+            "strike"
+          ],
+          "score": 52.1
+        },
+        {
+          "postId": "intelslava/85193",
+          "text": "🇮🇷🇮🇱A missile alert has been declared throughout Israel. The splitting warheads of Iranian missiles are raining down on the central regions.",
+          "date": "2026-03-20T21:15:17+00:00",
+          "views": 19300,
+          "hasMedia": true,
+          "channel": "intelslava",
+          "urgentFlags": [
+            "alert",
+            "missile"
+          ],
+          "score": 47.3
+        },
+        {
+          "postId": "intelslava/85182",
+          "text": "🇺🇸🇮🇱🇮🇷The Epstein coalition&#39;s strikes on Tehran this afternoon.",
+          "date": "2026-03-20T17:50:48+00:00",
+          "views": 30600,
+          "hasMedia": true,
+          "channel": "intelslava",
+          "urgentFlags": [
+            "strike"
+          ],
+          "score": 43.6
+        },
+        {
+          "postId": "intelslava/85190",
+          "text": "🇺🇸🇮🇷Trump stated that he is not interested in the Strait of Hormuz.\n\n\"We have already defeated Iran. As for the Strait of Hormuz - we don&#39;t need it, we don&#39;t use it,\" he said.\n\nAt the same time, he stated that he does not want a ceasefire.",
+          "date": "2026-03-20T20:17:30+00:00",
+          "views": 24300,
+          "hasMedia": true,
+          "channel": "intelslava",
+          "urgentFlags": [
+            "ceasefire"
+          ],
+          "score": 42.3
+        },
+        {
+          "postId": "intelslava/85191",
+          "text": "🇮🇷🇮🇶🌐🇺🇸The military representative of the Islamic Resistance in Iraq (&#39;Blood Guard Units&#39;), Abu Mahdi al-Jafari, said:\n\n\"Over the past 20 days, we have carried out successful and precise bombings of NATO forces in Camp Victoria near Baghdad International Airport.\n\nToday, NATO forces a",
+          "date": "2026-03-20T20:45:14+00:00",
+          "views": 21400,
+          "hasMedia": false,
+          "channel": "intelslava",
+          "urgentFlags": [
+            "nato"
+          ],
+          "score": 36.4
+        },
+        {
+          "postId": "intelslava/85188",
+          "text": "🇺🇸🇮🇷❗️Trump, commenting on the conflict with Iran, stated that he does not want a ceasefire",
+          "date": "2026-03-20T20:04:50+00:00",
+          "views": 24200,
+          "hasMedia": false,
+          "channel": "intelslava",
+          "urgentFlags": [
+            "ceasefire"
+          ],
+          "score": 34.2
+        },
+        {
+          "postId": "wartranslated/14277",
+          "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+          "date": "2026-03-20T14:47:06+00:00",
+          "views": 1310,
+          "hasMedia": true,
+          "channel": "wartranslated",
+          "urgentFlags": [
+            "alert",
+            "drone"
+          ],
+          "score": 29.31
+        },
+        {
+          "postId": "wartranslated/14278",
+          "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+          "date": "2026-03-20T14:57:57+00:00",
+          "views": 1310,
+          "hasMedia": true,
+          "channel": "wartranslated",
+          "urgentFlags": [
+            "alert",
+            "drone"
+          ],
+          "score": 29.31
+        },
+        {
+          "postId": "wartranslated/14284",
+          "text": "Zelensky says Ukraine offered the US a drone deal a year ago, covering interceptors plus naval and long-range drones, along with training and know-how. He says he’s ready to sign when Trump is, and the topic will be on the agenda at the US meeting.",
+          "date": "2026-03-20T17:42:03+00:00",
+          "views": 1030,
+          "hasMedia": true,
+          "channel": "wartranslated",
+          "urgentFlags": [
+            "drone",
+            "intercept"
+          ],
+          "score": 29.03
+        },
+        {
+          "postId": "wartranslated/14282",
+          "text": "Sevastopol after a Ukrainian Navy drone strike on the Granit plant, Exilenova+ reports. The facility was used to repair and service Russian S-300 and S-400 systems, Buk and Tor air defenses, and radar equipment.",
+          "date": "2026-03-20T17:19:33+00:00",
+          "views": 976,
+          "hasMedia": true,
+          "channel": "wartranslated",
+          "urgentFlags": [
+            "strike",
+            "drone"
+          ],
+          "score": 28.976
+        },
+        {
+          "postId": "wartranslated/14279",
+          "text": "Air alerts are up right now across parts of Russia, with air defenses working in the Moscow region. Reports say new drone groups are coming in via Bryansk and pushing deeper into Russia.",
+          "date": "2026-03-20T15:47:50+00:00",
+          "views": 1200,
+          "hasMedia": false,
+          "channel": "wartranslated",
+          "urgentFlags": [
+            "alert",
+            "drone"
+          ],
+          "score": 26.2
+        },
+        {
+          "postId": "CIG_telegram/71902",
+          "text": "🇺🇸📈⚠️ In a sudden turn of events, US 12-month inflation expectations have surged to 5.2%, the highest level since March 2023.\n\nIn just 3 weeks, markets have gone from pricing-in rate cuts to rate hikes.\n\n🔗 Adam Kobeissi",
+          "date": "2026-03-20T20:04:28+00:00",
+          "views": 7010,
+          "hasMedia": true,
+          "channel": "CIG_telegram",
+          "urgentFlags": [
+            "dam"
+          ],
+          "score": 25.009999999999998
+        },
+        {
+          "postId": "CIG_telegram/71891",
+          "text": "🇮🇷⚔️🇮🇱 Iranian ballistic missiles apperantly struck a major IDF base in Central Israel.\n\nNASA firms map shows that fires erupted earlier today at the Israeli Defense Forces (IDF) Ben Ami Military Base, home to the 6920th Transportation Battalion of the Central Military Command.\n\nThe base also ho",
+          "date": "2026-03-20T19:29:31+00:00",
+          "views": 6130,
+          "hasMedia": true,
+          "channel": "CIG_telegram",
+          "urgentFlags": [
+            "missile"
+          ],
+          "score": 24.13
+        }
+      ],
+      "byTopic": {
+        "conflict": {
+          "totalPosts": 152,
+          "urgentCount": 22,
+          "topPosts": [
+            {
+              "postId": "intelslava/85197",
+              "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem airbase between March 5 and 6, shrapnel from the explosion caused minor damage to two Italian Eurofighter Typhoon fighter jets at this base.",
+              "date": "2026-03-20T22:15:10+00:00",
+              "views": 10000,
+              "hasMedia": true,
+              "channel": "intelslava",
+              "urgentFlags": [
+                "confirmed",
+                "strike",
+                "explosion",
+                "dam"
+              ],
+              "score": 58
+            },
+            {
+              "postId": "legitimniy/21999",
+              "text": "#раскладка \nКак видим случаев сопротивления граждан в кейсе мобилизационного рабства становится больше, так как «рабы» начинают осознавать, что им нечего терять кроме их оков. Увы власть Зеленского сделала из украинцев рабов&#33;\n\nОчередной случай именно в селе на западной Украине в Волынской област",
+              "date": "2026-03-18T12:17:24+00:00",
+              "views": 249000,
+              "hasMedia": true,
+              "channel": "legitimniy",
+              "urgentFlags": null,
+              "score": 58
+            },
+            {
+              "postId": "legitimniy/22000",
+              "text": "#раскладка \nВС РФ продолжает методично уничтожать Украинскую железку и подвижной состав. \n\nОчередной случай в Черниговской области, где поражен маневровый тепловоз. Цена такого тепловоза от 120 до 350 тысяч долларов. Но, тут важна не цена, а их роль в логистике для фронта. Чем меньше будет локомотив",
+              "date": "2026-03-18T13:15:17+00:00",
+              "views": 255000,
+              "hasMedia": true,
+              "channel": "legitimniy",
+              "urgentFlags": null,
+              "score": 58
+            },
+            {
+              "postId": "legitimniy/22003",
+              "text": "👍👍👍👍84% граждан имеют второй источник дохода \n\n💰 Чтобы нормально зарабатывать в 2026 одной работы попросту не хватает. Поэтому многие ищут стабильные и безопасные способы получать второй доход.\n\n💰 Советник ВТБ создал свой проект, который позволяет увеличивать свой капитал от 5% в день. Такие у",
+              "date": "2026-03-19T08:03:13+00:00",
+              "views": 219000,
+              "hasMedia": true,
+              "channel": "legitimniy",
+              "urgentFlags": null,
+              "score": 58
+            },
+            {
+              "postId": "legitimniy/22011",
+              "text": "#раскладка \nПока депутаты и все официальные лица лгут по кейсу мобилизационного рабства (бусификации), шакалы ТЦК продолжают похищать и избивать украинцев.\n\nЛюдоловы среди бела дня на оживленной улице Луцка бьёт ногой парня, которому скрутили руки двое других сотрудников ТЦК. Какой ещё демократии ва",
+              "date": "2026-03-20T10:37:29+00:00",
+              "views": 164000,
+              "hasMedia": true,
+              "channel": "legitimniy",
+              "urgentFlags": null,
+              "score": 58
+            }
+          ]
+        },
+        "osint": {
+          "totalPosts": 35,
+          "urgentCount": 4,
+          "topPosts": [
+            {
+              "postId": "CIG_telegram/71902",
+              "text": "🇺🇸📈⚠️ In a sudden turn of events, US 12-month inflation expectations have surged to 5.2%, the highest level since March 2023.\n\nIn just 3 weeks, markets have gone from pricing-in rate cuts to rate hikes.\n\n🔗 Adam Kobeissi",
+              "date": "2026-03-20T20:04:28+00:00",
+              "views": 7010,
+              "hasMedia": true,
+              "channel": "CIG_telegram",
+              "urgentFlags": [
+                "dam"
+              ],
+              "score": 25.009999999999998
+            },
+            {
+              "postId": "CIG_telegram/71891",
+              "text": "🇮🇷⚔️🇮🇱 Iranian ballistic missiles apperantly struck a major IDF base in Central Israel.\n\nNASA firms map shows that fires erupted earlier today at the Israeli Defense Forces (IDF) Ben Ami Military Base, home to the 6920th Transportation Battalion of the Central Military Command.\n\nThe base also ho",
+              "date": "2026-03-20T19:29:31+00:00",
+              "views": 6130,
+              "hasMedia": true,
+              "channel": "CIG_telegram",
+              "urgentFlags": [
+                "missile"
+              ],
+              "score": 24.13
+            },
+            {
+              "postId": "CIG_telegram/71906",
+              "text": "#mapupdate\n⚡️🇱🇧🇱🇧❌🇮🇱 - The IDF has advanced considerably in southern Lebanon, particularly in the north-eastern axis. \n\nThe IDF pushed deeper into the northern outskirts of &#39;Khiam&#39; after fierce resistance. In &#39;Kfar Kila&#39;, the IDF&#39;s \"36th\" Brigade conducts clearing operation",
+              "date": "2026-03-20T20:31:08+00:00",
+              "views": 4910,
+              "hasMedia": true,
+              "channel": "CIG_telegram",
+              "urgentFlags": [
+                "advance"
+              ],
+              "score": 22.91
+            },
+            {
+              "postId": "CIG_telegram/71894",
+              "text": "🇺🇸🙏🇮🇷 Iranian diplomatic source to IranNow:   The U.S. has reportedly, for the third time today, sent a message via a regional intermediary requesting a halt to the war.  This time, the request was accompanied by a threat to escalate assassinations inside…",
+              "date": "2026-03-20T19:40:28+00:00",
+              "views": 5770,
+              "hasMedia": false,
+              "channel": "CIG_telegram",
+              "urgentFlags": [
+                "assassination"
+              ],
+              "score": 20.77
+            },
+            {
+              "postId": "CIG_telegram/71904",
+              "text": "🇺🇸⚔️🇮🇷  Pentagon officials have made detailed preparations for deploying U.S. ground forces into Iran, multiple sources tell CBS News.  The military has also held meetings to prepare for how to handle the possible detention of Iranian soldiers  🔗 https://…",
+              "date": "2026-03-20T20:17:06+00:00",
+              "views": 6070,
+              "hasMedia": true,
+              "channel": "CIG_telegram",
+              "urgentFlags": null,
+              "score": 14.07
+            }
+          ]
+        },
+        "finance": {
+          "totalPosts": 2,
+          "urgentCount": 0,
+          "topPosts": [
+            {
+              "postId": "wallstreetsilver/40",
+              "text": ".",
+              "date": "2026-03-19T09:46:42+00:00",
+              "views": 10,
+              "hasMedia": false,
+              "channel": "WallStreetSilver",
+              "urgentFlags": null,
+              "score": 0.01
+            },
+            {
+              "postId": "wallstreetsilver/1",
+              "text": "Channel created",
+              "date": "2024-11-14T15:34:23+00:00",
+              "views": 0,
+              "hasMedia": false,
+              "channel": "WallStreetSilver",
+              "urgentFlags": null,
+              "score": 0
+            }
+          ]
+        }
+      },
+      "channels": [
+        {
+          "channel": "intelslava",
+          "title": "Intel Slava",
+          "topic": "conflict",
+          "postCount": 20,
+          "reachable": true
+        },
+        {
+          "channel": "legitimniy",
+          "title": "Легитимный",
+          "topic": "conflict",
+          "postCount": 15,
+          "reachable": true
+        },
+        {
+          "channel": "wartranslated",
+          "title": "WarTranslated 18+ | Archiving the War in Ukraine",
+          "topic": "conflict",
+          "postCount": 18,
+          "reachable": true
+        },
+        {
+          "channel": "ukraine_frontline",
+          "title": "Ukraine Frontline",
+          "topic": "conflict",
+          "postCount": 10,
+          "reachable": true
+        },
+        {
+          "channel": "mod_russia",
+          "title": "Минобороны России",
+          "topic": "conflict",
+          "postCount": 12,
+          "reachable": true
+        },
+        {
+          "channel": "CIG_telegram",
+          "title": "/CIG/ Telegram | Counter Intelligence Global",
+          "topic": "osint",
+          "postCount": 15,
+          "reachable": true
+        },
+        {
+          "channel": "RVvoenkor",
+          "title": "Операция Z: Военкоры Русской Весны",
+          "topic": "conflict",
+          "postCount": 17,
+          "reachable": true
+        },
+        {
+          "channel": "readovkanews",
+          "title": "Readovka",
+          "topic": "conflict",
+          "postCount": 20,
+          "reachable": true
+        },
+        {
+          "channel": "DeepStateUA",
+          "title": "✙DeepState✙🇺🇦",
+          "topic": "conflict",
+          "postCount": 20,
+          "reachable": true
+        },
+        {
+          "channel": "operativnoZSU",
+          "title": "Оперативний ЗСУ",
+          "topic": "conflict",
+          "postCount": 16,
+          "reachable": true
+        },
+        {
+          "channel": "GeneralStaffZSU",
+          "title": "Генеральний штаб ЗСУ",
+          "topic": "conflict",
+          "postCount": 4,
+          "reachable": true
+        },
+        {
+          "channel": "middleeastosint",
+          "title": "עדכוני מידע גלוי המזרח התיכון",
+          "topic": "osint",
+          "postCount": 20,
+          "reachable": true
+        },
+        {
+          "channel": "inikiforv",
+          "title": "Telegram: Contact @inikiforv",
+          "topic": "osint",
+          "postCount": 0,
+          "reachable": true
+        },
+        {
+          "channel": "geaborning",
+          "title": "Telegram: Contact @geaborning",
+          "topic": "geopolitics",
+          "postCount": 0,
+          "reachable": true
+        },
+        {
+          "channel": "TheIntelligencer",
+          "title": "Telegram: Contact @TheIntelligencer",
+          "topic": "osint",
+          "postCount": 0,
+          "reachable": true
+        },
+        {
+          "channel": "WallStreetSilver",
+          "title": "wallstreetsilver",
+          "topic": "finance",
+          "postCount": 2,
+          "reachable": true
+        },
+        {
+          "channel": "unusual_whales",
+          "title": "Telegram: Contact @unusual_whales",
+          "topic": "finance",
+          "postCount": 0,
+          "reachable": true
+        }
+      ],
+      "topPosts": [
+        {
+          "postId": "intelslava/85197",
+          "text": "🇮🇷🇮🇹It has been confirmed that during the strikes on the Kuwaiti Al-Salem airbase between March 5 and 6, shrapnel from the explosion caused minor damage to two Italian Eurofighter Typhoon fighter jets at this base.",
+          "date": "2026-03-20T22:15:10+00:00",
+          "views": 10000,
+          "hasMedia": true,
+          "channel": "intelslava",
+          "urgentFlags": [
+            "confirmed",
+            "strike",
+            "explosion",
+            "dam"
+          ],
+          "score": 58
+        },
+        {
+          "postId": "legitimniy/21999",
+          "text": "#раскладка \nКак видим случаев сопротивления граждан в кейсе мобилизационного рабства становится больше, так как «рабы» начинают осознавать, что им нечего терять кроме их оков. Увы власть Зеленского сделала из украинцев рабов&#33;\n\nОчередной случай именно в селе на западной Украине в Волынской област",
+          "date": "2026-03-18T12:17:24+00:00",
+          "views": 249000,
+          "hasMedia": true,
+          "channel": "legitimniy",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "legitimniy/22000",
+          "text": "#раскладка \nВС РФ продолжает методично уничтожать Украинскую железку и подвижной состав. \n\nОчередной случай в Черниговской области, где поражен маневровый тепловоз. Цена такого тепловоза от 120 до 350 тысяч долларов. Но, тут важна не цена, а их роль в логистике для фронта. Чем меньше будет локомотив",
+          "date": "2026-03-18T13:15:17+00:00",
+          "views": 255000,
+          "hasMedia": true,
+          "channel": "legitimniy",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "legitimniy/22003",
+          "text": "👍👍👍👍84% граждан имеют второй источник дохода \n\n💰 Чтобы нормально зарабатывать в 2026 одной работы попросту не хватает. Поэтому многие ищут стабильные и безопасные способы получать второй доход.\n\n💰 Советник ВТБ создал свой проект, который позволяет увеличивать свой капитал от 5% в день. Такие у",
+          "date": "2026-03-19T08:03:13+00:00",
+          "views": 219000,
+          "hasMedia": true,
+          "channel": "legitimniy",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "legitimniy/22011",
+          "text": "#раскладка \nПока депутаты и все официальные лица лгут по кейсу мобилизационного рабства (бусификации), шакалы ТЦК продолжают похищать и избивать украинцев.\n\nЛюдоловы среди бела дня на оживленной улице Луцка бьёт ногой парня, которому скрутили руки двое других сотрудников ТЦК. Какой ещё демократии ва",
+          "date": "2026-03-20T10:37:29+00:00",
+          "views": 164000,
+          "hasMedia": true,
+          "channel": "legitimniy",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111471",
+          "text": "🇺🇸⚔️🇺🇦Украине грозит конфликт с США из-за неготовности проводить выборы в этом году, — Times\n\n▪️Украинские чиновники решили, что выборы возможны минимум через полгода после прекращения огня.\n▪️В ЦИК не могут решить вопрос об обеспечении \"честных выборов без российского вмешательства\".\n▪️При этом",
+          "date": "2026-03-20T15:38:02+00:00",
+          "views": 177000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111472",
+          "text": "🇷🇺🇺🇸🇮🇷 Война на Ближнем Востоке принесет России до 250 млрд долларов, если затянется до сентября, — Spiegel\n\n▪️Аналитический центр KSE Institute приводит 3 варианта развития событий на Ближнем Востоке.\n➖Война в Иране заканчивается к середине апреля. Цены на нефть на мировых рынках растут приме",
+          "date": "2026-03-20T16:02:01+00:00",
+          "views": 177000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111474",
+          "text": "‼️🇨🇿🇮🇱 В Чехии подожгли израильский завод, производящий 90% дронов\n\n▪️Речь идет об оборонном заводе, связанном с израильской Elbit Systems, производящей 90% израильских БПЛА и систем РЭБ.\n▪️Поджигатели назвали себя \"Фракцией землетрясения\" и заявили, что будут бороться против израильской военной",
+          "date": "2026-03-20T16:36:47+00:00",
+          "views": 169000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111475",
+          "text": "‼️🇷🇺🇺🇸Россия предложила США сделку: Москва перестаёт передавать разведданные Ирану, а Вашингтон — Украине, но США отказались\n\n▪️Такое предложение представитель президента К. Дмитриев якобы передал Уиткоффу и Кушнеру во время их встречи на прошлой неделе в Майами, пишет газета Politico со ссылкой",
+          "date": "2026-03-20T16:54:01+00:00",
+          "views": 167000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111476",
+          "text": "‼️🇺🇸🇺🇦Трамп: Украина «ничего не сделала чтобы помочь США в операции против Ирана», а слова Зеленского — это «политика и PR»\n\n➖«С Зеленским сложнее иметь дело, чем с Путиным», — добавил президент США в беседе с ведущей MS Now Стефани Рул.\n⚠️Если не грузит видео - смотрите в MAX",
+          "date": "2026-03-20T17:16:34+00:00",
+          "views": 161000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111478",
+          "text": "🇷🇺🇺🇸🇮🇷 Дмитриев прокомментировал \"сенсацию\" о \"предложении России\" для США по разведданным\n\n▪️Спецпредставитель президента России коротко ответил слово - \"ФЕЙК\".\n▪️Ранее Politico опубликовало материал, где утверждалось, что Дмитриев якобы передал Вашингтону предложение России о прекращении пер",
+          "date": "2026-03-20T17:56:29+00:00",
+          "views": 146000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111479",
+          "text": "Они уже сказали «спасибо».\nТеперь наша очередь — сделать больше.\n\nК Пасхе собираем куличи и слова поддержки для наших ребят на фронте.\n\n👉 Сделай простое действие:\n— напиши пару слов\n— или передай кулич\n\nМы всё отправим вместе с нашими поставками.\n\n📍 Великолукский мясокомбинат\n📅 До 7 апреля\n\nДаже ",
+          "date": "2026-03-20T18:15:40+00:00",
+          "views": 130000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111480",
+          "text": "‼️🇺🇦☠️ Население Украины сократилось до 20 млн человек\n\n▪️Об этом заявил замредактор британского журнала New Statesman Уилл Ллойд.\n▪️Такую оценку ему озвучил один из британских чиновников, работавших на Украине.\n▪️При этом Ллойд напоминает, что в начале 1990-х население Украины насчитывало 52 млн.",
+          "date": "2026-03-20T18:37:01+00:00",
+          "views": 132000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111481",
+          "text": "‼️🇮🇷 Иран не желает обсуждать открытие Ормузского пролива, пока находится под ударом, — Bloomberg\n\n▪️Иранские официальные лица не хотят даже обсуждать вопрос возобновления работы Ормузского пролива в условиях американо-израильских атак.\n▪️Удары по объектам энергетической инфраструктуры и убийства ",
+          "date": "2026-03-20T18:58:01+00:00",
+          "views": 124000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        },
+        {
+          "postId": "RVvoenkor/111482",
+          "text": "‼️🇷🇺«🅾️тважные» громят технику и пехоту врага в боях за Покровском, Мирноградом и в Днепропетровской области\n\n▪️Бойцы группировки войск «Центр» продолжают активно уничтожать пехоту и технику ВСУ в районе Красноармейска (Покровска), Мирнограда (Димитрова) и в Днепропетровской области.\n▪️На видео п",
+          "date": "2026-03-20T19:21:34+00:00",
+          "views": 112000,
+          "hasMedia": true,
+          "channel": "RVvoenkor",
+          "urgentFlags": null,
+          "score": 58
+        }
+      ],
+      "hint": "Set TELEGRAM_BOT_TOKEN in .env for Bot API access. Create a bot via @BotFather on Telegram."
+    },
+    "KiwiSDR": {
+      "source": "KiwiSDR",
+      "timestamp": "2026-03-20T22:56:21.980Z",
+      "status": "active",
+      "network": {
+        "totalReceivers": 911,
+        "online": 911,
+        "offline": 0,
+        "totalUsers": 0,
+        "totalCapacity": 0,
+        "utilizationPct": 0,
+        "tdoaCapable": 0
+      },
+      "geographic": {
+        "byContinent": {
+          "Oceania": 66,
+          "Europe": 465,
+          "North America": 285,
+          "Unknown": 1,
+          "Asia": 67,
+          "South America": 14,
+          "Africa": 11,
+          "Other": 2
+        },
+        "topCountries": [
+          {
+            "country": "Germany",
+            "count": 64
+          },
+          {
+            "country": "USA",
+            "count": 37
+          },
+          {
+            "country": "UK",
+            "count": 23
+          },
+          {
+            "country": "New Zealand",
+            "count": 21
+          },
+          {
+            "country": "Finland",
+            "count": 18
+          },
+          {
+            "country": "Canada",
+            "count": 17
+          },
+          {
+            "country": "Netherlands",
+            "count": 16
+          },
+          {
+            "country": "Japan",
+            "count": 16
+          },
+          {
+            "country": "California",
+            "count": 15
+          },
+          {
+            "country": "Sweden",
+            "count": 14
+          },
+          {
+            "country": "Switzerland",
+            "count": 11
+          },
+          {
+            "country": "Australia",
+            "count": 11
+          },
+          {
+            "country": "The Netherlands",
+            "count": 10
+          },
+          {
+            "country": "France",
+            "count": 9
+          },
+          {
+            "country": "JAPAN",
+            "count": 9
+          },
+          {
+            "country": "CA",
+            "count": 7
+          },
+          {
+            "country": "Belgium",
+            "count": 6
+          },
+          {
+            "country": "Austria",
+            "count": 6
+          },
+          {
+            "country": "South Australia",
+            "count": 6
+          },
+          {
+            "country": "HASENBERG AG 700M SWITZERLAND",
+            "count": 5
+          }
+        ]
+      },
+      "conflictZones": {
+        "middleEast": {
+          "region": "Middle East",
+          "count": 3,
+          "receivers": [
+            {
+              "name": "0-30 MHz SDR | Cyprus",
+              "location": "0-30 MHz SDR | Cyprus",
+              "lat": 34.76,
+              "lon": 32.53,
+              "users": 0,
+              "antenna": "",
+              "country": "0-30 MHz SDR | Cyprus"
+            },
+            {
+              "name": "0-30 MHz SDR | Doha, Qatar",
+              "location": "0-30 MHz SDR | Doha, Qatar",
+              "lat": 25.2854,
+              "lon": 51.531,
+              "users": 0,
+              "antenna": "",
+              "country": "Qatar"
+            },
+            {
+              "name": "0-30 MHz SDR | Baghdad, IRAQ",
+              "location": "0-30 MHz SDR | Baghdad, IRAQ",
+              "lat": 33.3355,
+              "lon": 44.387736,
+              "users": 0,
+              "antenna": "",
+              "country": "IRAQ"
+            }
+          ]
+        },
+        "ukraine": {
+          "region": "Ukraine / Eastern Europe",
+          "count": 6,
+          "receivers": [
+            {
+              "name": "The Real VLF-HF SDR Receiver 8KHz-30MHz | 16m LongWire@8m Height | Ground | BleedResistor | Attentua",
+              "location": "The Real VLF-HF SDR Receiver 8KHz-30MHz | 16m LongWire@8m Height | Ground | Blee",
+              "lat": 44.53,
+              "lon": 26.23,
+              "users": 0,
+              "antenna": "",
+              "country": "Romania"
+            },
+            {
+              "name": "0-30 MHz SDR | Near Lublin, Poland",
+              "location": "0-30 MHz SDR | Near Lublin, Poland",
+              "lat": 51.25,
+              "lon": 22.67,
+              "users": 0,
+              "antenna": "",
+              "country": "Poland"
+            },
+            {
+              "name": "0-30 MHz -YO8SGV- KN37EX- KiwiSDR | Dorohoi, Romania",
+              "location": "0-30 MHz -YO8SGV- KN37EX- KiwiSDR | Dorohoi, Romania",
+              "lat": 47.96881,
+              "lon": 26.379005,
+              "users": 0,
+              "antenna": "",
+              "country": "Romania"
+            },
+            {
+              "name": "The Real VLF-HF SDR Receiver 8KHz-30MHz | 16m LongWire@8m Height | Ground | BleedResistor | Attentua",
+              "location": "The Real VLF-HF SDR Receiver 8KHz-30MHz | 16m LongWire@8m Height | Ground | Blee",
+              "lat": 44.53,
+              "lon": 26.23,
+              "users": 0,
+              "antenna": "",
+              "country": "Romania"
+            },
+            {
+              "name": "0-30 MHz SDR | SLANIC PH",
+              "location": "0-30 MHz SDR | SLANIC PH",
+              "lat": 45.24,
+              "lon": 25.94,
+              "users": 0,
+              "antenna": "",
+              "country": "0-30 MHz SDR | SLANIC PH"
+            },
+            {
+              "name": "The Real VLF-HF SDR Receiver 8KHz-30MHz | 16m LongWire@8m Height | Ground | BleedResistor | Attentua",
+              "location": "The Real VLF-HF SDR Receiver 8KHz-30MHz | 16m LongWire@8m Height | Ground | Blee",
+              "lat": 44.53,
+              "lon": 26.23,
+              "users": 0,
+              "antenna": "",
+              "country": "Romania"
+            }
+          ]
+        },
+        "taiwan": {
+          "region": "Taiwan Strait",
+          "count": 11,
+          "receivers": [
+            {
+              "name": "0-30 MHz SDR ,BV3UN 桃園龜山 | Taoyuan, Taiwan",
+              "location": "0-30 MHz SDR ,BV3UN 桃園龜山 | Taoyuan, Taiwan",
+              "lat": 25.005928,
+              "lon": 121.343095,
+              "users": 0,
+              "antenna": "",
+              "country": "Taiwan"
+            },
+            {
+              "name": "0-30 MHz SDR, BM2KVV Taiwan #1",
+              "location": "0-30 MHz SDR, BM2KVV Taiwan #1",
+              "lat": 25.106238,
+              "lon": 121.816775,
+              "users": 0,
+              "antenna": "",
+              "country": "BM2KVV Taiwan #1"
+            },
+            {
+              "name": "0-30 MHz SDR, BM2KVV Taiwan #2",
+              "location": "0-30 MHz SDR, BM2KVV Taiwan #2",
+              "lat": 25.11,
+              "lon": 121,
+              "users": 0,
+              "antenna": "",
+              "country": "BM2KVV Taiwan #2"
+            },
+            {
+              "name": "0-30 MHz SDR, BM2KVV Taiwan #3",
+              "location": "0-30 MHz SDR, BM2KVV Taiwan #3",
+              "lat": 25.106,
+              "lon": 121.82,
+              "users": 0,
+              "antenna": "",
+              "country": "BM2KVV Taiwan #3"
+            },
+            {
+              "name": "0-30 MHz SDR, BM2KVV Taiwan #4",
+              "location": "0-30 MHz SDR, BM2KVV Taiwan #4",
+              "lat": 25.11,
+              "lon": 121.42,
+              "users": 0,
+              "antenna": "",
+              "country": "BM2KVV Taiwan #4"
+            },
+            {
+              "name": "0-30 MHz SDR, BM7GUP | Kaohsiung, Taiwan",
+              "location": "0-30 MHz SDR, BM7GUP | Kaohsiung, Taiwan",
+              "lat": 22.72,
+              "lon": 120.33,
+              "users": 0,
+              "antenna": "",
+              "country": "Taiwan"
+            },
+            {
+              "name": "0-30 MHz SDR,BV7AU  Pingtung taiwan",
+              "location": "0-30 MHz SDR,BV7AU  Pingtung taiwan",
+              "lat": 22.79,
+              "lon": 120.58,
+              "users": 0,
+              "antenna": "",
+              "country": "BV7AU  Pingtung taiwan"
+            },
+            {
+              "name": "0-30 MHz SDR,Pingtung taiwan -3",
+              "location": "0-30 MHz SDR,Pingtung taiwan -3",
+              "lat": 22.7943,
+              "lon": 120.5373,
+              "users": 0,
+              "antenna": "",
+              "country": "Pingtung taiwan -3"
+            },
+            {
+              "name": "0-30 MHz SDR,Pingtung taiwan-2(BV7AU) 屏東 臺灣",
+              "location": "0-30 MHz SDR,Pingtung taiwan-2(BV7AU) 屏東 臺灣",
+              "lat": 22.791,
+              "lon": 120.581,
+              "users": 0,
+              "antenna": "",
+              "country": "Pingtung taiwan-2(BV7AU) 屏東 臺灣"
+            },
+            {
+              "name": "0-30 MHz SDR | Taipei, Taiwan",
+              "location": "0-30 MHz SDR | Taipei, Taiwan",
+              "lat": 25.08,
+              "lon": 121.31,
+              "users": 0,
+              "antenna": "",
+              "country": "Taiwan"
+            }
+          ]
+        },
+        "baltics": {
+          "region": "Baltic Region",
+          "count": 0,
+          "receivers": []
+        },
+        "southChinaSea": {
+          "region": "South China Sea",
+          "count": 7,
+          "receivers": [
+            {
+              "name": "0-30 MHz SDR, BM7GUP | Kaohsiung, Taiwan",
+              "location": "0-30 MHz SDR, BM7GUP | Kaohsiung, Taiwan",
+              "lat": 22.72,
+              "lon": 120.33,
+              "users": 0,
+              "antenna": "",
+              "country": "Taiwan"
+            },
+            {
+              "name": "0-30 MHz SDR, VR2BG | Hong Kong",
+              "location": "0-30 MHz SDR, VR2BG | Hong Kong",
+              "lat": 22.35,
+              "lon": 114.13,
+              "users": 0,
+              "antenna": "",
+              "country": "VR2BG | Hong Kong"
+            },
+            {
+              "name": "0-30 MHz SDR,BV7AU  Pingtung taiwan",
+              "location": "0-30 MHz SDR,BV7AU  Pingtung taiwan",
+              "lat": 22.79,
+              "lon": 120.58,
+              "users": 0,
+              "antenna": "",
+              "country": "BV7AU  Pingtung taiwan"
+            },
+            {
+              "name": "0-30 MHz SDR,Pingtung taiwan -3",
+              "location": "0-30 MHz SDR,Pingtung taiwan -3",
+              "lat": 22.7943,
+              "lon": 120.5373,
+              "users": 0,
+              "antenna": "",
+              "country": "Pingtung taiwan -3"
+            },
+            {
+              "name": "0-30 MHz SDR,Pingtung taiwan-2(BV7AU) 屏東 臺灣",
+              "location": "0-30 MHz SDR,Pingtung taiwan-2(BV7AU) 屏東 臺灣",
+              "lat": 22.791,
+              "lon": 120.581,
+              "users": 0,
+              "antenna": "",
+              "country": "Pingtung taiwan-2(BV7AU) 屏東 臺灣"
+            },
+            {
+              "name": "0-30 MHz SDR ( VR2KJ ) | Hong Kong",
+              "location": "0-30 MHz SDR ( VR2KJ ) | Hong Kong",
+              "lat": 22.359632,
+              "lon": 114.127231,
+              "users": 0,
+              "antenna": "",
+              "country": "0-30 MHz SDR ( VR2KJ ) | Hong Kong"
+            },
+            {
+              "name": "Manila KiwiSDR 0-30 MHz",
+              "location": "Manila KiwiSDR 0-30 MHz",
+              "lat": 14.40606,
+              "lon": 120.940781,
+              "users": 0,
+              "antenna": "",
+              "country": "Manila KiwiSDR 0-30 MHz"
+            }
+          ]
+        },
+        "koreanPeninsula": {
+          "region": "Korean Peninsula",
+          "count": 8,
+          "receivers": [
+            {
+              "name": "0-30 MHz KIWI SDR( 4ch ), HL5NTR, Daegu_City Republic of Korea. Loop-type Antenna.",
+              "location": "0-30 MHz KIWI SDR( 4ch ), HL5NTR, Daegu_City Republic of Korea. Loop-type Antenn",
+              "lat": 35.888778,
+              "lon": 128.574964,
+              "users": 0,
+              "antenna": "",
+              "country": "Daegu_City Republic of Korea. Loop-type Antenna."
+            },
+            {
+              "name": "0-30 MHz KIWI SDR( 8ch ), HL5NTR, Daegu_City Republic of Korea. 85M Loop-type Antenna.",
+              "location": "0-30 MHz KIWI SDR( 8ch ), HL5NTR, Daegu_City Republic of Korea. 85M Loop-type An",
+              "lat": 35.888778,
+              "lon": 128.574964,
+              "users": 0,
+              "antenna": "",
+              "country": "Daegu_City Republic of Korea. 85M Loop-type Antenna."
+            },
+            {
+              "name": "0-30 MHz KIWI SDR( 8ch ), HL5NTR, Daegu_City Republic of Korea. 85M Loop-type Antenna.",
+              "location": "0-30 MHz KIWI SDR( 8ch ), HL5NTR, Daegu_City Republic of Korea. 85M Loop-type An",
+              "lat": 35.888778,
+              "lon": 128.574964,
+              "users": 0,
+              "antenna": "",
+              "country": "Daegu_City Republic of Korea. 85M Loop-type Antenna."
+            },
+            {
+              "name": "0-30 MHz KIWI SDR( 8ch ), HL5NTR, Daegu_City Republic of Korea. 85M Loop-type Antenna.",
+              "location": "0-30 MHz KIWI SDR( 8ch ), HL5NTR, Daegu_City Republic of Korea. 85M Loop-type An",
+              "lat": 35.888778,
+              "lon": 128.574964,
+              "users": 0,
+              "antenna": "",
+              "country": "Daegu_City Republic of Korea. 85M Loop-type Antenna."
+            },
+            {
+              "name": "0-30 MHz KIWI SDR( 4ch ), HL5NTR, Daegu_City Republic of Korea. Loop-type Antenna.",
+              "location": "0-30 MHz KIWI SDR( 4ch ), HL5NTR, Daegu_City Republic of Korea. Loop-type Antenn",
+              "lat": 35.888778,
+              "lon": 128.574964,
+              "users": 0,
+              "antenna": "",
+              "country": "Daegu_City Republic of Korea. Loop-type Antenna."
+            },
+            {
+              "name": "0-30 MHz KIWI SDR( 4ch ), HL5NTR, Daegu_City Republic of Korea. Loop-type Antenna.",
+              "location": "0-30 MHz KIWI SDR( 4ch ), HL5NTR, Daegu_City Republic of Korea. Loop-type Antenn",
+              "lat": 35.888778,
+              "lon": 128.574964,
+              "users": 0,
+              "antenna": "",
+              "country": "Daegu_City Republic of Korea. Loop-type Antenna."
+            },
+            {
+              "name": "0-30 MHz SDR at DS1TUW, Seoul, Rep. of Korea, MLA-30+ active loop, 60m AGL, DigiSkimmer Running",
+              "location": "0-30 MHz SDR at DS1TUW, Seoul, Rep. of Korea, MLA-30+ active loop, 60m AGL, Digi",
+              "lat": 37.448412,
+              "lon": 126.920082,
+              "users": 0,
+              "antenna": "",
+              "country": "DigiSkimmer Running"
+            },
+            {
+              "name": "0.1-30 MHz SDR#1 at HL3AMO - Daejeon, Rep. of KOREA",
+              "location": "0.1-30 MHz SDR#1 at HL3AMO - Daejeon, Rep. of KOREA",
+              "lat": 36.387,
+              "lon": 127.321,
+              "users": 0,
+              "antenna": "",
+              "country": "Rep. of KOREA"
+            }
+          ]
+        },
+        "iran": {
+          "region": "Iran",
+          "count": 2,
+          "receivers": [
+            {
+              "name": "0-30 MHz SDR | Doha, Qatar",
+              "location": "0-30 MHz SDR | Doha, Qatar",
+              "lat": 25.2854,
+              "lon": 51.531,
+              "users": 0,
+              "antenna": "",
+              "country": "Qatar"
+            },
+            {
+              "name": "0-30 MHz SDR | Baghdad, IRAQ",
+              "location": "0-30 MHz SDR | Baghdad, IRAQ",
+              "lat": 33.3355,
+              "lon": 44.387736,
+              "users": 0,
+              "antenna": "",
+              "country": "IRAQ"
+            }
+          ]
+        },
+        "sahel": {
+          "region": "Sahel / West Africa",
+          "count": 0,
+          "receivers": []
+        }
+      },
+      "topActive": [],
+      "highUtilization": [],
+      "signals": []
+    },
+    "Space": {
+      "source": "Space/CelesTrak",
+      "timestamp": "2026-03-20T22:56:22.374Z",
+      "status": "active",
+      "recentLaunches": [
+        {
+          "name": "STARLINK-36858",
+          "noradId": 68021,
+          "classification": "U",
+          "inclination": 97.2783,
+          "epoch": "2026-03-20T19:04:54.232896"
+        },
+        {
+          "name": "YUXING-3 06",
+          "noradId": 68199,
+          "classification": "U",
+          "inclination": 97.5384,
+          "epoch": "2026-03-20T17:22:29.737056"
+        },
+        {
+          "name": "SHIYAN-30 04",
+          "noradId": 68140,
+          "classification": "U",
+          "inclination": 34.9915,
+          "epoch": "2026-03-20T16:22:40.585152"
+        },
+        {
+          "name": "SHIYAN-30 03",
+          "noradId": 68139,
+          "classification": "U",
+          "inclination": 35,
+          "epoch": "2026-03-20T16:21:34.153056"
+        },
+        {
+          "name": "STARLINK-36970",
+          "noradId": 68071,
+          "classification": "U",
+          "inclination": 53.1578,
+          "epoch": "2026-03-20T15:08:33.440640"
+        },
+        {
+          "name": "STARLINK-37068",
+          "noradId": 68085,
+          "classification": "U",
+          "inclination": 53.158,
+          "epoch": "2026-03-20T14:54:31.013856"
+        },
+        {
+          "name": "STARLINK-36785",
+          "noradId": 67853,
+          "classification": "U",
+          "inclination": 53.1577,
+          "epoch": "2026-03-20T14:28:29.681184"
+        },
+        {
+          "name": "STARLINK-36608",
+          "noradId": 67854,
+          "classification": "U",
+          "inclination": 53.1573,
+          "epoch": "2026-03-20T14:27:25.118784"
+        },
+        {
+          "name": "STARLINK-35873",
+          "noradId": 67860,
+          "classification": "U",
+          "inclination": 53.1577,
+          "epoch": "2026-03-20T14:20:56.536512"
+        },
+        {
+          "name": "STARLINK-36332",
+          "noradId": 67862,
+          "classification": "U",
+          "inclination": 53.1584,
+          "epoch": "2026-03-20T14:18:47.022912"
+        },
+        {
+          "name": "STARLINK-36341",
+          "noradId": 67918,
+          "classification": "U",
+          "inclination": 42.9987,
+          "epoch": "2026-03-20T14:13:51.608352"
+        },
+        {
+          "name": "STARLINK-36761",
+          "noradId": 67867,
+          "classification": "U",
+          "inclination": 53.1594,
+          "epoch": "2026-03-20T14:13:23.060928"
+        },
+        {
+          "name": "STARLINK-36779",
+          "noradId": 67869,
+          "classification": "U",
+          "inclination": 53.1583,
+          "epoch": "2026-03-20T14:11:13.263936"
+        },
+        {
+          "name": "STARLINK-36405",
+          "noradId": 67921,
+          "classification": "U",
+          "inclination": 43.0008,
+          "epoch": "2026-03-20T14:10:11.182080"
+        },
+        {
+          "name": "2026-052F",
+          "noradId": 68203,
+          "classification": "U",
+          "inclination": 97.5375,
+          "epoch": "2026-03-20T14:09:24.566688"
+        },
+        {
+          "name": "2026-052G",
+          "noradId": 68204,
+          "classification": "U",
+          "inclination": 97.5377,
+          "epoch": "2026-03-20T14:09:11.911680"
+        },
+        {
+          "name": "STARLINK-36770",
+          "noradId": 67870,
+          "classification": "U",
+          "inclination": 53.1589,
+          "epoch": "2026-03-20T14:09:03.957696"
+        },
+        {
+          "name": "STARLINK-36786",
+          "noradId": 67872,
+          "classification": "U",
+          "inclination": 53.1576,
+          "epoch": "2026-03-20T14:07:58.825056"
+        },
+        {
+          "name": "STARLINK-36726",
+          "noradId": 67925,
+          "classification": "U",
+          "inclination": 42.9994,
+          "epoch": "2026-03-20T14:07:23.875392"
+        },
+        {
+          "name": "STARLINK-36783",
+          "noradId": 67873,
+          "classification": "U",
+          "inclination": 53.1586,
+          "epoch": "2026-03-20T14:06:54.152064"
+        },
+        {
+          "name": "STARLINK-36730",
+          "noradId": 67874,
+          "classification": "U",
+          "inclination": 53.1582,
+          "epoch": "2026-03-20T14:05:48.597792"
+        },
+        {
+          "name": "STARLINK-36876",
+          "noradId": 67902,
+          "classification": "U",
+          "inclination": 97.2883,
+          "epoch": "2026-03-20T14:04:59.697984"
+        },
+        {
+          "name": "STARLINK-36727",
+          "noradId": 67875,
+          "classification": "U",
+          "inclination": 53.1579,
+          "epoch": "2026-03-20T14:04:44.476896"
+        },
+        {
+          "name": "STARLINK-36743",
+          "noradId": 67876,
+          "classification": "U",
+          "inclination": 53.1586,
+          "epoch": "2026-03-20T14:03:39.543840"
+        },
+        {
+          "name": "STARLINK-36816",
+          "noradId": 67891,
+          "classification": "U",
+          "inclination": 97.2891,
+          "epoch": "2026-03-20T14:01:45.836256"
+        }
+      ],
+      "totalNewObjects": 356,
+      "launchByCountry": {
+        "UNK": 356
+      },
+      "spaceStations": [
+        {
+          "name": "ISS (ZARYA)",
+          "noradId": 25544,
+          "inclination": 51.6345,
+          "epoch": "2026-03-20T06:59:30.191424"
+        },
+        {
+          "name": "POISK",
+          "noradId": 36086,
+          "inclination": 51.6345,
+          "epoch": "2026-03-20T06:59:30.191424"
+        },
+        {
+          "name": "CSS (TIANHE)",
+          "noradId": 48274,
+          "inclination": 41.4664,
+          "epoch": "2026-03-20T14:12:38.548512"
+        },
+        {
+          "name": "ISS (NAUKA)",
+          "noradId": 49044,
+          "inclination": 51.6345,
+          "epoch": "2026-03-20T06:59:30.191424"
+        },
+        {
+          "name": "FREGAT DEB",
+          "noradId": 49271,
+          "inclination": 51.6475,
+          "epoch": "2026-03-20T11:33:43.795296"
+        },
+        {
+          "name": "CSS (WENTIAN)",
+          "noradId": 53239,
+          "inclination": 41.4664,
+          "epoch": "2026-03-20T14:12:38.548512"
+        },
+        {
+          "name": "CSS (MENGTIAN)",
+          "noradId": 54216,
+          "inclination": 41.4664,
+          "epoch": "2026-03-20T14:12:38.548512"
+        },
+        {
+          "name": "TIANZHOU-9",
+          "noradId": 64786,
+          "inclination": 41.4664,
+          "epoch": "2026-03-20T14:12:38.548512"
+        },
+        {
+          "name": "PROGRESS-MS 32",
+          "noradId": 65586,
+          "inclination": 51.6345,
+          "epoch": "2026-03-20T06:59:30.191424"
+        },
+        {
+          "name": "YOTSUBA-KULOVER",
+          "noradId": 65941,
+          "inclination": 51.6209,
+          "epoch": "2026-03-20T11:59:23.712000"
+        }
+      ],
+      "iss": {
+        "name": "ISS (ZARYA)",
+        "noradId": 25544,
+        "inclination": 51.6345,
+        "epoch": "2026-03-20T06:59:30.191424"
+      },
+      "militarySatellites": 22,
+      "militaryByCountry": {
+        "UNK": 22
+      },
+      "constellations": {
+        "starlink": 9888,
+        "oneweb": 651
+      },
+      "signals": [
+        "HIGH LAUNCH TEMPO: 356 new objects tracked in last 30 days",
+        "STARLINK MEGA-CONSTELLATION: 9888 active satellites"
+      ]
+    },
+    "YFinance": {
+      "quotes": {
+        "SPY": {
+          "symbol": "SPY",
+          "name": "S&P 500",
+          "price": 648.57,
+          "prevClose": 662.29,
+          "change": -13.72,
+          "changePct": -2.07,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 669.03
+            },
+            {
+              "date": "2026-03-17",
+              "close": 670.79
+            },
+            {
+              "date": "2026-03-18",
+              "close": 661.43
+            },
+            {
+              "date": "2026-03-19",
+              "close": 659.8
+            },
+            {
+              "date": "2026-03-20",
+              "close": 648.57
+            }
+          ]
+        },
+        "QQQ": {
+          "symbol": "QQQ",
+          "name": "Nasdaq 100",
+          "price": 582.06,
+          "prevClose": 593.72,
+          "change": -11.66,
+          "changePct": -1.96,
+          "currency": "USD",
+          "exchange": "NGM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 600.38
+            },
+            {
+              "date": "2026-03-17",
+              "close": 603.31
+            },
+            {
+              "date": "2026-03-18",
+              "close": 594.9
+            },
+            {
+              "date": "2026-03-19",
+              "close": 593.02
+            },
+            {
+              "date": "2026-03-20",
+              "close": 582.06
+            }
+          ]
+        },
+        "DIA": {
+          "symbol": "DIA",
+          "name": "Dow Jones",
+          "price": 455.89,
+          "prevClose": 466.41,
+          "change": -10.52,
+          "changePct": -2.26,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 470.3
+            },
+            {
+              "date": "2026-03-17",
+              "close": 470.9
+            },
+            {
+              "date": "2026-03-18",
+              "close": 463
+            },
+            {
+              "date": "2026-03-19",
+              "close": 461.06
+            },
+            {
+              "date": "2026-03-20",
+              "close": 455.89
+            }
+          ]
+        },
+        "IWM": {
+          "symbol": "IWM",
+          "name": "Russell 2000",
+          "price": 242.22,
+          "prevClose": 246.59,
+          "change": -4.37,
+          "changePct": -1.77,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 248.92
+            },
+            {
+              "date": "2026-03-17",
+              "close": 250.05
+            },
+            {
+              "date": "2026-03-18",
+              "close": 246.02
+            },
+            {
+              "date": "2026-03-19",
+              "close": 247.63
+            },
+            {
+              "date": "2026-03-20",
+              "close": 242.22
+            }
+          ]
+        },
+        "TLT": {
+          "symbol": "TLT",
+          "name": "20Y+ Treasury",
+          "price": 85.83,
+          "prevClose": 86.54,
+          "change": -0.71,
+          "changePct": -0.82,
+          "currency": "USD",
+          "exchange": "NGM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 87.21
+            },
+            {
+              "date": "2026-03-17",
+              "close": 87.45
+            },
+            {
+              "date": "2026-03-18",
+              "close": 86.96
+            },
+            {
+              "date": "2026-03-19",
+              "close": 87.49
+            },
+            {
+              "date": "2026-03-20",
+              "close": 85.83
+            }
+          ]
+        },
+        "HYG": {
+          "symbol": "HYG",
+          "name": "High Yield Corp",
+          "price": 78.92,
+          "prevClose": 79.2,
+          "change": -0.28,
+          "changePct": -0.35,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 79.45
+            },
+            {
+              "date": "2026-03-17",
+              "close": 79.81
+            },
+            {
+              "date": "2026-03-18",
+              "close": 79.4
+            },
+            {
+              "date": "2026-03-19",
+              "close": 79.66
+            },
+            {
+              "date": "2026-03-20",
+              "close": 78.92
+            }
+          ]
+        },
+        "LQD": {
+          "symbol": "LQD",
+          "name": "IG Corporate",
+          "price": 107.85,
+          "prevClose": 108.17,
+          "change": -0.32,
+          "changePct": -0.3,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 108.69
+            },
+            {
+              "date": "2026-03-17",
+              "close": 109.3
+            },
+            {
+              "date": "2026-03-18",
+              "close": 108.71
+            },
+            {
+              "date": "2026-03-19",
+              "close": 109.19
+            },
+            {
+              "date": "2026-03-20",
+              "close": 107.85
+            }
+          ]
+        },
+        "GC=F": {
+          "symbol": "GC=F",
+          "name": "Gold",
+          "price": 4492,
+          "prevClose": 4994,
+          "change": -502,
+          "changePct": -10.05,
+          "currency": "USD",
+          "exchange": "CMX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 4994
+            },
+            {
+              "date": "2026-03-17",
+              "close": 5001
+            },
+            {
+              "date": "2026-03-18",
+              "close": 4889.9
+            },
+            {
+              "date": "2026-03-19",
+              "close": 4600.7
+            },
+            {
+              "date": "2026-03-20",
+              "close": 4492
+            }
+          ]
+        },
+        "SI=F": {
+          "symbol": "SI=F",
+          "name": "Silver",
+          "price": 67.81,
+          "prevClose": 80.26,
+          "change": -12.45,
+          "changePct": -15.52,
+          "currency": "USD",
+          "exchange": "CMX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 80.26
+            },
+            {
+              "date": "2026-03-17",
+              "close": 79.53
+            },
+            {
+              "date": "2026-03-18",
+              "close": 77.24
+            },
+            {
+              "date": "2026-03-19",
+              "close": 70.9
+            },
+            {
+              "date": "2026-03-20",
+              "close": 67.81
+            }
+          ]
+        },
+        "CL=F": {
+          "symbol": "CL=F",
+          "name": "WTI Crude",
+          "price": 98.09,
+          "prevClose": 93.5,
+          "change": 4.59,
+          "changePct": 4.91,
+          "currency": "USD",
+          "exchange": "NYM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 93.5
+            },
+            {
+              "date": "2026-03-17",
+              "close": 96.21
+            },
+            {
+              "date": "2026-03-18",
+              "close": 96.32
+            },
+            {
+              "date": "2026-03-19",
+              "close": 96.14
+            },
+            {
+              "date": "2026-03-20",
+              "close": 98.09
+            }
+          ]
+        },
+        "BZ=F": {
+          "symbol": "BZ=F",
+          "name": "Brent Crude",
+          "price": 106.77,
+          "prevClose": 100.21,
+          "change": 6.56,
+          "changePct": 6.55,
+          "currency": "USD",
+          "exchange": "NYM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 100.21
+            },
+            {
+              "date": "2026-03-17",
+              "close": 103.42
+            },
+            {
+              "date": "2026-03-18",
+              "close": 107.38
+            },
+            {
+              "date": "2026-03-19",
+              "close": 108.65
+            },
+            {
+              "date": "2026-03-20",
+              "close": 106.77
+            }
+          ]
+        },
+        "NG=F": {
+          "symbol": "NG=F",
+          "name": "Natural Gas",
+          "price": 3.1,
+          "prevClose": 3.02,
+          "change": 0.07,
+          "changePct": 2.41,
+          "currency": "USD",
+          "exchange": "NYM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 3.02
+            },
+            {
+              "date": "2026-03-17",
+              "close": 3.03
+            },
+            {
+              "date": "2026-03-18",
+              "close": 3.07
+            },
+            {
+              "date": "2026-03-19",
+              "close": 3.17
+            },
+            {
+              "date": "2026-03-20",
+              "close": 3.1
+            }
+          ]
+        },
+        "BTC-USD": {
+          "symbol": "BTC-USD",
+          "name": "Bitcoin",
+          "price": 70805.75,
+          "prevClose": 74861.09,
+          "change": -4055.34,
+          "changePct": -5.42,
+          "currency": "USD",
+          "exchange": "CCC",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 74861.09
+            },
+            {
+              "date": "2026-03-17",
+              "close": 73922.48
+            },
+            {
+              "date": "2026-03-18",
+              "close": 71245.58
+            },
+            {
+              "date": "2026-03-19",
+              "close": 69912.79
+            },
+            {
+              "date": "2026-03-20",
+              "close": 70805.75
+            }
+          ]
+        },
+        "ETH-USD": {
+          "symbol": "ETH-USD",
+          "name": "Ethereum",
+          "price": 2157.36,
+          "prevClose": 2351.18,
+          "change": -193.82,
+          "changePct": -8.24,
+          "currency": "USD",
+          "exchange": "CCC",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 2351.18
+            },
+            {
+              "date": "2026-03-17",
+              "close": 2318.05
+            },
+            {
+              "date": "2026-03-18",
+              "close": 2203.67
+            },
+            {
+              "date": "2026-03-19",
+              "close": 2137.42
+            },
+            {
+              "date": "2026-03-20",
+              "close": 2157.36
+            }
+          ]
+        },
+        "^VIX": {
+          "symbol": "^VIX",
+          "name": "VIX",
+          "price": 26.78,
+          "prevClose": 23.51,
+          "change": 3.27,
+          "changePct": 13.91,
+          "currency": "USD",
+          "exchange": "CXI",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 23.51
+            },
+            {
+              "date": "2026-03-17",
+              "close": 22.37
+            },
+            {
+              "date": "2026-03-18",
+              "close": 25.09
+            },
+            {
+              "date": "2026-03-19",
+              "close": 24.06
+            },
+            {
+              "date": "2026-03-20",
+              "close": 26.78
+            }
+          ]
+        }
+      },
+      "summary": {
+        "totalSymbols": 15,
+        "ok": 15,
+        "failed": 0,
+        "timestamp": "2026-03-20T22:56:21.111Z"
+      },
+      "indexes": [
+        {
+          "symbol": "SPY",
+          "name": "S&P 500",
+          "price": 648.57,
+          "prevClose": 662.29,
+          "change": -13.72,
+          "changePct": -2.07,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 669.03
+            },
+            {
+              "date": "2026-03-17",
+              "close": 670.79
+            },
+            {
+              "date": "2026-03-18",
+              "close": 661.43
+            },
+            {
+              "date": "2026-03-19",
+              "close": 659.8
+            },
+            {
+              "date": "2026-03-20",
+              "close": 648.57
+            }
+          ]
+        },
+        {
+          "symbol": "QQQ",
+          "name": "Nasdaq 100",
+          "price": 582.06,
+          "prevClose": 593.72,
+          "change": -11.66,
+          "changePct": -1.96,
+          "currency": "USD",
+          "exchange": "NGM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 600.38
+            },
+            {
+              "date": "2026-03-17",
+              "close": 603.31
+            },
+            {
+              "date": "2026-03-18",
+              "close": 594.9
+            },
+            {
+              "date": "2026-03-19",
+              "close": 593.02
+            },
+            {
+              "date": "2026-03-20",
+              "close": 582.06
+            }
+          ]
+        },
+        {
+          "symbol": "DIA",
+          "name": "Dow Jones",
+          "price": 455.89,
+          "prevClose": 466.41,
+          "change": -10.52,
+          "changePct": -2.26,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 470.3
+            },
+            {
+              "date": "2026-03-17",
+              "close": 470.9
+            },
+            {
+              "date": "2026-03-18",
+              "close": 463
+            },
+            {
+              "date": "2026-03-19",
+              "close": 461.06
+            },
+            {
+              "date": "2026-03-20",
+              "close": 455.89
+            }
+          ]
+        },
+        {
+          "symbol": "IWM",
+          "name": "Russell 2000",
+          "price": 242.22,
+          "prevClose": 246.59,
+          "change": -4.37,
+          "changePct": -1.77,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 248.92
+            },
+            {
+              "date": "2026-03-17",
+              "close": 250.05
+            },
+            {
+              "date": "2026-03-18",
+              "close": 246.02
+            },
+            {
+              "date": "2026-03-19",
+              "close": 247.63
+            },
+            {
+              "date": "2026-03-20",
+              "close": 242.22
+            }
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "symbol": "TLT",
+          "name": "20Y+ Treasury",
+          "price": 85.83,
+          "prevClose": 86.54,
+          "change": -0.71,
+          "changePct": -0.82,
+          "currency": "USD",
+          "exchange": "NGM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 87.21
+            },
+            {
+              "date": "2026-03-17",
+              "close": 87.45
+            },
+            {
+              "date": "2026-03-18",
+              "close": 86.96
+            },
+            {
+              "date": "2026-03-19",
+              "close": 87.49
+            },
+            {
+              "date": "2026-03-20",
+              "close": 85.83
+            }
+          ]
+        },
+        {
+          "symbol": "HYG",
+          "name": "High Yield Corp",
+          "price": 78.92,
+          "prevClose": 79.2,
+          "change": -0.28,
+          "changePct": -0.35,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 79.45
+            },
+            {
+              "date": "2026-03-17",
+              "close": 79.81
+            },
+            {
+              "date": "2026-03-18",
+              "close": 79.4
+            },
+            {
+              "date": "2026-03-19",
+              "close": 79.66
+            },
+            {
+              "date": "2026-03-20",
+              "close": 78.92
+            }
+          ]
+        },
+        {
+          "symbol": "LQD",
+          "name": "IG Corporate",
+          "price": 107.85,
+          "prevClose": 108.17,
+          "change": -0.32,
+          "changePct": -0.3,
+          "currency": "USD",
+          "exchange": "PCX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 108.69
+            },
+            {
+              "date": "2026-03-17",
+              "close": 109.3
+            },
+            {
+              "date": "2026-03-18",
+              "close": 108.71
+            },
+            {
+              "date": "2026-03-19",
+              "close": 109.19
+            },
+            {
+              "date": "2026-03-20",
+              "close": 107.85
+            }
+          ]
+        }
+      ],
+      "commodities": [
+        {
+          "symbol": "GC=F",
+          "name": "Gold",
+          "price": 4492,
+          "prevClose": 4994,
+          "change": -502,
+          "changePct": -10.05,
+          "currency": "USD",
+          "exchange": "CMX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 4994
+            },
+            {
+              "date": "2026-03-17",
+              "close": 5001
+            },
+            {
+              "date": "2026-03-18",
+              "close": 4889.9
+            },
+            {
+              "date": "2026-03-19",
+              "close": 4600.7
+            },
+            {
+              "date": "2026-03-20",
+              "close": 4492
+            }
+          ]
+        },
+        {
+          "symbol": "SI=F",
+          "name": "Silver",
+          "price": 67.81,
+          "prevClose": 80.26,
+          "change": -12.45,
+          "changePct": -15.52,
+          "currency": "USD",
+          "exchange": "CMX",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 80.26
+            },
+            {
+              "date": "2026-03-17",
+              "close": 79.53
+            },
+            {
+              "date": "2026-03-18",
+              "close": 77.24
+            },
+            {
+              "date": "2026-03-19",
+              "close": 70.9
+            },
+            {
+              "date": "2026-03-20",
+              "close": 67.81
+            }
+          ]
+        },
+        {
+          "symbol": "CL=F",
+          "name": "WTI Crude",
+          "price": 98.09,
+          "prevClose": 93.5,
+          "change": 4.59,
+          "changePct": 4.91,
+          "currency": "USD",
+          "exchange": "NYM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 93.5
+            },
+            {
+              "date": "2026-03-17",
+              "close": 96.21
+            },
+            {
+              "date": "2026-03-18",
+              "close": 96.32
+            },
+            {
+              "date": "2026-03-19",
+              "close": 96.14
+            },
+            {
+              "date": "2026-03-20",
+              "close": 98.09
+            }
+          ]
+        },
+        {
+          "symbol": "BZ=F",
+          "name": "Brent Crude",
+          "price": 106.77,
+          "prevClose": 100.21,
+          "change": 6.56,
+          "changePct": 6.55,
+          "currency": "USD",
+          "exchange": "NYM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 100.21
+            },
+            {
+              "date": "2026-03-17",
+              "close": 103.42
+            },
+            {
+              "date": "2026-03-18",
+              "close": 107.38
+            },
+            {
+              "date": "2026-03-19",
+              "close": 108.65
+            },
+            {
+              "date": "2026-03-20",
+              "close": 106.77
+            }
+          ]
+        },
+        {
+          "symbol": "NG=F",
+          "name": "Natural Gas",
+          "price": 3.1,
+          "prevClose": 3.02,
+          "change": 0.07,
+          "changePct": 2.41,
+          "currency": "USD",
+          "exchange": "NYM",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 3.02
+            },
+            {
+              "date": "2026-03-17",
+              "close": 3.03
+            },
+            {
+              "date": "2026-03-18",
+              "close": 3.07
+            },
+            {
+              "date": "2026-03-19",
+              "close": 3.17
+            },
+            {
+              "date": "2026-03-20",
+              "close": 3.1
+            }
+          ]
+        }
+      ],
+      "crypto": [
+        {
+          "symbol": "BTC-USD",
+          "name": "Bitcoin",
+          "price": 70805.75,
+          "prevClose": 74861.09,
+          "change": -4055.34,
+          "changePct": -5.42,
+          "currency": "USD",
+          "exchange": "CCC",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 74861.09
+            },
+            {
+              "date": "2026-03-17",
+              "close": 73922.48
+            },
+            {
+              "date": "2026-03-18",
+              "close": 71245.58
+            },
+            {
+              "date": "2026-03-19",
+              "close": 69912.79
+            },
+            {
+              "date": "2026-03-20",
+              "close": 70805.75
+            }
+          ]
+        },
+        {
+          "symbol": "ETH-USD",
+          "name": "Ethereum",
+          "price": 2157.36,
+          "prevClose": 2351.18,
+          "change": -193.82,
+          "changePct": -8.24,
+          "currency": "USD",
+          "exchange": "CCC",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 2351.18
+            },
+            {
+              "date": "2026-03-17",
+              "close": 2318.05
+            },
+            {
+              "date": "2026-03-18",
+              "close": 2203.67
+            },
+            {
+              "date": "2026-03-19",
+              "close": 2137.42
+            },
+            {
+              "date": "2026-03-20",
+              "close": 2157.36
+            }
+          ]
+        }
+      ],
+      "volatility": [
+        {
+          "symbol": "^VIX",
+          "name": "VIX",
+          "price": 26.78,
+          "prevClose": 23.51,
+          "change": 3.27,
+          "changePct": 13.91,
+          "currency": "USD",
+          "exchange": "CXI",
+          "marketState": "UNKNOWN",
+          "history": [
+            {
+              "date": "2026-03-16",
+              "close": 23.51
+            },
+            {
+              "date": "2026-03-17",
+              "close": 22.37
+            },
+            {
+              "date": "2026-03-18",
+              "close": 25.09
+            },
+            {
+              "date": "2026-03-19",
+              "close": 24.06
+            },
+            {
+              "date": "2026-03-20",
+              "close": 26.78
+            }
+          ]
+        }
+      ]
+    },
+    "NIST": {
+      "total": 35,
+      "criticalCount": 12,
+      "highCount": 19,
+      "recent": [
+        {
+          "id": "CVE-2016-20024",
+          "published": "2026-03-16T14:17:48.350",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "ZKTeco ZKTime.Net 3.0.1.6 contains an insecure file permissions vulnerability that allows unprivileged users to escalate privileges by modifying executable files. Attackers can exploit world-writable permissions on the ZKTimeNet3.0 directory and its contents to replace executable",
+          "cwes": [
+            "CWE-538"
+          ],
+          "refs": [
+            "https://cxsecurity.com/issue/WLB-2016080264",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/116487"
+          ],
+          "products": []
+        },
+        {
+          "id": "CVE-2016-20026",
+          "published": "2026-03-16T14:17:48.777",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "ZKTeco ZKBioSecurity 3.0 contains hardcoded credentials in the bundled Apache Tomcat server that allow unauthenticated attackers to access the manager application. Attackers can authenticate with hardcoded credentials stored in tomcat-users.xml to upload malicious WAR archives co",
+          "cwes": [
+            "CWE-798"
+          ],
+          "refs": [
+            "https://cxsecurity.com/issue/WLB-2016080266",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/116484"
+          ],
+          "products": []
+        },
+        {
+          "id": "CVE-2016-20030",
+          "published": "2026-03-16T14:17:49.727",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "ZKTeco ZKBioSecurity 3.0 contains a user enumeration vulnerability that allows unauthenticated attackers to discover valid usernames by submitting partial characters via the username parameter. Attackers can send requests to the authLoginAction!login.do script with varying userna",
+          "cwes": [
+            "CWE-551"
+          ],
+          "refs": [
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/116485",
+            "https://packetstormsecurity.com/files/138573"
+          ],
+          "products": []
+        },
+        {
+          "id": "CVE-2017-20223",
+          "published": "2026-03-16T14:17:52.347",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "Telesquare SKT LTE Router SDT-CS3B1 firmware version 1.2.0 contains an insecure direct object reference vulnerability that allows attackers to bypass authorization and access resources by manipulating user-supplied input parameters. Attackers can directly reference objects in the",
+          "cwes": [
+            "CWE-639"
+          ],
+          "refs": [
+            "https://cxsecurity.com/issue/WLB-2017120297",
+            "https://exchange.xforce.ibmcloud.com/vulnerabilities/136993"
+          ],
+          "products": []
+        },
+        {
+          "id": "CVE-2017-20224",
+          "published": "2026-03-16T14:17:52.560",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "Telesquare SKT LTE Router SDT-CS3B1 version 1.2.0 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious content by exploiting enabled WebDAV HTTP methods. Attackers can use PUT, DELETE, MKCOL, MOVE, COPY, and PROPPATCH methods t",
+          "cwes": [
+            "CWE-434"
+          ],
+          "refs": [
+            "https://cxsecurity.com/issue/WLB-2017120301",
+            "https://www.vulncheck.com/advisories/telesquare-skt-lte-router-sdt-cs3b1-webdav-arbitrary-file-upload"
+          ],
+          "products": []
+        },
+        {
+          "id": "CVE-2025-69246",
+          "published": "2026-03-16T14:18:02.093",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "Raytha CMS does not have any brute force protection mechanism implemented. It allows an attacker to send multiple automated logon requests without triggering lockout, throttling, or step-up challenges.\n\nThis issue was fixed in version 1.4.6.",
+          "cwes": [
+            "CWE-307"
+          ],
+          "refs": [
+            "https://cert.pl/en/posts/2026/03/CVE-2025-69236",
+            "https://raytha.com/"
+          ],
+          "products": [
+            "raytha raytha"
+          ]
+        },
+        {
+          "id": "CVE-2026-32640",
+          "published": "2026-03-16T14:19:40.930",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "SimpleEval is a library for adding evaluatable expressions into python projects. Prior to 1.0.5, objects (including modules) can leak dangerous modules through to direct access inside the sandbox. If the objects you've passed in as names to SimpleEval have modules or other disall",
+          "cwes": [
+            "CWE-94",
+            "CWE-915"
+          ],
+          "refs": [
+            "https://github.com/danthedeckie/simpleeval/security/advisories/GHSA-44vg-5wv2-h2hg"
+          ],
+          "products": [
+            "danthedeckie simpleeval"
+          ]
+        },
+        {
+          "id": "CVE-2026-4163",
+          "published": "2026-03-16T14:19:55.143",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "A vulnerability was detected in Wavlink WL-WN579A3 220323. This issue affects the function SetName/GuestWifi of the file /cgi-bin/wireless.cgi of the component POST Request Handler. Performing a manipulation results in command injection. It is possible to initiate the attack remo",
+          "cwes": [
+            "CWE-74",
+            "CWE-77"
+          ],
+          "refs": [
+            "https://dl.wavlink.com/firmware/RD/WINSTAR_WN579A3-A-2026-03-10-94f93d4-WO-mt7628-squashfs-sysupgrade.bin",
+            "https://github.com/Litengzheng/vul_db/blob/main/WL-WN579A3/vul_10/README.md"
+          ],
+          "products": []
+        },
+        {
+          "id": "CVE-2026-4164",
+          "published": "2026-03-16T14:19:55.380",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "A flaw has been found in Wavlink WL-WN578W2 221110. Impacted is the function Delete_Mac_list/SetName/GuestWifi of the file /cgi-bin/wireless.cgi of the component POST Request Handler. Executing a manipulation can lead to command injection. It is possible to launch the attack remo",
+          "cwes": [
+            "CWE-74",
+            "CWE-77"
+          ],
+          "refs": [
+            "https://dl.wavlink.com/firmware/RD/WINSTAR_WN578W2-A-2026-03-10-94f93d4-WO-mt7628-squashfs-sysupgrade.bin",
+            "https://github.com/Litengzheng/vul_db/blob/main/WL-WN578W2/vul_1/README.md"
+          ],
+          "products": []
+        },
+        {
+          "id": "CVE-2026-4170",
+          "published": "2026-03-16T14:19:56.880",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "A weakness has been identified in Topsec TopACM 3.0. Affected by this vulnerability is an unknown functionality of the file /view/systemConfig/management/nmc_sync.php of the component HTTP Request Handler. Executing a manipulation of the argument template_path can lead to os comm",
+          "cwes": [
+            "CWE-77",
+            "CWE-78"
+          ],
+          "refs": [
+            "https://my.feishu.cn/docx/EAFFdhzoeodDxfxeazNcxBzCnRf?from=from_copylink",
+            "https://vuldb.com/?ctiid.351077"
+          ],
+          "products": []
+        },
+        {
+          "id": "CVE-2026-4181",
+          "published": "2026-03-16T14:19:58.797",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "A security flaw has been discovered in D-Link DIR-816 1.10CNB05. This affects an unknown function of the file /goform/form2RepeaterStep2.cgi of the component goahead. The manipulation of the argument key1/key2/key3/key4/pskValue results in stack-based buffer overflow. The attack ",
+          "cwes": [
+            "CWE-119",
+            "CWE-121",
+            "CWE-787"
+          ],
+          "refs": [
+            "https://github.com/wudipjq/my_vuln/blob/main/D-Link7/vuln_85/85.md",
+            "https://vuldb.com/?ctiid.351085"
+          ],
+          "products": [
+            "dlink dir-816_firmware",
+            "dlink dir-816"
+          ]
+        },
+        {
+          "id": "CVE-2026-4182",
+          "published": "2026-03-16T14:19:59.017",
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "desc": "A weakness has been identified in D-Link DIR-816 1.10CNB05. This impacts an unknown function of the file /goform/form2Wl5RepeaterStep2.cgi of the component goahead. This manipulation of the argument key1/key2/key3/key4/pskValue causes stack-based buffer overflow. Remote exploitat",
+          "cwes": [
+            "CWE-119",
+            "CWE-121",
+            "CWE-787"
+          ],
+          "refs": [
+            "https://github.com/wudipjq/my_vuln/blob/main/D-Link7/vuln_86/86.md",
+            "https://vuldb.com/?ctiid.351086"
+          ],
+          "products": [
+            "dlink dir-816_firmware",
+            "dlink dir-816"
+          ]
+        }
+      ],
+      "topCve": {
+        "id": "CVE-2016-20024",
+        "published": "2026-03-16T14:17:48.350",
+        "score": 9.8,
+        "severity": "CRITICAL",
+        "desc": "ZKTeco ZKTime.Net 3.0.1.6 contains an insecure file permissions vulnerability that allows unprivileged users to escalate privileges by modifying executable files. Attackers can exploit world-writable permissions on the ZKTimeNet3.0 directory and its contents to replace executable",
+        "cwes": [
+          "CWE-538"
+        ],
+        "refs": [
+          "https://cxsecurity.com/issue/WLB-2016080264",
+          "https://exchange.xforce.ibmcloud.com/vulnerabilities/116487"
+        ],
+        "products": []
+      },
+      "weekStart": "2026-03-13",
+      "signals": [
+        "12 CRITICAL CVEs published this week — patch prioritization warranted",
+        "4 RCE vulnerabilities detected — CVE-2017-20223 (score: 9.8)",
+        "2 auth-bypass/privilege-escalation CVEs — critical attack surface expansion"
+      ]
+    },
+    "CISA": {
+      "kevTotal": 1551,
+      "kevRecentCount": 15,
+      "kevRecent": [
+        {
+          "id": "CVE-2025-32432",
+          "vendor": "Craft CMS",
+          "product": "Craft CMS",
+          "name": "Craft CMS Code Injection Vulnerability",
+          "dateAdded": "2026-03-20",
+          "dueDate": "2026-04-03",
+          "desc": "Craft CMS contains a code injection vulnerability that allows a remote attacker to execute arbitrary code.",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2025-54068",
+          "vendor": "Laravel",
+          "product": "Livewire",
+          "name": "Laravel Livewire Code Injection Vulnerability",
+          "dateAdded": "2026-03-20",
+          "dueDate": "2026-04-03",
+          "desc": "Laravel Livewire contain a code injection vulnerability that could allow unauthenticated attackers to achieve remote command execution in specific scenarios.",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2025-43510",
+          "vendor": "Apple",
+          "product": "Multiple Products",
+          "name": "Apple Multiple Products Improper Locking Vulnerability",
+          "dateAdded": "2026-03-20",
+          "dueDate": "2026-04-03",
+          "desc": "Apple watchOS, iOS, iPadOS, macOS, visionOS, and tvOS contain an improper locking vulnerability that could allow a malicious application to cause unexpected changes in memory share",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2025-43520",
+          "vendor": "Apple",
+          "product": "Multiple Products",
+          "name": "Apple Multiple Products Classic Buffer Overflow Vulnerability",
+          "dateAdded": "2026-03-20",
+          "dueDate": "2026-04-03",
+          "desc": "Apple watchOS, iOS, iPadOS, macOS, visionOS, tvOS, and iPadOS contain a classic buffer overflow vulnerability which could allow a malicious application to cause unexpected system t",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2025-31277",
+          "vendor": "Apple",
+          "product": "Multiple Products",
+          "name": "Apple Multiple Products Buffer Overflow Vulnerability",
+          "dateAdded": "2026-03-20",
+          "dueDate": "2026-04-03",
+          "desc": "Apple Safari, iOS, watchOS, visionOS, iPadOS, macOS, and tvOS contain a buffer overflow vulnerability that could allow the processing of maliciously crafted web content which may l",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2026-20131",
+          "vendor": "Cisco",
+          "product": "Secure Firewall Management Center (FMC)",
+          "name": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud ",
+          "dateAdded": "2026-03-19",
+          "dueDate": "2026-03-22",
+          "desc": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain a deserialization of untrusted data vulnerability in the w",
+          "ransomware": true
+        },
+        {
+          "id": "CVE-2025-66376",
+          "vendor": "Synacor",
+          "product": "Zimbra Collaboration Suite (ZCS)",
+          "name": "Synacor Zimbra Collaboration Suite (ZCS) Cross-Site Scripting Vulnerability",
+          "dateAdded": "2026-03-18",
+          "dueDate": "2026-04-01",
+          "desc": "Synacor Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability in the Classic UI where attackers could abuse Cascading Style Sheets (CSS) @import directives",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2026-20963",
+          "vendor": "Microsoft",
+          "product": "SharePoint",
+          "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
+          "dateAdded": "2026-03-18",
+          "dueDate": "2026-03-21",
+          "desc": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2025-47813",
+          "vendor": "Wing FTP Server",
+          "product": "Wing FTP Server",
+          "name": "Wing FTP Server Information Disclosure Vulnerability",
+          "dateAdded": "2026-03-16",
+          "dueDate": "2026-03-30",
+          "desc": "Wing FTP Server contains a generation of error message containing sensitive information vulnerability when using a long value in the UID cookie.",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2026-3910",
+          "vendor": "Google",
+          "product": "Chromium V8",
+          "name": "Google Chromium V8 Improper Restriction of Operations Within the Bounds of a Mem",
+          "dateAdded": "2026-03-13",
+          "dueDate": "2026-03-27",
+          "desc": "Google Chromium V8 contains an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow a remote attacker to execute arbitrary code in",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2026-3909",
+          "vendor": "Google",
+          "product": "Skia",
+          "name": "Google Skia Out-of-Bounds Write Vulnerability",
+          "dateAdded": "2026-03-13",
+          "dueDate": "2026-03-27",
+          "desc": "Google Skia contains an out-of-bounds write vulnerability that could allow a remote attacker to perform out of bounds memory access via a crafted HTML page. This vulnerability affe",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2025-68613",
+          "vendor": "n8n",
+          "product": "n8n",
+          "name": "n8n Improper Control of Dynamically-Managed Code Resources Vulnerability",
+          "dateAdded": "2026-03-11",
+          "dueDate": "2026-03-25",
+          "desc": "n8n contains an improper control of dynamically managed code resources vulnerability in its workflow expression evaluation system that allows for remote code execution.",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2021-22054",
+          "vendor": "Omnissa",
+          "product": "Workspace One UEM",
+          "name": "Omnissa Workspace ONE Server-Side Request Forgery",
+          "dateAdded": "2026-03-09",
+          "dueDate": "2026-03-23",
+          "desc": "Omnissa Workspace One UEM formerly known as VMware Workspace One UEM contains a server-side request forgery (SSRF) vulnerability that could allow a malicious actor with network acc",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2025-26399",
+          "vendor": "SolarWinds",
+          "product": "Web Help Desk",
+          "name": "SolarWinds Web Help Desk Deserialization of Untrusted Data Vulnerability",
+          "dateAdded": "2026-03-09",
+          "dueDate": "2026-03-12",
+          "desc": "SolarWinds Web Help Desk contain a deserialization of untrusted data vulnerability in AjaxProxy that could allow an attacker to run commands on the host machine.",
+          "ransomware": false
+        },
+        {
+          "id": "CVE-2026-1603",
+          "vendor": "Ivanti",
+          "product": " Endpoint Manager (EPM)",
+          "name": "Ivanti Endpoint Manager (EPM) Authentication Bypass Vulnerability",
+          "dateAdded": "2026-03-09",
+          "dueDate": "2026-03-23",
+          "desc": "Ivanti Endpoint Manager (EPM) contains an authentication bypass using an alternate path or channel vulnerability that could allow a remote unauthenticated attacker to leak specific",
+          "ransomware": false
+        }
+      ],
+      "topVendors": [
+        {
+          "vendor": "Microsoft",
+          "count": 362
+        },
+        {
+          "vendor": "Apple",
+          "count": 93
+        },
+        {
+          "vendor": "Cisco",
+          "count": 86
+        },
+        {
+          "vendor": "Adobe",
+          "count": 76
+        },
+        {
+          "vendor": "Google",
+          "count": 70
+        },
+        {
+          "vendor": "Oracle",
+          "count": 42
+        },
+        {
+          "vendor": "Apache",
+          "count": 38
+        },
+        {
+          "vendor": "Ivanti",
+          "count": 32
+        }
+      ],
+      "alerts": [
+        {
+          "title": "Pro-Russia Hacktivists Conduct Opportunistic Attacks Against US and Global Critical Infrastructure",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-343a",
+          "date": "Fri, 05 Dec 2025 14:35:38 EST",
+          "desc": "&lt;h2&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This joint Cybersecurity Advisory is being published as an addition to the Cybersecurity and Infra"
+        },
+        {
+          "title": "CISA Shares Lessons Learned from an Incident Response Engagement",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-266a",
+          "date": "Mon, 22 Sep 2025 11:12:49 EDT",
+          "desc": "&lt;h2&gt;&lt;strong&gt;Advisory at a Glance&lt;/strong&gt;&lt;/h2&gt; &lt;table&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Executive Summary&lt;/td&gt; &lt;td&gt;CISA began incident response efforts at a"
+        },
+        {
+          "title": "Countering Chinese State-Sponsored Actors Compromise of Networks Worldwide to Feed Global Espionage System",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-239a",
+          "date": "Mon, 25 Aug 2025 09:36:40 EDT",
+          "desc": "&lt;h2&gt;&lt;strong&gt;Executive summary&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;People’s Republic of China (PRC) state-sponsored cyber threat actors are targeting networks globally, including, but not li"
+        },
+        {
+          "title": "CISA and USCG Identify Areas for Cyber Hygiene Improvement After Conducting Proactive Threat Hunt at US Critical Infrastructure Organization",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-212a",
+          "date": "Tue, 29 Jul 2025 13:53:52 EDT",
+          "desc": "&lt;div class=\"WordSection1\"&gt; &lt;h2&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;&lt;em&gt;The Cybersecurity and Infrastructure Security Agency (CISA) and U.S. Coast Guard (USCG) ar"
+        },
+        {
+          "title": "#StopRansomware: Interlock",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-203a",
+          "date": "Mon, 21 Jul 2025 10:11:24 EDT",
+          "desc": "&lt;h2&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: This joint Cybersecurity Advisory is part of an ongoing #StopRansomware effort to publis"
+        },
+        {
+          "title": "Ransomware Actors Exploit Unpatched SimpleHelp Remote Monitoring and Management to Compromise Utility Billing Software Provider",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-163a",
+          "date": "Thu, 12 Jun 2025 10:29:54 EDT",
+          "desc": "&lt;h2&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;The Cybersecurity and Infrastructure Security Agency (CISA) is releasing this advisory in response to ransomware actors leveraging un"
+        },
+        {
+          "title": "Threat Actors Deploy LummaC2 Malware to Exfiltrate Sensitive Data from Organizations",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-141b",
+          "date": "Tue, 20 May 2025 15:20:23 EDT",
+          "desc": "&lt;h2&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;The Federal Bureau of Investigation (FBI) and the Cybersecurity and Infrastructure Security Agency (CISA) are releasing this joint ad"
+        },
+        {
+          "title": "Russian GRU Targeting Western Logistics Entities and Technology Companies",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-141a",
+          "date": "Mon, 12 May 2025 12:49:12 EDT",
+          "desc": "&lt;h2&gt;&lt;strong&gt;Executive Summary&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;This joint cybersecurity advisory (CSA) highlights a Russian state-sponsored cyber campaign targeting Western logistics ent"
+        },
+        {
+          "title": "Fast Flux: A National Security Threat",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-093a",
+          "date": "Tue, 01 Apr 2025 15:00:21 EDT",
+          "desc": "&lt;h2&gt;&lt;strong&gt;Executive summary&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Many networks have a gap in their defenses for detecting and blocking a malicious technique known as “fast flux.” This tech"
+        },
+        {
+          "title": "#StopRansomware: Medusa Ransomware",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-071a",
+          "date": "Tue, 11 Mar 2025 10:52:42 EDT",
+          "desc": "&lt;h2&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This joint Cybersecurity Advisory is part of an ongoing #StopRansomware effort to publish advisori"
+        }
+      ],
+      "alertCount": 10,
+      "ransomwareCount": 1,
+      "signals": [
+        "15 new KEVs added in last 30 days — active exploitation confirmed",
+        "1 KEV entries linked to known ransomware campaigns",
+        "CISA issued 10 active cybersecurity advisories — Pro-Russia Hacktivists Conduct Opportunistic Attacks Against"
+      ]
+    }
+  },
+  "errors": [],
+  "timing": {
+    "GDELT": {
+      "status": "ok",
+      "ms": 5505
+    },
+    "OpenSky": {
+      "status": "ok",
+      "ms": 2902
+    },
+    "FIRMS": {
+      "status": "ok",
+      "ms": 1233
+    },
+    "Maritime": {
+      "status": "ok",
+      "ms": 60
+    },
+    "Safecast": {
+      "status": "ok",
+      "ms": 3055
+    },
+    "ACLED": {
+      "status": "ok",
+      "ms": 6032
+    },
+    "ReliefWeb": {
+      "status": "ok",
+      "ms": 5908
+    },
+    "WHO": {
+      "status": "ok",
+      "ms": 3249
+    },
+    "OFAC": {
+      "status": "ok",
+      "ms": 13821
+    },
+    "OpenSanctions": {
+      "status": "ok",
+      "ms": 8105
+    },
+    "ADS-B": {
+      "status": "ok",
+      "ms": 5466
+    },
+    "FRED": {
+      "status": "ok",
+      "ms": 6234
+    },
+    "Treasury": {
+      "status": "ok",
+      "ms": 4366
+    },
+    "BLS": {
+      "status": "ok",
+      "ms": 5671
+    },
+    "EIA": {
+      "status": "ok",
+      "ms": 6206
+    },
+    "GSCPI": {
+      "status": "ok",
+      "ms": 4196
+    },
+    "USAspending": {
+      "status": "ok",
+      "ms": 5350
+    },
+    "Comtrade": {
+      "status": "ok",
+      "ms": 9033
+    },
+    "NOAA": {
+      "status": "ok",
+      "ms": 6544
+    },
+    "EPA": {
+      "status": "ok",
+      "ms": 18734
+    },
+    "Patents": {
+      "status": "ok",
+      "ms": 6660
+    },
+    "Bluesky": {
+      "status": "ok",
+      "ms": 15320
+    },
+    "Reddit": {
+      "status": "ok",
+      "ms": 20
+    },
+    "Telegram": {
+      "status": "ok",
+      "ms": 14868
+    },
+    "KiwiSDR": {
+      "status": "ok",
+      "ms": 5788
+    },
+    "Space": {
+      "status": "ok",
+      "ms": 6181
+    },
+    "YFinance": {
+      "status": "ok",
+      "ms": 4915
+    },
+    "NIST": {
+      "status": "ok",
+      "ms": 6034
+    },
+    "CISA": {
+      "status": "ok",
+      "ms": 5579
+    }
+  }
+}

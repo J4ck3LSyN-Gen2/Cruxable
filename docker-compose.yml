@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  crucix:
+    build: .
+    ports:
+      - "127.0.0.1:${PORT:-3117}:${PORT:-3117}"
+    env_file:
+      - .env
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    volumes:
+      - crucix_runs:/app/runs
+    restart: unless-stopped
+
+volumes:
+  crucix_runs:

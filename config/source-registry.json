@@ -1,0 +1,109 @@
+{
+  "newsFeeds": [
+    {
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "source": "BBC"
+    },
+    {
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "source": "NYT"
+    },
+    {
+      "url": "https://feeds.aljazeera.com/xml/rss/all.xml",
+      "source": "Al Jazeera"
+    },
+    {
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Americas.xml",
+      "source": "NYT Americas"
+    },
+    {
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml",
+      "source": "NYT Asia"
+    },
+    {
+      "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+      "source": "BBC Tech"
+    },
+    {
+      "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "source": "BBC Science"
+    }
+  ],
+  "osintFeeds": [
+    {
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "source": "BleepingComputer",
+      "category": "security"
+    },
+    {
+      "url": "https://krebsonsecurity.com/feed/",
+      "source": "Krebs",
+      "category": "security"
+    },
+    {
+      "url": "https://isc.sans.edu/rssfeed.xml",
+      "source": "SANS ISC",
+      "category": "security"
+    },
+    {
+      "url": "https://feeds.feedburner.com/securityweek",
+      "source": "SecurityWeek",
+      "category": "security"
+    },
+    {
+      "url": "https://therecord.media/feed",
+      "source": "The Record",
+      "category": "security"
+    },
+    {
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "source": "The Hacker News",
+      "category": "security"
+    },
+    {
+      "url": "https://www.darkreading.com/rss_simple.asp",
+      "source": "Dark Reading",
+      "category": "security"
+    },
+    {
+      "url": "https://cyberscoop.com/feed/",
+      "source": "CyberScoop",
+      "category": "security"
+    },
+    {
+      "url": "https://blog.talosintelligence.com/rss/",
+      "source": "Cisco Talos",
+      "category": "security"
+    },
+    {
+      "url": "https://securityaffairs.com/feed",
+      "source": "Security Affairs",
+      "category": "security"
+    },
+    {
+      "url": "https://unit42.paloaltonetworks.com/feed/",
+      "source": "Unit 42",
+      "category": "security"
+    },
+    {
+      "url": "https://securelist.com/feed/",
+      "source": "Securelist",
+      "category": "security"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/tag/ransomware/feed/",
+      "source": "Bleeping Ransomware",
+      "category": "security"
+    },
+    {
+      "url": "https://blog.cloudflare.com/tag/ddos/rss/",
+      "source": "Cloudflare DDoS",
+      "category": "security"
+    },
+    {
+      "url": "https://www.imperva.com/blog/category/ddos/feed/",
+      "source": "Imperva DDoS",
+      "category": "security"
+    }
+  ]
+}
