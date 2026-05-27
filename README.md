@@ -1,12 +1,12 @@
 <div align="center">
 
-# Crucix-Epanded (Cruxidle:beta)
+# Cruxable (Old `Crucix-Expanded`)
 
 Customized working fork of the original Crucix project, with active development centered on cybersecurity intelligence and expanded dashboard workflows.
 
 Original base: https://github.com/calesthio/Crucix.git
 
-<img src="docs/headerCrucix.png" alt="CrucixExpanded dashboard in amber theme" width="100%" />
+<img src="docs/headerCrucix.png" alt="cruxable dashboard in amber theme" width="100%" />
 
 </div>
 ---
@@ -35,7 +35,7 @@ The result is a local intelligence console that still covers geopolitical, econo
 
 Most of the world's real-time intelligence is public: vulnerability disclosures, exploited CVEs, conflict events, satellite detections, flight movement, maritime chokepoints, macro indicators, and breaking headlines. The problem is that it is fragmented across too many feeds to monitor cleanly.
 
-CrucixExpanded pulls those streams into one local system, correlates them, and keeps the dashboard current on an automated sweep cycle. For this fork, the emphasis is less "generic world dashboard" and more "practical operator console" with stronger cyber context and better real-time situational awareness.
+cruxable pulls those streams into one local system, correlates them, and keeps the dashboard current on an automated sweep cycle. For this fork, the emphasis is less "generic world dashboard" and more "practical operator console" with stronger cyber context and better real-time situational awareness.
 
 It is built for users who want cross-domain visibility without buying into a closed platform: analysts, builders, defenders, researchers, and anyone who wants a live picture of what is changing across cyber, geopolitical, and market environments.
 
@@ -53,23 +53,23 @@ It is built for users who want cross-domain visibility without buying into a clo
 
 ### Boot Sequence
 
-![CrucixExpanded boot sequence](docs/boot.png)
+![cruxable boot sequence](docs/boot.png)
 
 ### Dashboard Theme Examples
 
 ### Kali 
-![CrucixExpanded dashboard in Kali theme](docs/kaliCrucix.png)
+![cruxable dashboard in Kali theme](docs/kaliCrucix.png)
 
 ### Tulip 
-![CrucixExpanded dashboard in tulip theme](docs/tulipCrucix.png)
+![cruxable dashboard in tulip theme](docs/tulipCrucix.png)
 
 ### Layout Examples
 
 ### Conflict 
-![CrucixExpanded Conflict Layout](docs/conflictCrucix.png)
+![cruxable Conflict Layout](docs/conflictCrucix.png)
 
 ### Engagement
-![CrucixExpanded Engagement Layout](docs/engageCrucix.png)
+![cruxable Engagement Layout](docs/engageCrucix.png)
 
 ---
 
@@ -78,7 +78,7 @@ It is built for users who want cross-domain visibility without buying into a clo
 ```bash
 # 1. Clone the repo
 git clone https://github.com/J4ck3LSyN-Gen2/Crucix-Expanded.git
-cd crucixExpanded
+cd cruxable
 
 # 2. Edit the .env & add keys...
 cp .env.example .env
@@ -90,7 +90,7 @@ docker compose logs -f crucix
 
 ### Down the container
 ```bash
-# From inside of the crucixExpanded directory
+# From inside of the cruxable directory
 docker compose down 
 ```
 Dashboard at `http://localhost:3117`. Sweep data persists in the Docker-managed volume `crucix_runs` (`/app/runs` inside container). Includes a health check endpoint.
@@ -133,7 +133,7 @@ The server runs a sweep cycle every 15 minutes (configurable). Each cycle:
 6. Pushes update to all connected browsers via SSE
 
 ### Telegram Bot (Two-Way)
-CrucixExpanded doubles as an interactive Telegram bot. Beyond sending alerts, it responds to commands directly from your chat:
+cruxable doubles as an interactive Telegram bot. Beyond sending alerts, it responds to commands directly from your chat:
 
 | Command | What It Does |
 |---------|-------------|
@@ -150,7 +150,7 @@ This requires `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` in `.env`. The bot pol
 
 ### Discord Bot (Two-Way)
 
-CrucixExpanded also supports Discord as a full-featured bot with slash commands and rich embed alerts. It mirrors the Telegram bot's capabilities with Discord-native formatting.
+cruxable also supports Discord as a full-featured bot with slash commands and rich embed alerts. It mirrors the Telegram bot's capabilities with Discord-native formatting.
 
 | Command | What It Does |
 |---------|-------------|
@@ -165,7 +165,7 @@ Alerts are delivered as rich embeds with color-coded sidebars: red for FLASH, ye
 
 **Webhook fallback:** If you don't want to run a full bot, set `DISCORD_WEBHOOK_URL` instead. This enables one-way alerts (no slash commands) with zero dependencies — no `discord.js` needed.
 
-**Optional dependency:** The full bot requires `discord.js`. Install it with `npm install discord.js`. If it's not installed, CrucixExpanded automatically falls back to webhook-only mode.
+**Optional dependency:** The full bot requires `discord.js`. Install it with `npm install discord.js`. If it's not installed, cruxable automatically falls back to webhook-only mode.
 
 ### Optional LLM Layer
 Connect any of 4 LLM providers for enhanced analysis:
@@ -255,14 +255,14 @@ Alerts work with or without an LLM on both Telegram and Discord. With an LLM con
 
 ### Without Any Keys
 
-CrucixExpanded still works with zero API keys. 22+ sources require no authentication at all (including CISA KEV, EPSS, and cyber RSS feeds). Sources that need keys return structured errors and the rest of the sweep continues normally.
+cruxable still works with zero API keys. 22+ sources require no authentication at all (including CISA KEV, EPSS, and cyber RSS feeds). Sources that need keys return structured errors and the rest of the sweep continues normally.
 
 ---
 
 ## Architecture
 
 ```
-crucixExpanded/
+cruxable/
 ├── server.mjs                 # Express dev server (SSE, auto-refresh, LLM, bot commands)
 ├── crucix.config.mjs          # Configuration with env var overrides + delta thresholds
 ├── diag.mjs                   # Diagnostic script — run if server fails to start
@@ -456,7 +456,7 @@ This tests every import one by one, checks your Node.js version, and verifies po
 
 **3. Check if port 3117 is already in use:**
 
-A previous CrucixExpanded instance may still be running in the background.
+A previous cruxable instance may still be running in the background.
 
 ```powershell
 # Windows PowerShell
@@ -478,7 +478,7 @@ Then try starting again. You can also change the port by setting `PORT=3118` in 
 ```bash
 node --version
 ```
-CrucixExpanded requires Node.js 22 or later. If you have an older version, download the latest LTS from [nodejs.org](https://nodejs.org/).
+cruxable requires Node.js 22 or later. If you have an older version, download the latest LTS from [nodejs.org](https://nodejs.org/).
 
 ### Dashboard shows empty panels after first start
 
