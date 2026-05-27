@@ -41,15 +41,19 @@ It is built for users who want cross-domain visibility without buying into a clo
 
 ---
 
-> CHANGELOG: 
+> CHANGELOG:
+> ! Implemented docker containerization (old news)
+> + Created `Theme` configurables. (old news)
+> ! Fixed `DNS` issues + more wrapping around container configurations. (old news)
+> + Added cybsecurity OSINT feeds. (NIDST,...). (old news)
 > + `CVE Feed` at the top of the page.
 > + More wrapping around the `lowerGrid` functionality.
 > + `Panel` resizing functionality + padding (beta).
 > + `4` new themes `Kali`, `tulip`,  `rose` & `spy`.
-> +  a `layout` configuration (more to come), this allows for on the fly layouts.
+> +  `layout` configuration (more to come), this allows for on the fly layouts.
 > ! Implemented `AUTH_USERNAME` & `AUTH_PASSWD` inside of `.env` for proper authentication configuartions.
 > + Added `login.html` to handle logins with changes to `crucix.config.mjs` & `server.mjs`.
-> - Removed old `sc` documentation. 
+> - Removed old `sc` documentation.
 
 ---
 ## Screenshots
