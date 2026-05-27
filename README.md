@@ -411,6 +411,8 @@ All settings are in `.env` with sensible defaults:
 |----------|---------|-------------|
 | `PORT` | `3117` | Dashboard server port |
 | `REFRESH_INTERVAL_MINUTES` | `15` | Auto-refresh interval |
+| `AUTH_USERNAME` | — | Optional: Set to enable dashboard login |
+| `AUTH_PASSWD` | — | Optional: Access code for dashboard |
 | `LLM_PROVIDER` | disabled | `anthropic`, `openai`, `gemini`, or `codex` |
 | `LLM_API_KEY` | — | API key (not needed for codex) |
 | `LLM_MODEL` | per-provider default | Override model selection |
