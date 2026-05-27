@@ -41,6 +41,31 @@ It is built for users who want cross-domain visibility without buying into a clo
 
 ---
 
+## Quick Start
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/J4ck3LSyN-Gen2/Cruxable.git
+cd cruxable
+
+# 2. Edit the .env & add keys...
+cp .env.example .env
+
+# 3. Run the container 
+docker compose up --build -d
+docker compose logs -f crucix-live
+```
+
+### Down the container
+```bash
+# From inside of the cruxable directory
+docker compose down 
+```
+Dashboard at `http://localhost:3117`. Sweep data persists in the Docker-managed volume `crucix_runs` (`/app/runs` inside container). Includes a health check endpoint.
+
+
+---
+
 > CHANGELOG:
 > ! Implemented docker containerization (old news)
 > + Created `Theme` configurables. (old news)
@@ -81,30 +106,6 @@ It is built for users who want cross-domain visibility without buying into a clo
 
 ### Engagement
 ![cruxable Engagement Layout](docs/engageCrucix.png)
-
----
-
-## Quick Start
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/J4ck3LSyN-Gen2/Cruxable.git
-cd cruxable
-
-# 2. Edit the .env & add keys...
-cp .env.example .env
-
-# 3. Run the container 
-docker compose up --build -d
-docker compose logs -f crucix-live
-```
-
-### Down the container
-```bash
-# From inside of the cruxable directory
-docker compose down 
-```
-Dashboard at `http://localhost:3117`. Sweep data persists in the Docker-managed volume `crucix_runs` (`/app/runs` inside container). Includes a health check endpoint.
 
 ---
 
@@ -519,18 +520,3 @@ Check these in order:
 5. Check server logs for `[Discord] Bot logged in as ...` on startup. If you see `[Discord] discord.js not installed`, install it and restart
 6. **Webhook-only fallback:** If you just want alerts without slash commands, set `DISCORD_WEBHOOK_URL` instead of the bot token. No `discord.js` needed.
 
----
-
-## Contributing
-
-Found a bug? Want to add a 32nd source? PRs welcome. Each source is a standalone module in `apis/sources/` — just export a `briefing()` function that returns structured data and add it to the orchestrator in `apis/briefing.mjs`.
-
-If you find this useful, a star helps others find it too.
-
-For contribution guidelines, review expectations, and source-add rules, see `CONTRIBUTING.md`. For security reports, see `SECURITY.md`.
-
----
-
-## License
-
-AGPL-3.0
