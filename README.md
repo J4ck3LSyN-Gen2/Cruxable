@@ -1,12 +1,12 @@
 <div align="center">
 
-# crucixExpanded
+# Crucix-Epanded (Crucidle:beta)
 
 Customized working fork of the original Crucix project, with active development centered on cybersecurity intelligence and expanded dashboard workflows.
 
 Original base: https://github.com/calesthio/Crucix.git
 
-<img src="docs/dashGold.png" alt="CrucixExpanded dashboard in amber theme" width="100%" />
+<img src="docs/headerCrucix.png" alt="CrucixExpanded dashboard in amber theme" width="100%" />
 
 </div>
 ---
@@ -41,31 +41,35 @@ It is built for users who want cross-domain visibility without buying into a clo
 
 ---
 
+> What has changed: 
+> - Added `CVE Feed` at the top of the page.
+> - Added more wrapping around the `lowerGrid` functionality.
+> - Added `Panel` resizing functionality + padding (beta).
+> - Added `4` new themes `Kali`, `tulip`,  `rose` & `spy`.
+> - Added a `layout` configuration (more to come), this allows for on the fly layouts.
+
+---
 ## Screenshots
 
 ### Boot Sequence
 
 ![CrucixExpanded boot sequence](docs/boot.png)
 
-### Dashboard Themes
+### Dashboard Theme Examples
 
-Amber theme with the cyber watch stack, sweep delta, live ticker, and expanded flat-map view:
+### Kali 
+![CrucixExpanded dashboard in Kali theme](docs/kaliCrucix.png)
 
-![CrucixExpanded dashboard in amber theme](docs/dashGold.png)
+### Tulip 
+![CrucixExpanded dashboard in tulip theme](docs/tulipCrucix.png)
 
-Phantom theme variant of the same operator layout:
+### Layout Examples
 
-![CrucixExpanded dashboard in phantom theme](docs/dashMidnight.png)
+### Conflict 
+![CrucixExpanded Conflict Layout](docs/conflictCrucix.png)
 
-Blood theme for higher-contrast alert monitoring:
-
-![CrucixExpanded dashboard in blood theme](docs/dashRed.png)
-
-### Expanded Map View
-
-Flat-map mode with chokepoints, conflict clusters, air corridors, OSINT events, and infrastructure overlays:
-
-![CrucixExpanded expanded flat map](docs/newMap.png)
+### Engagement
+![CrucixExpanded Engagement Layout](docs/engageCrucix.png)
 
 ---
 
@@ -80,14 +84,14 @@ cd crucixExpanded
 cp .env.example .env
 
 # 3. Run the container 
-sudo docker-compose up --build -d
-sudo docker-compose logs -f crucix
+docker compose up --build -d
+docker compose logs -f crucix
 ```
 
 ### Down the container
 ```bash
 # From inside of the crucixExpanded directory
-sudo docker-compose down 
+docker compose down 
 ```
 Dashboard at `http://localhost:3117`. Sweep data persists in the Docker-managed volume `crucix_runs` (`/app/runs` inside container). Includes a health check endpoint.
 
