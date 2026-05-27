@@ -70,8 +70,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--s
 .g-panel.panel-dragging{opacity:0.45;border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset;cursor:grabbing}
 .panel-drop-target{outline:1px dashed var(--accent);outline-offset:3px}
 [data-drop-zone]{min-height:100px;transition:background 0.3s ease}
-[data-drop-zone].panel-drop-target{background:rgba(100,240,200,0.04);outline-offset:-2px}
-.g-panel.panel-minimized{padding-bottom:10px}
+.g-panel.panel-minimized{padding-bottom:10px;height:auto !important;min-height:0 !important}
 .g-panel.panel-minimized > :not(.sec-head){display:none!important}
 .g-panel.panel-minimized .sec-head{margin-bottom:0}
 .panel-grip{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-right:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:var(--dim);font-family:var(--mono);font-size:9px;line-height:1;border-radius:4px;cursor:grab;flex-shrink:0}
@@ -93,7 +92,9 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--s
 .panel-resizer{position:absolute;right:0;bottom:0;width:14px;height:14px;cursor:nwse-resize;z-index:10;background:linear-gradient(135deg, transparent 50%, var(--border-bright) 50%)}
 .panel-resizer:hover{background:linear-gradient(135deg, transparent 50%, var(--accent) 50%)}
 .g-panel{display:flex;flex-direction:column;min-height:60px;position:relative}
-.g-panel > :not(.sec-head){flex:1;min-height:0}
+.g-panel-content{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;padding-right:4px}
+.g-panel-content::-webkit-scrollbar{width:3px}
+.g-panel-content::-webkit-scrollbar-thumb{background:var(--border-bright);border-radius:2px}
 
 /* LEFT RAIL */
 .layer-item{display:flex;align-items:center;justify-content:space-between;padding:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);margin-bottom:4px}
@@ -1439,9 +1440,9 @@ function loadPanelDimensions(){
 function updateSizeTier(panel){
   const h = panel.offsetHeight;
   let tier = 'full';
-  if(h < 260) tier = 'nano';
-  else if(h < 480) tier = 'small';
-  else if(h < 750) tier = 'medium';
+  if(h < 240) tier = 'nano';
+  else if(h < 420) tier = 'small';
+  else if(h < 680) tier = 'medium';
   panel.dataset.sizeTier = tier;
 }
 function savePanelDimensions(dims){
@@ -1450,10 +1451,11 @@ function savePanelDimensions(dims){
 function applyPanelDimensions(panel){
   const dims = loadPanelDimensions();
   const id = panel.dataset.panelId;
-  if(!id || !dims[id]) return;
-  if(dims[id].h) panel.style.height = dims[id].h + 'px';
-  if(dims[id].span && panel.parentElement?.classList.contains('lower')){
-    panel.style.gridColumn = `span ${dims[id].span}`;
+  if(id && dims[id]){
+    if(dims[id].h) panel.style.height = dims[id].h + 'px';
+    if(dims[id].span && panel.parentElement?.classList.contains('lower')){
+      panel.style.gridColumn = `span ${dims[id].span}`;
+    }
   }
   updateSizeTier(panel);
 }
@@ -1539,6 +1541,7 @@ function togglePanelMinimized(panelId){
   const next = !isPanelMinimized(panelId);
   setPanelMinimized(panelId, next);
   applyPanelMinimized(panel, next);
+  if(!next) applyPanelDimensions(panel);
 }
 function loadPanelLayout(){
   try { return JSON.parse(localStorage.getItem(PANEL_LAYOUT_KEY) || '{}'); }
@@ -1837,6 +1840,10 @@ function renderCyberPanel() {
     <div style="margin:8px 0 4px;font-family:var(--mono);font-size:9px;color:var(--dim);letter-spacing:0.08em;text-transform:uppercase">GreyNoise Watchlist</div>
     ${gnRows||'<div style="font-size:10px;color:var(--dim);padding:4px 0">GreyNoise watchlist not configured</div>'}
     </div>`;
+
+  return `
+    <div class="sec-head"><h3>Cyber Watch</h3><span class="badge">LIVE</span></div>
+    <div class="g-panel-content">${content}</div>`;
 }
 
 // === BOOT SEQUENCE ===
