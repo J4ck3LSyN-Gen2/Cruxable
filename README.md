@@ -41,15 +41,22 @@ It is built for users who want cross-domain visibility without buying into a clo
 
 ---
 
-> What has changed: 
-> - Added `CVE Feed` at the top of the page.
-> - Added more wrapping around the `lowerGrid` functionality.
-> - Added `Panel` resizing functionality + padding (beta).
-> - Added `4` new themes `Kali`, `tulip`,  `rose` & `spy`.
-> - Added a `layout` configuration (more to come), this allows for on the fly layouts.
+> CHANGELOG: 
+> + `CVE Feed` at the top of the page.
+> + More wrapping around the `lowerGrid` functionality.
+> + `Panel` resizing functionality + padding (beta).
+> + `4` new themes `Kali`, `tulip`,  `rose` & `spy`.
+> +  a `layout` configuration (more to come), this allows for on the fly layouts.
+> ! Implemented `AUTH_USERNAME` & `AUTH_PASSWD` inside of `.env` for proper authentication configuartions.
+> + Added `login.html` to handle logins with changes to `crucix.config.mjs` & `server.mjs`.
+> - Removed old `sc` documentation. 
 
 ---
 ## Screenshots
+
+### Login
+
+![cruxable login](docs/cruxLogin.png)
 
 ### Boot Sequence
 
