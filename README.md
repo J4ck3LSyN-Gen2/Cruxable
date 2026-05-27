@@ -77,7 +77,7 @@ It is built for users who want cross-domain visibility without buying into a clo
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/J4ck3LSyN-Gen2/Crucix-Expanded.git
+git clone https://github.com/J4ck3LSyN-Gen2/Cruxable.git
 cd cruxable
 
 # 2. Edit the .env & add keys...
