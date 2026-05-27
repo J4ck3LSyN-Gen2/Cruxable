@@ -1,6 +1,6 @@
 <div align="center">
 
-# Crucix-Epanded (Crucidle:beta)
+# Crucix-Epanded (Cruxidle:beta)
 
 Customized working fork of the original Crucix project, with active development centered on cybersecurity intelligence and expanded dashboard workflows.
 
