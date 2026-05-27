@@ -9,7 +9,11 @@ export async function safeFetch(url, opts = {}) {
       const timer = setTimeout(() => controller.abort(), timeout);
       const res = await fetch(url, {
         signal: controller.signal,
-        headers: { 'User-Agent': 'Crucix/1.0', ...headers },
+        headers: { 
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+          'Accept': 'application/json, text/plain, application/rss+xml, application/xml;q=0.9, */*;q=0.8',
+          ...headers 
+        },
       });
       clearTimeout(timer);
       if (!res.ok) {
